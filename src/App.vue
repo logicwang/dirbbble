@@ -2,7 +2,7 @@
   <div>
     <div>
       <HelloWorld />
-      <AllItems />
+      <!-- <AllItems /> -->
       <router-view></router-view>
     </div>
   </div>
@@ -10,13 +10,13 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-import AllItems from "./components/AllItems.vue";
+// import AllItems from "./components/AllItems.vue";
 
 export default {
   name: "app",
   components: {
     HelloWorld,
-    AllItems,
+    // AllItems,
   },
 };
 </script>

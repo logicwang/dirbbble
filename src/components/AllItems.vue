@@ -23,9 +23,7 @@
             fill="#8a8a8a"
           ></path>
         </svg>
-        <router-link to="/RegisterApp/index" class="items"
-          >All Items</router-link
-        >
+        <router-link to="/RegisterApp" class="items">All Items</router-link>
         <span class="number">19</span>
         <div class="clear"></div>
       </li>
@@ -186,9 +184,7 @@
                 p-id="6903"
               ></path>
             </svg>
-            <router-link to="/RegisterApp/index" class="items"
-              >Work</router-link
-            >
+            <router-link to="/RegisterApp" class="items">Work</router-link>
           </li>
           <li class="name">
             <svg
@@ -234,6 +230,8 @@
         </div>
       </div>
     </div>
+    <router-view></router-view>
+
     <div class="finall">
       <ul class="padding">
         <li>
@@ -327,6 +325,7 @@ ul {
 .padding {
   padding-left: 18px;
   padding-top: 110px;
+  padding-bottom: 10px;
 }
 .folder {
   color: #fff;
