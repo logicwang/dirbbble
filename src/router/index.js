@@ -3,6 +3,8 @@ import Router from 'vue-router'
 
 const RegisterApp = () =>
     import("@/components/RegisterApp")
+const AllItems = () =>
+    import("@/components/AllItems")
 // const NotFound = () =>
 //     import("@/components/NotFound")
 
@@ -15,11 +17,11 @@ export const routes = [
         component: RegisterApp
     },
 
-    // {
-    //     path: '*',
-    //     name: '/NotFound',
-    //     component: NotFound
-    // }
+    {
+        path: '/AllItems',
+        name: '/AllItems',
+        component: AllItems
+    }
 
 ]
 
