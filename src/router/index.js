@@ -3,8 +3,6 @@ import Router from 'vue-router'
 Vue.use(Router);
 const RegisterApp = () =>
     import("@/components/RegisterApp")
-// const AllItems = () =>
-//     import("@/components/AllItems")
 const HelloWorld = () =>
     import("@/components/HelloWorld")
 
@@ -13,7 +11,7 @@ export const routes = [
 
     {
         path: '/',
-        name: '/RegisterApp/index',
+        name: '/RegisterApp',
         component: RegisterApp,
         children: [
             {
@@ -26,12 +24,7 @@ export const routes = [
                 component: HelloWorld
             }
         ]
-
-
     },
-
-
-
 ]
 
 export default new Router({
