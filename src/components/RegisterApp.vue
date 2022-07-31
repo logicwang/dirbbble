@@ -273,9 +273,9 @@ export default {
 </script>
 
 <style>
-div {
+/* div {
   height: 100%;
-}
+} */
 .clear {
   clear: both;
 }
@@ -294,7 +294,7 @@ ul {
 }
 .header .item {
   padding-top: 40px;
-  padding-left: 8px;
+  padding-left: 18px;
 }
 .number {
   color: #dcdfe633;
@@ -307,14 +307,6 @@ ul {
   padding-left: 5px;
   text-decoration: none;
 }
-/* .flex {
-  display: flex;
-  justify-content: space-around;
-} */
-/* .start {
-  display: flex;
-  justify-content: start;
-} */
 .type {
   color: RGB(122, 122, 122);
   font-size: 8px;
