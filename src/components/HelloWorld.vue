@@ -120,6 +120,84 @@
           </div>
         </div>
       </button>
+      <!--分割线 -->
+      <button class="password">
+        <div class="password-all">
+          <div class="password-leftc">
+            <img
+              class="imdg"
+              src="https://s3.bmp.ovh/imgs/2022/08/02/0d1a693d9e8e130b.png"
+            />
+          </div>
+          <div class="password-righta">
+            <div class="password-jklb">
+              <div class="password-name">
+                <li v-for="item in Facebook" :key="item.name">
+                  <span class="ado">{{ item.name }}</span>
+                </li>
+                <div class="clear" />
+              </div>
+              <div class="password-job">
+                <li v-for="item in items" :key="item.aaa">
+                  <span class="job">{{ item.aaa }}</span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <!--分割线 -->
+      <button class="password">
+        <div class="password-all">
+          <div class="password-leftd">
+            <img
+              class="imeg"
+              src="https://s3.bmp.ovh/imgs/2022/08/02/bdde204635075c55.png"
+            />
+          </div>
+          <div class="password-righta">
+            <div class="password-jklb">
+              <div class="password-name">
+                <li v-for="item in google" :key="item.name">
+                  <span class="ado">{{ item.name }}</span>
+                </li>
+                <div class="clear" />
+              </div>
+              <div class="password-job">
+                <li v-for="item in items" :key="item.aaa">
+                  <span class="job">{{ item.aaa }}</span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <!--分割线 -->
+      <button class="password">
+        <div class="password-all">
+          <div class="password-leftd">
+            <img
+              class="imeg"
+              src="https://s3.bmp.ovh/imgs/2022/08/02/57443163a10eacf1.png"
+            />
+          </div>
+          <div class="password-righta">
+            <div class="password-jklb">
+              <div class="password-name">
+                <li v-for="item in IMDb" :key="item.name">
+                  <span class="ado">{{ item.name }}</span>
+                </li>
+                <div class="clear" />
+              </div>
+              <div class="password-job">
+                <li v-for="item in items" :key="item.aaa">
+                  <span class="job">{{ item.aaa }}</span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
     </div>
   </div>
 </template>
@@ -134,6 +212,9 @@ export default {
       apple: [{ name: "Apple" }],
       Dribbble: [{ name: "Dribbble" }],
       Etsy: [{ name: "Etsy" }],
+      Facebook: [{ name: "Facebook" }],
+      google: [{ name: "Google" }],
+      IMDb: [{ name: "IMDb" }],
       button() {
         document.getElementById("btn").style.backgroundColor = "blue";
       },
@@ -143,7 +224,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .clear {
   clear: both;
 }
@@ -289,9 +370,35 @@ input {
   height: 45px;
   border-radius: 10px;
 }
+.password-leftc {
+  background-color: rgb(58, 74, 140);
+  /* width: 30px; */
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+.password-leftd {
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 6px;
+}
 .imcg {
   position: relative;
   top: 12px;
+}
+.imdg {
+  width: 31px;
+  position: relative;
+  top: 5px;
+  right: 5px;
+}
+.imeg {
+  position: relative;
+  left: 0px;
+  top: 5px;
+  width: 38px;
+  height: 36px;
 }
 .password-jkl {
   padding-left: 12px;
