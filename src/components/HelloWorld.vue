@@ -6,8 +6,8 @@
           <el-input v-model="input" placeholder="Search Vault">
             <i slot="prefix" style="display: flex; align-items: center">
               <img
-                style="width: 16px; height: 16px"
-                src="https://www.hualigs.cn/image/62e56bd1d1fea.jpg"
+                class="hualigs"
+                src="https://s3.bmp.ovh/imgs/2022/08/02/873533b9a4ed4984.png"
                 alt
               /> </i
           ></el-input>
@@ -16,6 +16,58 @@
           <img src="https://i.postimg.cc/h48qP5LM/o.png" class="icon-img" />
         </div>
       </div>
+      <!--分割线 -->
+      <button class="password">
+        <div class="password-all">
+          <div class="password-left">
+            <img
+              class="img"
+              src="https://s3.bmp.ovh/imgs/2022/08/01/13e3a45a902b797d.png"
+            />
+          </div>
+          <div class="password-right">
+            <div class="password-jkl">
+              <div class="password-name">
+                <li v-for="item in objects" :key="item.bbb">
+                  <span class="ado">{{ item.bbb }}</span>
+                </li>
+                <div class="clear" />
+              </div>
+              <div class="password-job">
+                <li v-for="item in items" :key="item.aaa">
+                  <span class="job">{{ item.aaa }}</span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <!--分割线 -->
+      <button class="password">
+        <div class="password-all">
+          <div class="password-left">
+            <img
+              class="imag"
+              src="https://s3.bmp.ovh/imgs/2022/08/02/1b16f92a27163068.png"
+            />
+          </div>
+          <div class="password-right">
+            <div class="password-jkl">
+              <div class="password-name">
+                <li v-for="item in objects" :key="item.bbb">
+                  <span class="ado">{{ item.bbb }}</span>
+                </li>
+                <div class="clear" />
+              </div>
+              <div class="password-job">
+                <li v-for="item in items" :key="item.aaa">
+                  <span class="job">{{ item.aaa }}</span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
     </div>
   </div>
 </template>
@@ -25,6 +77,8 @@ export default {
   data() {
     return {
       input: "",
+      items: [{ aaa: "thomas@gmail.com" }],
+      objects: [{ bbb: "Adobe" }],
     };
   },
 };
@@ -44,7 +98,7 @@ input {
   outline: none;
 }
 .header-name {
-  width: 290px;
+  width: 390px;
   background-color: rgb(30 30 30);
 }
 .icon-user {
@@ -71,27 +125,87 @@ input {
 }
 .el-input__inner {
   -webkit-appearance: none;
-  background-color: #808080a3;
+  background-color: #404040;
   border-radius: 4px;
   border: 1px solid #dcdfe6;
   box-sizing: border-box;
-  color: #606266;
+  color: #686868;
   display: inline-block;
   font-size: inherit;
-  height: 21px;
+  height: 30px;
   line-height: 40px;
   outline: 0;
   padding: 0 15px;
   transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
   width: 100%;
 }
+.el-input {
+  position: relative;
+  font-size: 14px;
+  display: inline-block;
+  width: 126%;
+}
 .icon-a {
   border-radius: 7px;
-  background-color: rgb(55, 80, 214);
+  background-color: #005fe4;
+  width: 30px;
+  height: 30px;
 }
-img {
-  padding-top: 2px;
+.icon-img {
   width: 20px;
   height: 20px;
+  position: relative;
+  left: 4px;
+  top: 4px;
+}
+.hualigs {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 7px;
+  left: 2px;
+  width: 17px;
+  height: 17px;
+}
+.job {
+  color: #8f8f8f;
+}
+.ado {
+  color: #fff;
+  float: left;
+  font-size: 20px;
+}
+.password {
+  background-color: rgb(30 30 30);
+  border-color: transparent;
+  margin-left: 45px;
+}
+.password-right {
+  padding-left: 16px;
+}
+.password-left {
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  border-radius: 5px;
+}
+.password-all {
+  display: flex;
+  justify-content: start;
+}
+.imag {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 8px;
+}
+.img {
+  width: 45px;
+  height: 51px;
+  position: relative;
+  bottom: 4px;
+}
+.password-name {
+  padding-top: 4px;
 }
 </style>

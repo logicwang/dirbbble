@@ -91,9 +91,7 @@
                     fill="#bfbfbf"
                   ></path>
                 </svg>
-                <router-link to="/RegisterApp/index" class="items"
-                  >Login</router-link
-                >
+                <router-link to="/RegisterApp" class="items">Login</router-link>
               </li>
               <li class="name">
                 <svg

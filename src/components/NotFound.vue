@@ -44,6 +44,7 @@ export default {
 .logo p span {
   color: lightgreen;
 }
+
 .sub a {
   color: white;
   background: #8f8e8c;
