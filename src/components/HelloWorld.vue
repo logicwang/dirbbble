@@ -17,12 +17,12 @@
         </div>
       </div>
       <!--分割线 -->
-      <button class="password">
+      <button class="password" onclick="button()" id="btn">
         <div class="password-all">
           <div class="password-left">
             <img
               class="img"
-              src="https://s3.bmp.ovh/imgs/2022/08/01/13e3a45a902b797d.png"
+              src="https://s3.bmp.ovh/imgs/2022/08/02/c6b8d6da68ee70d9.png"
             />
           </div>
           <div class="password-right">
@@ -45,7 +45,7 @@
       <!--分割线 -->
       <button class="password">
         <div class="password-all">
-          <div class="password-left">
+          <div class="password-leftwhite">
             <img
               class="imag"
               src="https://s3.bmp.ovh/imgs/2022/08/02/1b16f92a27163068.png"
@@ -54,8 +54,60 @@
           <div class="password-right">
             <div class="password-jkl">
               <div class="password-name">
-                <li v-for="item in objects" :key="item.bbb">
-                  <span class="ado">{{ item.bbb }}</span>
+                <li v-for="item in apple" :key="item.name">
+                  <span class="ado">{{ item.name }}</span>
+                </li>
+                <div class="clear" />
+              </div>
+              <div class="password-job">
+                <li v-for="item in items" :key="item.aaa">
+                  <span class="job">{{ item.aaa }}</span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <!--分割线 -->
+      <button class="password">
+        <div class="password-all">
+          <div class="password-lefta">
+            <img
+              class="imbg"
+              src="https://s3.bmp.ovh/imgs/2022/08/02/302daaef95f616a3.png"
+            />
+          </div>
+          <div class="password-righta">
+            <div class="password-jkl">
+              <div class="password-name">
+                <li v-for="item in Dribbble" :key="item.name">
+                  <span class="ado">{{ item.name }}</span>
+                </li>
+                <div class="clear" />
+              </div>
+              <div class="password-job">
+                <li v-for="item in items" :key="item.aaa">
+                  <span class="job">{{ item.aaa }}</span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <!--分割线 -->
+      <button class="password">
+        <div class="password-all">
+          <div class="password-leftb">
+            <img
+              class="imcg"
+              src="https://s3.bmp.ovh/imgs/2022/08/02/6d519513ab7b2c12.png"
+            />
+          </div>
+          <div class="password-righta">
+            <div class="password-jklb">
+              <div class="password-name">
+                <li v-for="item in Etsy" :key="item.name">
+                  <span class="ado">{{ item.name }}</span>
                 </li>
                 <div class="clear" />
               </div>
@@ -79,8 +131,15 @@ export default {
       input: "",
       items: [{ aaa: "thomas@gmail.com" }],
       objects: [{ bbb: "Adobe" }],
+      apple: [{ name: "Apple" }],
+      Dribbble: [{ name: "Dribbble" }],
+      Etsy: [{ name: "Etsy" }],
+      button() {
+        document.getElementById("btn").style.backgroundColor = "blue";
+      },
     };
   },
+  // methods: {},
 };
 </script>
 
@@ -173,7 +232,7 @@ input {
 .ado {
   color: #fff;
   float: left;
-  font-size: 20px;
+  font-size: 18px;
 }
 .password {
   background-color: rgb(30 30 30);
@@ -186,12 +245,21 @@ input {
 .password-left {
   width: 45px;
   height: 45px;
+  background: #d81e06;
+  border-radius: 5px;
+}
+.password-leftwhite {
+  width: 45px;
+  height: 45px;
   background: #fff;
   border-radius: 5px;
 }
 .password-all {
   display: flex;
   justify-content: start;
+}
+.password-righta {
+  padding-left: 5px;
 }
 .imag {
   width: 30px;
@@ -200,12 +268,35 @@ input {
   top: 8px;
 }
 .img {
-  width: 45px;
-  height: 51px;
+  width: 33px;
+  height: 33px;
   position: relative;
-  bottom: 4px;
+  top: 6px;
 }
 .password-name {
-  padding-top: 4px;
+  padding: 4px 0 10px 0;
+}
+.imbg {
+  width: 55px;
+  height: 55px;
+  position: relative;
+  right: 4px;
+}
+.password-leftb {
+  background-color: rgb(211, 97, 18);
+  /* width: 30px; */
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+.imcg {
+  position: relative;
+  top: 12px;
+}
+.password-jkl {
+  padding-left: 12px;
+}
+.password-jklb {
+  padding-left: 20px;
 }
 </style>
