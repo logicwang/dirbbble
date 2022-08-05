@@ -13,29 +13,7 @@
         </div>
       </div>
       <div class="all-button">
-        <!--分割线 -->
-        <button class="password">
-          <div class="password-all">
-            <div class="password-left">
-              <img class="img" src="https://s3.bmp.ovh/imgs/2022/08/02/c6b8d6da68ee70d9.png" />
-            </div>
-            <div class="password-right">
-              <div class="password-jkl">
-                <div class="password-name">
-                  <li v-for="item in objects" :key="item.bbb">
-                    <span class="ado">{{ item.bbb }}</span>
-                  </li>
-                  <div class="clear" />
-                </div>
-                <div class="password-job">
-                  <li v-for="item in items" :key="item.aaa">
-                    <span class="job">{{ item.aaa }}</span>
-                  </li>
-                </div>
-              </div>
-            </div>
-          </div>
-        </button>
+        <AdobeApp />
         <!--分割线 -->
         <button class="password">
           <div class="password-all">
@@ -154,28 +132,7 @@
           </div>
         </button>
         <!--分割线 -->
-        <button class="password">
-          <div class="password-all">
-            <div class="password-leftd">
-              <img class="imeg" src="https://s3.bmp.ovh/imgs/2022/08/03/ad11eef905dd11f5.png" />
-            </div>
-            <div class="password-righta">
-              <div class="password-jklb">
-                <div class="password-name">
-                  <li v-for="item in InVision" :key="item.name">
-                    <span class="ado">{{ item.name }}</span>
-                  </li>
-                  <div class="clear" />
-                </div>
-                <div class="password-job">
-                  <li v-for="item in items" :key="item.aaa">
-                    <span class="job">{{ item.aaa }}</span>
-                  </li>
-                </div>
-              </div>
-            </div>
-          </div>
-        </button>
+        <InVisionBut />
         <!-- 分割线 -->
         <router-link to="/AdobeApp">
           <PasswordApp />
@@ -183,13 +140,16 @@
         <router-view />
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
 import PassWord from "../View/PassWord.vue"
+import InVisionBut from "../View/InVisionBut.vue"
 import PasswordApp from "./PasswordApp.vue";
+import AdobeApp from "../View/AdobeApp.vue";
+
+
 export default {
   data() {
     return {
@@ -205,11 +165,16 @@ export default {
       InVision: [{ name: "InVision" }],
     };
   },
+
+
   components: {
     PasswordApp,
-    PassWord
+    PassWord,
+    InVisionBut,
+    AdobeApp
   },
-  // methods: {},
+
+
 };
 </script>
 
