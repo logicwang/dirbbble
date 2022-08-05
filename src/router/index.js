@@ -5,6 +5,8 @@ const RegisterApp = () =>
     import("@/components/RegisterApp")
 const HelloWorld = () =>
     import("@/components/HelloWorld")
+const PasswordApp = () =>
+    import("@/components/PasswordApp")
 
 
 export const routes = [
@@ -21,8 +23,16 @@ export const routes = [
             {
                 path: '/RegisterApp',
                 name: '/AllItems',
-                component: HelloWorld
-            }
+                component: HelloWorld,
+
+            },
+            {
+                path: '/PasswordApp',
+                name: '/PasswordApp',
+                component: PasswordApp,
+
+            },
+
         ]
     },
 ]
