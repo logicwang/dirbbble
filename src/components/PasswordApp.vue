@@ -34,48 +34,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.password {
-  .password-all {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .password-leftd {
-    background-color: #fff;
-    width: 45px;
-    height: 45px;
-    border-radius: 6px;
-
-    .imeg {
-      position: relative;
-      left: 0px;
-      top: 5px;
-      width: 38px;
-      height: 36px;
-    }
-  }
-
-  .password-righta {
-    padding-left: 5px;
-
-    .password-jklb {
-      padding-left: 20px;
-    }
-
-    .password-name {
-      padding: 4px 0 10px 0;
-
-      .ado {
-        color: #fff;
-        float: left;
-        font-size: 18px;
-      }
-    }
-
-    .job {
-      color: #8f8f8f;
-    }
-  }
-}
+<style>
+@import url(../assets/button.scss);
 </style>

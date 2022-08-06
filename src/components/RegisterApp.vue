@@ -157,87 +157,87 @@ export default {
 };
 </script>
 
-<style>
-.padding {
-  padding: 55px 0 0 0;
-}
-
-.flex-item {
-  padding-left: 20px;
-}
-
-.flex-type {
-  padding-top: 30px;
-  padding-left: 20px;
-}
-
-.folders {
-  padding-top: 25px;
-  padding-left: 20px;
-}
-
-li {
-  list-style: none;
-}
-
-ul {
-  margin: 0;
-}
-
+<style lang="scss">
 .header {
   width: 230px;
   background-color: rgb(24 24 24 / 80%);
   height: 670px;
-}
 
-.header li ul {
-  color: #fff;
-}
+  .padding {
+    padding: 55px 0 0 0;
 
-.number {
-  color: #dcdfe633;
-  padding-left: 85px;
-  font-size: 13px;
-}
+    .flex-item {
+      padding-left: 20px;
+    }
 
-.items {
-  color: #fff;
-  padding-left: 12px;
-  text-decoration: none;
-}
+    .flex-type {
+      padding-top: 30px;
+      padding-left: 20px;
+    }
 
-.type {
-  color: RGB(122, 122, 122);
-  font-size: 8px;
-  position: relative;
-  right: 6px;
-}
+    .folders {
+      padding-top: 25px;
+      padding-left: 20px;
+    }
 
-.center-third {
-  padding-top: 6px;
-}
+    li {
+      list-style: none;
+    }
 
-.folder {
-  color: #fff;
-  padding-left: 5px;
-}
+    ul {
+      margin: 0;
+    }
 
-.flex {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
+    .header li ul {
+      color: #fff;
+    }
 
-.padding-floder {
-  padding: 185px 0px 0px 22px;
-}
+    .number {
+      color: #dcdfe633;
+      padding-left: 85px;
+      font-size: 13px;
+    }
 
-.right {
-  position: relative;
-  right: 5px;
-}
+    .items {
+      color: #fff;
+      padding-left: 12px;
+      text-decoration: none;
+    }
 
-.name {
-  padding: 3px;
+    .type {
+      color: RGB(122, 122, 122);
+      font-size: 8px;
+      position: relative;
+      right: 6px;
+    }
+
+    .center-third {
+      padding-top: 6px;
+    }
+
+    .folder {
+      color: #fff;
+      padding-left: 5px;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .padding-floder {
+      padding: 185px 0px 0px 22px;
+    }
+
+    .right {
+      position: relative;
+      right: 5px;
+    }
+
+    .name {
+      padding: 3px;
+    }
+  }
 }
 </style>

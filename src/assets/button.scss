@@ -5,46 +5,46 @@
     height: 65px;
     margin: 0 0 0 45px;
     border: none;
+}
 
-    .password-all {
-        display: flex;
-        justify-content: flex-start;
+.password-all {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.password-leftd {
+    background-color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 6px;
+
+    .imeg {
+        position: relative;
+        left: 0px;
+        top: 5px;
+        width: 38px;
+        height: 36px;
+    }
+}
+
+.password-righta {
+    padding-left: 5px;
+
+    .password-jklb {
+        padding-left: 20px;
     }
 
-    .password-leftd {
-        background-color: #fff;
-        width: 45px;
-        height: 45px;
-        border-radius: 6px;
+    .password-name {
+        padding: 4px 0 10px 0;
 
-        .imeg {
-            position: relative;
-            left: 0px;
-            top: 5px;
-            width: 38px;
-            height: 36px;
+        .ado {
+            color: #fff;
+            float: left;
+            font-size: 18px;
         }
     }
 
-    .password-righta {
-        padding-left: 5px;
-
-        .password-jklb {
-            padding-left: 20px;
-        }
-
-        .password-name {
-            padding: 4px 0 10px 0;
-
-            .ado {
-                color: #fff;
-                float: left;
-                font-size: 18px;
-            }
-        }
-
-        .job {
-            color: #8f8f8f;
-        }
+    .job {
+        color: #8f8f8f;
     }
 }

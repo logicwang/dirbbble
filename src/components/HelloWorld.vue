@@ -305,10 +305,6 @@ input {
   border-radius: 5px;
 }
 
-// .password-all {
-//   display: flex;
-//   justify-content: flex-start;
-// }
 
 .password-righta {
   padding-left: 5px;
