@@ -45,7 +45,7 @@ export default {
 
     .pass-all {
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
     }
 
     .pass-leftd {

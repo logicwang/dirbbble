@@ -1,17 +1,17 @@
 <template>
-  <button class="pass">
-    <div class="pass-all">
-      <div class="pass-leftd">
+  <button class="password">
+    <div class="password-all">
+      <div class="password-leftd">
         <img class="imeg" src="https://s3.bmp.ovh/imgs/2022/08/03/61220035d1bab3cc.png" />
       </div>
-      <div class="pass-righta">
-        <div class="pass-jklb">
-          <div class="pass-name">
+      <div class="password-righta">
+        <div class="password-jklb">
+          <div class="password-name">
             <li v-for="item in Telegram" :key="item.name">
               <span class="ado">{{ item.name }}</span>
             </li>
           </div>
-          <div class="pass-job">
+          <div class="password-job">
             <li v-for="item in items" :key="item.aaa">
               <span class="job">{{ item.aaa }}</span>
             </li>
@@ -35,18 +35,13 @@ export default {
 </script>
 
 <style lang="scss">
-.pass {
-  background-color: #1e1e1e;
-  border-color: transparent;
-  margin-left: 45px;
-  padding: 10px;
-
-  .pass-all {
+.password {
+  .password-all {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
   }
 
-  .pass-leftd {
+  .password-leftd {
     background-color: #fff;
     width: 45px;
     height: 45px;
@@ -61,14 +56,14 @@ export default {
     }
   }
 
-  .pass-righta {
+  .password-righta {
     padding-left: 5px;
 
-    .pass-jklb {
+    .password-jklb {
       padding-left: 20px;
     }
 
-    .pass-name {
+    .password-name {
       padding: 4px 0 10px 0;
 
       .ado {

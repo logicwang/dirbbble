@@ -131,13 +131,9 @@
             </div>
           </div>
         </button>
-        <!--分割线 -->
         <InVisionBut />
         <!-- 分割线 -->
-        <router-link to="/AdobeApp">
-          <PasswordApp />
-        </router-link>
-        <router-view />
+        <PasswordApp />
       </div>
     </div>
   </div>
@@ -179,10 +175,6 @@ export default {
 </script>
 
 <style lang="scss">
-.clear {
-  clear: both;
-}
-
 li {
   list-style: none;
 }
@@ -197,6 +189,7 @@ input {
 
 .header-name {
   width: 390px;
+  height: 670px;
   background-color: rgb(30 30 30);
 }
 
@@ -221,20 +214,20 @@ input {
 }
 
 .input {
-  padding: 21px;
+  padding: 20px;
   display: flex;
   justify-content: space-around;
 }
 
 .el-input__inner {
-  -webkit-appearance: none;
+
   background-color: #404040;
   border-radius: 4px;
-  border: 1px solid #dcdfe6;
+  border: none;
   box-sizing: border-box;
   color: #686868;
-  display: inline-block;
-  font-size: inherit;
+
+
   height: 30px;
   line-height: 40px;
   outline: 0;
@@ -285,12 +278,14 @@ input {
   font-size: 18px;
 }
 
-.password {
-  background-color: rgb(30 30 30);
-  border-color: transparent;
-  margin-left: 45px;
-  // padding: 10px;
-}
+// .password {
+//   padding: 0;
+//   width: 300px;
+//   background: #1e1e1e;
+//   height: 65px;
+//   margin: 0 0 0 45px;
+//   border: none;
+// }
 
 .password-right {
   padding-left: 16px;
@@ -310,10 +305,10 @@ input {
   border-radius: 5px;
 }
 
-.password-all {
-  display: flex;
-  justify-content: start;
-}
+// .password-all {
+//   display: flex;
+//   justify-content: flex-start;
+// }
 
 .password-righta {
   padding-left: 5px;
@@ -331,10 +326,6 @@ input {
   height: 33px;
   position: relative;
   top: 6px;
-}
-
-.password-name {
-  padding: 4px 0 10px 0;
 }
 
 .imbg {
