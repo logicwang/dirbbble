@@ -16,7 +16,6 @@
               </svg>
               <router-link to="/RegisterApp" class="items">All Items</router-link>
               <span class="number">19</span>
-              <div class="clear"></div>
             </li>
             <li class="item">
               <svg t="1658923382051" class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -27,7 +26,6 @@
               </svg>
               <router-link to="/RegisterApp" class="items">Favorites</router-link>
               <span class="number">7</span>
-              <div class="clear"></div>
             </li>
             <li class="item">
               <svg t="1658923825827" class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -169,12 +167,12 @@ export default {
 }
 
 .flex-type {
-  padding-top: 35px;
+  padding-top: 30px;
   padding-left: 20px;
 }
 
 .folders {
-  padding-top: 35px;
+  padding-top: 25px;
   padding-left: 20px;
 }
 
@@ -231,13 +229,7 @@ ul {
 }
 
 .padding-floder {
-  padding: 180px 0 0 0;
-}
-
-.newfolder {
-  position: relative;
-  bottom: 10px;
-  left: 17px;
+  padding: 185px 0px 0px 22px;
 }
 
 .right {
