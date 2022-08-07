@@ -14,27 +14,7 @@
     <div class="all-button">
       <AdobeApp />
       <!--分割线 -->
-      <button class="password">
-        <div class="password-all">
-          <div class="password-leftwhite">
-            <img class="imag" src="https://s3.bmp.ovh/imgs/2022/08/02/1b16f92a27163068.png" />
-          </div>
-          <div class="password-right">
-            <div class="password-jkl">
-              <div class="password-name">
-                <li v-for="item in apple" :key="item.name">
-                  <span class="ado">{{ item.name }}</span>
-                </li>
-              </div>
-              <div class="password-job">
-                <li v-for="item in items" :key="item.aaa">
-                  <span class="job">{{ item.aaa }}</span>
-                </li>
-              </div>
-            </div>
-          </div>
-        </div>
-      </button>
+      <AppleeApp />
       <!--分割线 -->
       <button class="password">
         <div class="password-all">
@@ -115,7 +95,7 @@
                 <li v-for="item in IMDb" :key="item.name">
                   <span class="ado">{{ item.name }}</span>
                 </li>
-              </div>qwwwwwqwww
+              </div>
               <div class="password-job">
                 <li v-for="item in items" :key="item.aaa">
                   <span class="job">{{ item.aaa }}</span>
@@ -137,6 +117,7 @@ import PassWord from "../View/PassWord.vue"
 import InVisionBut from "../View/InVisionBut.vue"
 import PasswordApp from "./PasswordApp.vue";
 import AdobeApp from "../View/AdobeApp.vue";
+import AppleeApp from "../View/AppleApp.vue";
 
 
 export default {
@@ -145,7 +126,6 @@ export default {
       input: "",
       items: [{ aaa: "thomas@gmail.com" }],
       objects: [{ bbb: "Adobe" }],
-      apple: [{ name: "Apple" }],
       Dribbble: [{ name: "Dribbble" }],
       Etsy: [{ name: "Etsy" }],
       Facebook: [{ name: "Facebook" }],
@@ -160,7 +140,8 @@ export default {
     PasswordApp,
     PassWord,
     InVisionBut,
-    AdobeApp
+    AdobeApp,
+    AppleeApp
   },
 
 
@@ -290,9 +271,9 @@ input {
 }
 
 
-.password-righta {
-  padding-left: 5px;
-}
+// .password-righta {
+//   padding-left: 5px;
+// }
 
 .imag {
   width: 30px;
