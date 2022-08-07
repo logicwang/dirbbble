@@ -1,140 +1,133 @@
 <template>
-  <div>
-    <div class="header-name">
-      <div class="input">
-        <div class="inputandcion">
-          <el-input v-model="input" placeholder="Search Vault">
-            <i slot="prefix" style="display: flex; align-items: center">
-              <img class="hualigs" src="https://s3.bmp.ovh/imgs/2022/08/02/873533b9a4ed4984.png" alt /> </i>
-          </el-input>
-        </div>
-        <div class="icon-a">
-          <img src="https://i.postimg.cc/h48qP5LM/o.png" class="icon-img" />
-        </div>
+  <div class="header-name">
+    <div class="input">
+      <div class="inputandcion">
+        <el-input v-model="input" placeholder="Search Vault">
+          <i slot="prefix" style="display: flex; align-items: center">
+            <img class="hualigs" src="https://s3.bmp.ovh/imgs/2022/08/02/873533b9a4ed4984.png" alt /> </i>
+        </el-input>
       </div>
-      <div class="all-button">
-        <AdobeApp />
-        <!--分割线 -->
-        <button class="password">
-          <div class="password-all">
-            <div class="password-leftwhite">
-              <img class="imag" src="https://s3.bmp.ovh/imgs/2022/08/02/1b16f92a27163068.png" />
-            </div>
-            <div class="password-right">
-              <div class="password-jkl">
-                <div class="password-name">
-                  <li v-for="item in apple" :key="item.name">
-                    <span class="ado">{{ item.name }}</span>
-                  </li>
-                  <div class="clear" />
-                </div>
-                <div class="password-job">
-                  <li v-for="item in items" :key="item.aaa">
-                    <span class="job">{{ item.aaa }}</span>
-                  </li>
-                </div>
-              </div>
-            </div>
-          </div>
-        </button>
-        <!--分割线 -->
-        <button class="password">
-          <div class="password-all">
-            <div class="password-lefta">
-              <img class="imbg" src="https://s3.bmp.ovh/imgs/2022/08/02/302daaef95f616a3.png" />
-            </div>
-            <div class="password-righta">
-              <div class="password-jkl">
-                <div class="password-name">
-                  <li v-for="item in Dribbble" :key="item.name">
-                    <span class="ado">{{ item.name }}</span>
-                  </li>
-                  <div class="clear" />
-                </div>
-                <div class="password-job">
-                  <li v-for="item in items" :key="item.aaa">
-                    <span class="job">{{ item.aaa }}</span>
-                  </li>
-                </div>
-              </div>
-            </div>
-          </div>
-        </button>
-        <!--分割线 -->
-        <button class="password">
-          <div class="password-all">
-            <div class="password-leftb">
-              <img class="imcg" src="https://s3.bmp.ovh/imgs/2022/08/02/6d519513ab7b2c12.png" />
-            </div>
-            <div class="password-righta">
-              <div class="password-jklb">
-                <div class="password-name">
-                  <li v-for="item in Etsy" :key="item.name">
-                    <span class="ado">{{ item.name }}</span>
-                  </li>
-                  <div class="clear" />
-                </div>
-                <div class="password-job">
-                  <li v-for="item in items" :key="item.aaa">
-                    <span class="job">{{ item.aaa }}</span>
-                  </li>
-                </div>
-              </div>
-            </div>
-          </div>
-        </button>
-        <!--分割线 -->
-        <button class="password">
-          <div class="password-all">
-            <div class="password-leftc">
-              <img class="imdg" src="https://s3.bmp.ovh/imgs/2022/08/02/0d1a693d9e8e130b.png" />
-            </div>
-            <div class="password-righta">
-              <div class="password-jklb">
-                <div class="password-name">
-                  <li v-for="item in Facebook" :key="item.name">
-                    <span class="ado">{{ item.name }}</span>
-                  </li>
-                  <div class="clear" />
-                </div>
-                <div class="password-job">
-                  <li v-for="item in items" :key="item.aaa">
-                    <span class="job">{{ item.aaa }}</span>
-                  </li>
-                </div>
-              </div>
-            </div>
-          </div>
-        </button>
-        <!--分割线 -->
-        <PassWord />
-        <!--分割线 -->
-        <button class="password">
-          <div class="password-all">
-            <div class="password-lefte">
-              <img class="imeg" src="https://s3.bmp.ovh/imgs/2022/08/03/0c6b8db7324d8988.png" />
-            </div>
-            <div class="password-righta">
-              <div class="password-jklb">
-                <div class="password-name">
-                  <li v-for="item in IMDb" :key="item.name">
-                    <span class="ado">{{ item.name }}</span>
-                  </li>
-                  <div class="clear" />
-                </div>
-                <div class="password-job">
-                  <li v-for="item in items" :key="item.aaa">
-                    <span class="job">{{ item.aaa }}</span>
-                  </li>
-                </div>
-              </div>
-            </div>
-          </div>
-        </button>
-        <InVisionBut />
-        <!-- 分割线 -->
-        <PasswordApp />
+      <div class="icon-a">
+        <img src="https://i.postimg.cc/h48qP5LM/o.png" class="icon-img" />
       </div>
+    </div>
+    <div class="all-button">
+      <AdobeApp />
+      <!--分割线 -->
+      <button class="password">
+        <div class="password-all">
+          <div class="password-leftwhite">
+            <img class="imag" src="https://s3.bmp.ovh/imgs/2022/08/02/1b16f92a27163068.png" />
+          </div>
+          <div class="password-right">
+            <div class="password-jkl">
+              <div class="password-name">
+                <li v-for="item in apple" :key="item.name">
+                  <span class="ado">{{ item.name }}</span>
+                </li>
+              </div>
+              <div class="password-job">
+                <li v-for="item in items" :key="item.aaa">
+                  <span class="job">{{ item.aaa }}</span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <!--分割线 -->
+      <button class="password">
+        <div class="password-all">
+          <div class="password-lefta">
+            <img class="imbg" src="https://s3.bmp.ovh/imgs/2022/08/02/302daaef95f616a3.png" />
+          </div>
+          <div class="password-righta">
+            <div class="password-jkl">
+              <div class="password-name">
+                <li v-for="item in Dribbble" :key="item.name">
+                  <span class="ado">{{ item.name }}</span>
+                </li>
+              </div>
+              <div class="password-job">
+                <li v-for="item in items" :key="item.aaa">
+                  <span class="job">{{ item.aaa }}</span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <!--分割线 -->
+      <button class="password">
+        <div class="password-all">
+          <div class="password-leftb">
+            <img class="imcg" src="https://s3.bmp.ovh/imgs/2022/08/02/6d519513ab7b2c12.png" />
+          </div>
+          <div class="password-righta">
+            <div class="password-jklb">
+              <div class="password-name">
+                <li v-for="item in Etsy" :key="item.name">
+                  <span class="ado">{{ item.name }}</span>
+                </li>
+              </div>
+              <div class="password-job">
+                <li v-for="item in items" :key="item.aaa">
+                  <span class="job">{{ item.aaa }}</span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <!--分割线 -->
+      <button class="password">
+        <div class="password-all">
+          <div class="password-leftc">
+            <img class="imdg" src="https://s3.bmp.ovh/imgs/2022/08/02/0d1a693d9e8e130b.png" />
+          </div>
+          <div class="password-righta">
+            <div class="password-jklb">
+              <div class="password-name">
+                <li v-for="item in Facebook" :key="item.name">
+                  <span class="ado">{{ item.name }}</span>
+                </li>
+              </div>
+              <div class="password-job">
+                <li v-for="item in items" :key="item.aaa">
+                  <span class="job">{{ item.aaa }}</span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <!--分割线 -->
+      <PassWord />
+      <!--分割线 -->
+      <button class="password">
+        <div class="password-all">
+          <div class="password-lefte">
+            <img class="imeg" src="https://s3.bmp.ovh/imgs/2022/08/03/0c6b8db7324d8988.png" />
+          </div>
+          <div class="password-righta">
+            <div class="password-jklb">
+              <div class="password-name">
+                <li v-for="item in IMDb" :key="item.name">
+                  <span class="ado">{{ item.name }}</span>
+                </li>
+              </div>qwwwwwqwww
+              <div class="password-job">
+                <li v-for="item in items" :key="item.aaa">
+                  <span class="job">{{ item.aaa }}</span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <InVisionBut />
+      <!-- 分割线 -->
+      <PasswordApp />
     </div>
   </div>
 </template>
@@ -278,15 +271,6 @@ input {
   font-size: 18px;
 }
 
-// .password {
-//   padding: 0;
-//   width: 300px;
-//   background: #1e1e1e;
-//   height: 65px;
-//   margin: 0 0 0 45px;
-//   border: none;
-// }
-
 .password-right {
   padding-left: 16px;
 }
@@ -347,12 +331,12 @@ input {
   border-radius: 10px;
 }
 
-.password-leftd {
-  background-color: #fff;
-  width: 45px;
-  height: 45px;
-  border-radius: 6px;
-}
+// .password-leftd {
+//   background-color: #fff;
+//   width: 45px;
+//   height: 45px;
+//   border-radius: 6px;
+// }
 
 .password-lefte {
   background-color: #efb700;

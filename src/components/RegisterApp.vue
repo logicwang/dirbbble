@@ -1,5 +1,5 @@
 <template>
-  <div style="display: flex">
+  <div class="flex">
     <div class="header">
       <div class="padding">
         <div class="flex-item">
@@ -158,6 +158,10 @@ export default {
 </script>
 
 <style lang="scss">
+.flex {
+  display: flex
+}
+
 .header {
   width: 230px;
   background-color: rgb(24 24 24 / 80%);
