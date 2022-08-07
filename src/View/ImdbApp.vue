@@ -1,13 +1,13 @@
 <template>
     <button class="password">
         <div class="password-all">
-            <div class="password-leftwhite">
-                <img class="imag" src="https://s3.bmp.ovh/imgs/2022/08/02/1b16f92a27163068.png" />
+            <div class="password-lefte">
+                <img class="imeg" src="https://s3.bmp.ovh/imgs/2022/08/03/0c6b8db7324d8988.png" />
             </div>
-            <div class="password-right">
-                <div class="password-jkl">
+            <div class="password-righta">
+                <div class="password-jklb">
                     <div class="password-name">
-                        <li v-for="item in apple" :key="item.name">
+                        <li v-for="item in IMDb" :key="item.name">
                             <span class="ado">{{ item.name }}</span>
                         </li>
                     </div>
@@ -26,9 +26,8 @@
 export default {
     data() {
         return {
-            apple: [{ name: "Apple" }],
+            IMDb: [{ name: "IMDb" }],
             items: [{ aaa: "thomas@gmail.com" }],
-
         }
     }
 }

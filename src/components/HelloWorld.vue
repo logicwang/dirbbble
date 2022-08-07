@@ -16,95 +16,15 @@
       <!--分割线 -->
       <AppleeApp />
       <!--分割线 -->
-      <button class="password">
-        <div class="password-all">
-          <div class="password-lefta">
-            <img class="imbg" src="https://s3.bmp.ovh/imgs/2022/08/02/302daaef95f616a3.png" />
-          </div>
-          <div class="password-righta">
-            <div class="password-jkl">
-              <div class="password-name">
-                <li v-for="item in Dribbble" :key="item.name">
-                  <span class="ado">{{ item.name }}</span>
-                </li>
-              </div>
-              <div class="password-job">
-                <li v-for="item in items" :key="item.aaa">
-                  <span class="job">{{ item.aaa }}</span>
-                </li>
-              </div>
-            </div>
-          </div>
-        </div>
-      </button>
+      <DribbbleApp />
       <!--分割线 -->
-      <button class="password">
-        <div class="password-all">
-          <div class="password-leftb">
-            <img class="imcg" src="https://s3.bmp.ovh/imgs/2022/08/02/6d519513ab7b2c12.png" />
-          </div>
-          <div class="password-righta">
-            <div class="password-jklb">
-              <div class="password-name">
-                <li v-for="item in Etsy" :key="item.name">
-                  <span class="ado">{{ item.name }}</span>
-                </li>
-              </div>
-              <div class="password-job">
-                <li v-for="item in items" :key="item.aaa">
-                  <span class="job">{{ item.aaa }}</span>
-                </li>
-              </div>
-            </div>
-          </div>
-        </div>
-      </button>
+      <EtsyApp />
       <!--分割线 -->
-      <button class="password">
-        <div class="password-all">
-          <div class="password-leftc">
-            <img class="imdg" src="https://s3.bmp.ovh/imgs/2022/08/02/0d1a693d9e8e130b.png" />
-          </div>
-          <div class="password-righta">
-            <div class="password-jklb">
-              <div class="password-name">
-                <li v-for="item in Facebook" :key="item.name">
-                  <span class="ado">{{ item.name }}</span>
-                </li>
-              </div>
-              <div class="password-job">
-                <li v-for="item in items" :key="item.aaa">
-                  <span class="job">{{ item.aaa }}</span>
-                </li>
-              </div>
-            </div>
-          </div>
-        </div>
-      </button>
+      <FaceBook />
       <!--分割线 -->
       <PassWord />
       <!--分割线 -->
-      <button class="password">
-        <div class="password-all">
-          <div class="password-lefte">
-            <img class="imeg" src="https://s3.bmp.ovh/imgs/2022/08/03/0c6b8db7324d8988.png" />
-          </div>
-          <div class="password-righta">
-            <div class="password-jklb">
-              <div class="password-name">
-                <li v-for="item in IMDb" :key="item.name">
-                  <span class="ado">{{ item.name }}</span>
-                </li>
-              </div>
-              <div class="password-job">
-                <li v-for="item in items" :key="item.aaa">
-                  <span class="job">{{ item.aaa }}</span>
-                </li>
-              </div>
-            </div>
-          </div>
-        </div>
-      </button>
+      <ImdbApp />
       <InVisionBut />
       <!-- 分割线 -->
       <PasswordApp />
@@ -118,20 +38,16 @@ import InVisionBut from "../View/InVisionBut.vue"
 import PasswordApp from "./PasswordApp.vue";
 import AdobeApp from "../View/AdobeApp.vue";
 import AppleeApp from "../View/AppleApp.vue";
+import ImdbApp from "../View/ImdbApp.vue";
+import FaceBook from "../View/FaceBook.vue";
+import EtsyApp from "../View/EtsyApp.vue";
+import DribbbleApp from "../View/DribbbleApp.vue";
 
 
 export default {
   data() {
     return {
       input: "",
-      items: [{ aaa: "thomas@gmail.com" }],
-      objects: [{ bbb: "Adobe" }],
-      Dribbble: [{ name: "Dribbble" }],
-      Etsy: [{ name: "Etsy" }],
-      Facebook: [{ name: "Facebook" }],
-      google: [{ name: "Google" }],
-      IMDb: [{ name: "IMDb" }],
-      InVision: [{ name: "InVision" }],
     };
   },
 
@@ -141,7 +57,11 @@ export default {
     PassWord,
     InVisionBut,
     AdobeApp,
-    AppleeApp
+    AppleeApp,
+    ImdbApp,
+    FaceBook,
+    EtsyApp,
+    DribbbleApp
   },
 
 
