@@ -13,29 +13,39 @@
     </div>
     <div class="all-button">
       <AdobeApp />
-      <!--分割线 -->
+      <!--AdobeApp -->
+
       <AppleeApp />
-      <!--分割线 -->
+      <!--AppleeApp-->
+
       <DribbbleApp />
-      <!--分割线 -->
+      <!--DribbbleApp -->
+
       <EtsyApp />
-      <!--分割线 -->
+      <!--EtsyApp -->
+
       <FaceBook />
-      <!--分割线 -->
+      <!--FaceBook -->
+
       <PassWord />
-      <!--分割线 -->
+      <!--PassWord -->
+
       <ImdbApp />
+      <!-- ImdbApp -->
+
       <InVisionBut />
-      <!-- 分割线 -->
-      <PasswordApp />
+      <!-- InVisionBut -->
+
+      <TeleGram />
+      <!-- PasswordApp -->
     </div>
   </div>
 </template>
 
 <script>
-import PassWord from "../View/PassWord.vue"
+import PassWord from "./Password.vue"
 import InVisionBut from "../View/InVisionBut.vue"
-import PasswordApp from "./PasswordApp.vue";
+import TeleGram from "../View/TeleGram.vue"
 import AdobeApp from "../View/AdobeApp.vue";
 import AppleeApp from "../View/AppleApp.vue";
 import ImdbApp from "../View/ImdbApp.vue";
@@ -43,17 +53,14 @@ import FaceBook from "../View/FaceBook.vue";
 import EtsyApp from "../View/EtsyApp.vue";
 import DribbbleApp from "../View/DribbbleApp.vue";
 
-
 export default {
   data() {
     return {
       input: "",
     };
   },
-
-
   components: {
-    PasswordApp,
+    TeleGram,
     PassWord,
     InVisionBut,
     AdobeApp,
@@ -63,8 +70,6 @@ export default {
     EtsyApp,
     DribbbleApp
   },
-
-
 };
 </script>
 
@@ -169,7 +174,8 @@ input {
 .ado {
   color: #fff;
   float: left;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .password-right {
