@@ -32,8 +32,8 @@
       <FaceBook />
       <!--FaceBook -->
 
-      <PassWord />
-      <!--PassWord -->
+      <GooGle />
+      <!--GooGle -->
 
       <ImdbApp />
       <!-- ImdbApp -->
@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import PassWord from "../View/Password"
+import GooGle from "../View/GooGle"
 import InVisionBut from "../View/InVisionBut.vue"
 import TeleGram from "../View/TeleGram.vue"
 import AdobeApp from "../View/AdobeApp.vue";
@@ -66,7 +66,7 @@ export default {
   },
   components: {
     TeleGram,
-    PassWord,
+    GooGle,
     InVisionBut,
     AdobeApp,
     AppleeApp,

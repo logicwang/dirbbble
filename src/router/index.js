@@ -4,8 +4,8 @@ const RegisterApp = () =>
     import("@/components/RegisterApp")
 const HelloWorld = () =>
     import("@/components/HelloWorld")
-const AdobApp = () =>
-    import("@/View/Password")
+const GooGle = () =>
+    import("@/View/GooGle")
 const AdobDeTails = () =>
     import("@/detail/AdobDeTails")
 
@@ -22,9 +22,9 @@ export const routes = [
                 name: '/AllItems',
             },
             {
-                path: '/AdobApp',
-                name: '/AdobApp',
-                component: AdobApp,
+                path: '/GooGle',
+                name: '/GooGle',
+                component: GooGle,
             },
             {
                 path: '/HelloWorld',
