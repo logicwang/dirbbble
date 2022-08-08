@@ -1,4 +1,5 @@
 <template>
+  <!-- 密码管理页面左侧菜单 -->
   <div class="flex">
     <div class="header">
       <div class="padding">

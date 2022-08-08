@@ -1,4 +1,5 @@
 <template>
+    <!-- Apple按钮 -->
     <button class="password">
         <div class="password-all">
             <div class="password-leftwhite">

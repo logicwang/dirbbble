@@ -1,4 +1,5 @@
 <template>
+    <!-- Facebook按钮 -->
     <button class="password">
         <div class="password-all">
             <div class="password-leftc">

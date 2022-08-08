@@ -1,4 +1,5 @@
 <template>
+  <!-- 404页面 -->
   <div>
     <div class="wrap">
       <div class="logo">
@@ -25,9 +26,11 @@ export default {
   margin: 0 auto;
   width: 1000px;
 }
+
 .logo {
   margin-top: 50px;
 }
+
 .logo h1 {
   font-size: 200px;
   color: #8f8e8c;
@@ -35,12 +38,14 @@ export default {
   margin-bottom: 1px;
   text-shadow: 1px 1px 6px #fff;
 }
+
 .logo p {
   color: rgb(228, 146, 162);
   font-size: 20px;
   margin-top: 1px;
   text-align: center;
 }
+
 .logo p span {
   color: lightgreen;
 }
