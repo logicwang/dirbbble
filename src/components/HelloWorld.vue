@@ -1,4 +1,5 @@
 <template>
+  <!-- 密码管理页面详情页 -->
   <div class="header-name">
     <div class="input">
       <div class="inputandcion">
@@ -12,8 +13,12 @@
       </div>
     </div>
     <div class="all-button">
-      <AdobeApp />
-      <!--AdobeApp -->
+
+      <router-link to="/HelloWorld/AdobDeTails">
+        <AdobeApp />
+        <!--AdobeApp -->
+      </router-link>
+
 
       <AppleeApp />
       <!--AppleeApp-->
@@ -43,7 +48,7 @@
 </template>
 
 <script>
-import PassWord from "./Password.vue"
+import PassWord from "../View/Password"
 import InVisionBut from "../View/InVisionBut.vue"
 import TeleGram from "../View/TeleGram.vue"
 import AdobeApp from "../View/AdobeApp.vue";

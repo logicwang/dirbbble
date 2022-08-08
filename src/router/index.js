@@ -5,9 +5,9 @@ const RegisterApp = () =>
 const HelloWorld = () =>
     import("@/components/HelloWorld")
 const AdobApp = () =>
-    import("@/components/Password")
-const DetailsApp = () =>
-    import("@/detail/AdobApp")
+    import("@/View/Password")
+const AdobDeTails = () =>
+    import("@/detail/AdobDeTails")
 
 
 export const routes = [
@@ -22,23 +22,24 @@ export const routes = [
                 name: '/AllItems',
             },
             {
-                path: '/HelloWorld',
-                name: '/HelloWorld',
-                component: HelloWorld,
-
-            },
-            {
                 path: '/AdobApp',
                 name: '/AdobApp',
                 component: AdobApp,
+            },
+            {
+                path: '/HelloWorld',
+                name: '/HelloWorld',
+                component: HelloWorld,
                 children: [
+
                     {
-                        path: '/DetailsApp',
-                        name: '/DetailsApp',
-                        component: DetailsApp,
+                        path: '/HelloWorld/AdobDeTails',
+                        name: '/AdobDeTails',
+                        component: AdobDeTails,
 
                     },
                 ]
+
             },
 
         ]
