@@ -1,0 +1,12 @@
+.wrap-right {
+    width: 505px;
+    height: 665px;
+    background-color: rgb(29, 29, 29);
+
+    .header-right {
+        .display {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

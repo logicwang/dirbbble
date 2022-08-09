@@ -4,7 +4,7 @@
     <div class="input">
       <div class="inputandcion">
         <el-input v-model="input" placeholder="SearchVault">
-          <i slot="prefix" style="display: flex; align-items: center">
+          <i slot="prefix" class="prefix">
             <img class="hualigs" src="https://s3.bmp.ovh/imgs/2022/08/02/873533b9a4ed4984.png" alt /> </i>
         </el-input>
       </div>
@@ -17,8 +17,6 @@
         <AdobeApp />
         <!--AdobeApp -->
       </router-link>
-      <router-view></router-view>
-
 
       <AppleeApp />
       <!--AppleeApp-->
