@@ -13,10 +13,12 @@
       </div>
     </div>
     <div class="all-button">
-      <router-link to="/AdobDeTail">
+      <router-link to="/HelloWorld/AdobDeTail">
         <AdobeApp />
         <!--AdobeApp -->
       </router-link>
+      <router-view></router-view>
+
 
       <AppleeApp />
       <!--AppleeApp-->

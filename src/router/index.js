@@ -8,7 +8,6 @@ import RegisterApp from '../components/RegisterApp.vue'
 
 
 export const routes =
-
     [
         {
             path: '/',
@@ -18,20 +17,18 @@ export const routes =
                     path: '/',
                     name: '/AllItems',
                 },
-
                 {
                     path: '/GooGle',
                     name: '/GooGle',
                     component: GooGle,
                 },
-
                 {
                     path: '/HelloWorld',
                     name: '/HelloWorld',
                     component: HelloWorld,
                     children: [
                         {
-                            path: '/AdobDeTail',
+                            path: '/HelloWorld/AdobDeTail',
                             name: '/AdobDeTail',
                             component: AdobDeTail,
                         },
