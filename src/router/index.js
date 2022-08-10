@@ -13,10 +13,10 @@ export const routes =
             path: '/',
             component: RegisterApp,
             children: [
-                {
-                    path: '/',
-                    name: '/AllItems',
-                },
+                // {
+                //     path: '/',
+                //     name: '/AllItems',
+                // },
                 {
                     path: '/GooGle',
                     name: '/GooGle',
@@ -29,7 +29,7 @@ export const routes =
                     children: [
                         {
                             path: '/HelloWorld/AdobDeTail',
-                            name: '/AdobDeTail',
+                            // name: '/AdobDeTail',
                             component: AdobDeTail,
                         },
                     ]
