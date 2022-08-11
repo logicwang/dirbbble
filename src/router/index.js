@@ -28,8 +28,8 @@ export const routes =
                     component: HelloWorld,
                     children: [
                         {
-                            path: '/HelloWorld/AdobDeTail',
-                            // name: '/AdobDeTail',
+                            path: '/AdobDeTail',
+                            name: '/AdobDeTail',
                             component: AdobDeTail,
                         },
                     ]

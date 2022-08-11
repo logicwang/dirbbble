@@ -13,8 +13,7 @@
       </div>
     </div>
     <div class="all-button">
-      <router-link to="/HelloWorld/AdobDeTail">
-        <router-view />
+      <router-link to="/AdobDeTail">
         <AdobeApp />
         <!--AdobeApp -->
       </router-link>
