@@ -3,7 +3,7 @@
     <button class="password">
         <div class="password-all">
             <div class="password-lefta">
-                <img class="imbg" src="https://s3.bmp.ovh/imgs/2022/08/02/302daaef95f616a3.png" />
+                <img class="imbg" src="../assets/image/dribbble-square-fill.png" />
             </div>
             <div class="password-righta">
                 <div class="password-jkl">

@@ -3,7 +3,7 @@
     <button class="password">
         <div class="password-all">
             <div class="password-lefte">
-                <img class="imeg" src="https://s3.bmp.ovh/imgs/2022/08/03/0c6b8db7324d8988.png" />
+                <img class="imeg" src="../assets/image/imdb.png" />
             </div>
             <div class="password-righta">
                 <div class="password-jklb">

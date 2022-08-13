@@ -3,7 +3,7 @@
     <button class="password">
         <div class="password-all">
             <div class="password-leftc">
-                <img class="imdg" src="https://s3.bmp.ovh/imgs/2022/08/02/0d1a693d9e8e130b.png" />
+                <img class="imdg" src="../assets/image/facebook.png" />
             </div>
             <div class="password-righta">
                 <div class="password-jklb">

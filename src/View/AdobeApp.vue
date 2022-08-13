@@ -3,7 +3,7 @@
         <!-- Adobe -->
         <div class="password-all">
             <div class="password-left">
-                <img class="img" src="https://s3.bmp.ovh/imgs/2022/08/02/c6b8d6da68ee70d9.png" />
+                <img class="img" src="../assets/image/Adobe.png" />
             </div>
             <div class="password-right">
                 <div class="password-jkl">

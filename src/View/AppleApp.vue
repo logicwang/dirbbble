@@ -3,7 +3,7 @@
     <button class="password">
         <div class="password-all">
             <div class="password-leftwhite">
-                <img class="imag" src="https://s3.bmp.ovh/imgs/2022/08/02/1b16f92a27163068.png" />
+                <img class="imag" src="../assets/image/apple.png" />
             </div>
             <div class="password-right">
                 <div class="password-jkl">

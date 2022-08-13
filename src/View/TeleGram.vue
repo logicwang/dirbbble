@@ -3,7 +3,7 @@
     <button class="password">
         <div class="password-all">
             <div class="password-leftd">
-                <img class="imeg" src="https://s3.bmp.ovh/imgs/2022/08/03/61220035d1bab3cc.png" />
+                <img class="imeg" src="../assets/image/telegram.png" />
             </div>
             <div class="password-righta">
                 <div class="password-jklb">

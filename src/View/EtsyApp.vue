@@ -3,7 +3,7 @@
     <button class="password">
         <div class="password-all">
             <div class="password-leftb">
-                <img class="imcg" src="https://s3.bmp.ovh/imgs/2022/08/02/6d519513ab7b2c12.png" />
+                <img class="imcg" src="../assets/image/etsy.png" />
             </div>
             <div class="password-righta">
                 <div class="password-jklb">
