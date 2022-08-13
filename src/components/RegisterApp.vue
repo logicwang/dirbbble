@@ -166,7 +166,7 @@ export default {
 .header {
   width: 230px;
   background-color: rgb(24 24 24 / 80%);
-  height: 670px;
+  height: 700px;
 
   .padding {
     padding: 55px 0 0 0;
@@ -232,7 +232,7 @@ export default {
     }
 
     .padding-floder {
-      padding: 185px 0px 0px 22px;
+      padding: 210px 0px 0px 22px;
     }
 
     .right {

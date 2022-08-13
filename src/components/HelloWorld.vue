@@ -3,13 +3,13 @@
   <div class="header-name">
     <div class="input">
       <div class="inputandcion">
-        <el-input v-model="input" placeholder="SearchVault">
+        <el-input v-model="input">
           <i slot="prefix" class="prefix">
-            <img class="hualigs" src="https://s3.bmp.ovh/imgs/2022/08/02/873533b9a4ed4984.png" alt /> </i>
+            <img class="hualigs" src="../assets/image/搜索.png" alt /> </i>
         </el-input>
       </div>
       <div class="icon-a">
-        <img src="https://i.postimg.cc/h48qP5LM/o.png" class="icon-img" />
+        <img src="../assets/image/加号.png" class="icon-img" />
       </div>
     </div>
     <div class="all-button">
@@ -18,6 +18,7 @@
         <AdobeApp />
         <!--AdobeApp -->
       </router-link>
+
 
       <AppleeApp />
       <!--AppleeApp-->
@@ -62,7 +63,7 @@ import DribbbleApp from "../View/DribbbleApp.vue";
 export default {
   data() {
     return {
-      input: " ",
+      input: "SearchVault ",
     };
   },
   components: {
@@ -74,7 +75,7 @@ export default {
     ImdbApp,
     FaceBook,
     EtsyApp,
-    DribbbleApp
+    DribbbleApp,
   },
 };
 </script>
