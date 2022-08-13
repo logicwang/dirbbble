@@ -14,6 +14,7 @@
     </div>
     <div class="all-button">
       <router-link to="/AdobDeTail">
+        <router-view />
         <AdobeApp />
         <!--AdobeApp -->
       </router-link>

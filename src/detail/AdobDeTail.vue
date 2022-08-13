@@ -1,6 +1,7 @@
 <template>
     <div class="wrap-right">
         <div class="header-right">
+            <router-view />
             <div class="display">
                 <div class="edit">
                     <svg t="1660048620062" class="icon" viewBox="0 0 1024 1024" version="1.1"
