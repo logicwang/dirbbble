@@ -2,7 +2,7 @@
     <!-- InVision按钮 -->
     <button class="password">
         <div class="password-all">
-            <div class="password-leftd">
+            <div class="password-leftp">
                 <img class="imeg" src="../assets/image/bxl-invision.png" />
             </div>
             <div class="password-righta">

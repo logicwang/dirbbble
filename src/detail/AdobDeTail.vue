@@ -1,8 +1,7 @@
 <template>
     <div class="wrap-right">
         <div class="header-right">
-            <router-view />
-            <div class="display">
+            <div class="display padding">
                 <div class="edit">
                     <svg t="1660048620062" class="icon" viewBox="0 0 1024 1024" version="1.1"
                         xmlns="http://www.w3.org/2000/svg" p-id="1944" width="20" height="20">
@@ -22,9 +21,28 @@
                     <span class="name">delete</span>
                 </div>
             </div>
+            <div class="main-center">
+                <div class="main-max">
+                    <div class="icon-ouct">
+                        <div class="password-left">
+                            <img src="../assets/image/Adobe.png" class="Adobe img">
+                        </div>
+                    </div>
+                    <div class="wenzi">
+                        <div class="daobe">
+                            <h1 class="name">Adobe</h1>
+                        </div>
+                        <div class="login">
+                            <span class="logicn">login</span>
+                        </div>
+                    </div>
+                    <div class="collection">
+                        <img src="../assets/image/收藏.png">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
 </template>
 
 <script>

@@ -1,12 +1,83 @@
 .wrap-right {
-    width: 505px;
+    width: 515px;
     height: 665px;
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(15, 15, 15);
+}
 
-    .header-right {
-        .display {
-            display: flex;
-            justify-content: flex-end;
-        }
-    }
+.display {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.padding {
+    padding-right: 65px;
+}
+
+.wrap-right .display .edit {
+    background-color: rgb(47 44 44);
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.wrap-right .display .edit .icon {
+    position: relative;
+    top: 4px;
+    left: 4px;
+}
+
+.wrap-right .display .delete {
+    background-color: rgb(47 44 44);
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.wrap-right .display .delete .icon {
+    position: relative;
+    top: 4px;
+    left: 4px;
+}
+
+.wrap-right .display .edit .name {
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+    left: 12px;
+}
+
+.wrap-right .display .delete .name {
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+    left: 3px;
+}
+
+.login .logicn {
+    color: rgb(131, 131, 131);
+    font-size: 13px;
+}
+
+.daobe .name {
+    margin: 0;
+    color: #fff;
+    font-size: 30px;
+}
+
+.Adobe {
+    position: relative;
+    top: 7px;
+    left: 5px;
+}
+
+img {
+    width: 33px;
+    height: 33px;
+}
+
+.main-max {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
