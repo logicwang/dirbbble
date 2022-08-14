@@ -24,7 +24,7 @@ export default {
 <style>
 .wrap {
   margin: 0 auto;
-  width: 1000px;
+  max-width: 1000px;
 }
 
 .logo {
