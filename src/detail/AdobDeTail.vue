@@ -43,25 +43,52 @@
                     </div>
                 </div>
             </div>
-            <div class="username">
-                <li v-for="item in name" :key="item.name">
-                    <span class="xxx">{{ item.name }}</span>
-                </li>
-                <li v-for="item in items" :key="item.aaa">
-                    <span class="job">{{ item.aaa }}</span>
-                </li>
-                <div class="word">
-                    <span class="padsss">Password</span>
+            <div class="main borderbottom ">
+                <div class="username">
+                    <li v-for="item in name" :key="item.name">
+                        <span class="xxx">{{ item.name }}</span>
+                    </li>
+                    <li v-for="item in items" :key="item.aaa">
+                        <span class="aaaaa">{{ item.aaa }}</span>
+                    </li>
+
                 </div>
-                <div class="private">
-                    <!--// 显示内容: ==0时显示*，==1时显示密钥内容 -->
-                    <span v-if="codeType == 1">{{ privates }}</span>
-                    <span class="special" v-if="codeType == 0">{{ star }}</span>
-                    <!--// 小图标: ==0时展示隐藏图标，==1时展示显示图标-->
-                    <span v-if="codeType == 1"><img @click="reveal"
-                            src="https://s4.ax1x.com/2022/01/07/79E7dg.png"></span>
-                    <span v-if="codeType == 0"><img @click="conceal"
-                            src="https://s4.ax1x.com/2022/01/07/79EOWn.png"></span>
+                <div class="word">
+                    <span class="xxx">Password</span>
+                    <div class="private">
+                        <!--// 显示内容: ==0时显示*，==1时显示密钥内容 -->
+                        <span v-if="codeType == 1">{{ privates }}</span>
+                        <span class="special" v-if="codeType == 0">{{ star }}</span>
+                        <!--// 小图标: ==0时展示隐藏图标，==1时展示显示图标-->
+                        <span v-if="codeType == 1"><img @click="reveal"
+                                src="https://s4.ax1x.com/2022/01/07/79E7dg.png"></span>
+                        <span v-if="codeType == 0"><img @click="conceal"
+                                src="https://s4.ax1x.com/2022/01/07/79EOWn.png"></span>
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="website xxx">
+                        {{ website }}
+                    </div>
+                </div>
+                <div class="web ">
+                    <li v-for="item in web" :key="item.web">
+                        <span class="aaaaa">{{ item.com }}</span>
+                    </li>
+                </div>
+
+            </div>
+            <div class="bottom">
+                <div class="duanluo">
+                    <div class="notes">
+                        <span>
+                            {{ notes }}
+                        </span>
+                    </div>
+                    <div class="great">
+                        <p>Great experiences have the power to inspire, transform and move the world forward.And every
+                            great experience starts with creativity</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -76,6 +103,9 @@ export default {
             privates: "123456789123456789123456789", //密钥内容
             codeType: 0, //控制密钥显示隐藏 等于1时显示，等于0时隐藏
             star: "", //要插入的星星*
+            website: "Website",
+            web: [{ com: "Adobe.com" }],
+            notes: "Notes"
         }
     },
     mounted() {
