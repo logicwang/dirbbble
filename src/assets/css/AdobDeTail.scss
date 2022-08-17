@@ -10,7 +10,7 @@
 }
 
 .padding {
-    padding-right: 65px;
+    padding: 0 0 25px 0;
 }
 
 .wrap-right .display .edit {
@@ -72,12 +72,17 @@
 }
 
 img {
-    width: 33px;
-    height: 33px;
+    width: 27px;
+    height: 27px;
 }
 
 .main-max {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.max-width {
+    max-width: 430px;
+    margin: 0 auto;
 }

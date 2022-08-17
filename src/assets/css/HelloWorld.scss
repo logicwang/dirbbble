@@ -156,22 +156,15 @@ input {
 
 .imcg {
     position: relative;
-    top: 12px;
+    top: 9px;
+    left: 1px;
 }
 
 .imdg {
     width: 31px;
     position: relative;
-    top: 5px;
-    right: 5px;
-}
-
-.imeg {
-    position: relative;
-    left: 0px;
-    top: 5px;
-    width: 38px;
-    height: 36px;
+    top: 7px;
+    right: 3px;
 }
 
 .password-jkl {
@@ -183,5 +176,9 @@ input {
 }
 
 .header-right {
-    padding-top: 35px;
+    padding: 35px 0 50px 0;
+}
+
+.borderbottom {
+    border-bottom: 4px solid pink
 }
