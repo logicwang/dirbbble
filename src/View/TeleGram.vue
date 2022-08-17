@@ -11,7 +11,6 @@
                         <li v-for="item in TeleGram" :key="item.name">
                             <span class="ado">{{ item.name }}</span>
                         </li>
-                        <div class="clear" />
                     </div>
                     <div class="password-job">
                         <li v-for="item in items" :key="item.aaa">

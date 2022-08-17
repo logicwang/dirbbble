@@ -8,15 +8,10 @@
             <div class="password-righta">
                 <div class="password-jklb">
                     <div class="password-name">
-                        <li v-for="item in InVision" :key="item.name">
-                            <span class="ado">{{ item.name }}</span>
-                        </li>
-                        <div class="clear" />
+                        <span class="ado" v-for="item in InVision" :key="item.name">{{ item.name }}</span>
                     </div>
                     <div class="password-job">
-                        <li v-for="item in items" :key="item.aaa">
-                            <span class="job">{{ item.aaa }}</span>
-                        </li>
+                        <span class="job" v-for="item in items" :key="item.aaa">{{ item.aaa }}</span>
                     </div>
                 </div>
             </div>

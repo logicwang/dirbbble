@@ -8,15 +8,10 @@
             <div class="password-right">
                 <div class="password-jkl">
                     <div class="password-name">
-                        <li v-for="item in objects" :key="item.bbb">
-                            <span class="ado">{{ item.bbb }}</span>
-                        </li>
-                        <div class="clear" />
+                        <span class="ado" v-for="item in objects" :key="item.bbb">{{ item.bbb }}</span>
                     </div>
                     <div class="password-job">
-                        <li v-for="item in items" :key="item.aaa">
-                            <span class="job">{{ item.aaa }}</span>
-                        </li>
+                        <span class="job" v-for="item in items" :key="item.aaa">{{ item.aaa }}</span>
                     </div>
                 </div>
             </div>
