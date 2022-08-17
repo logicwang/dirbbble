@@ -12,9 +12,9 @@
         <img src="../assets/image/加号.png" class="icon-img" />
       </div>
     </div>
+    <router-view />
     <div class="all-button">
       <router-link to="/AdobDeTail">
-        <router-view />
         <AdobeApp />
         <!--AdobeApp -->
       </router-link>
