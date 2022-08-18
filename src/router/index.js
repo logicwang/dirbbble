@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import GooGle from '../View/GooGle.vue'
+import AppleApp from '../detail/AppleApp.vue'
 import NotFound from '../components/NotFound.vue'
 import AdobDeTail from '../detail/AdobDeTail.vue'
 import HelloWorld from '../components/HelloWorld.vue'
@@ -28,7 +29,13 @@ export const routes =
                             name: '/AdobDeTail',
                             component: AdobDeTail,
                         },
-                    ]
+                        {
+                            path: '/AppleApp',
+                            name: '/AppleApp',
+                            component: AppleApp,
+                        },
+                    ],
+
                 },
             ]
         },

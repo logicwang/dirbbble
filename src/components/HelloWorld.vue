@@ -20,7 +20,11 @@
       </router-link>
 
 
-      <AppleeApp />
+      <router-link to="/AppleApp">
+
+        <AppleeApp />
+      </router-link>
+
       <!--AppleeApp-->
 
       <DribbbleApp />

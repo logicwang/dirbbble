@@ -30,7 +30,7 @@
                     <div class="main-max">
                         <div class="icon-ouct">
                             <div class="password-left">
-                                <img src="../assets/image/Adobe.png" class="Adobe img">
+                                <img class="imag" src="../assets/image/apple.png" />
                             </div>
                         </div>
                         <div class="wenzi">
