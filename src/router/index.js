@@ -2,8 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import GooGle from '../View/GooGle.vue'
 import AppleApp from '../detail/AppleApp.vue'
-import NotFound from '../components/NotFound.vue'
 import AdobDeTail from '../detail/AdobDeTail.vue'
+import NotFound from '../components/NotFound.vue'
 import HelloWorld from '../components/HelloWorld.vue'
 import RegisterApp from '../components/RegisterApp.vue'
 
@@ -20,15 +20,16 @@ export const routes =
                     component: GooGle,
                 },
                 {
+                    path: '/AdobDeTail',
+                    name: '/AdobDeTail',
+                    component: AdobDeTail,
+                },
+                {
                     path: '/HelloWorld',
                     name: '/HelloWorld',
                     component: HelloWorld,
                     children: [
-                        {
-                            path: '/AdobDeTail',
-                            name: '/AdobDeTail',
-                            component: AdobDeTail,
-                        },
+
                         {
                             path: '/AppleApp',
                             name: '/AppleApp',

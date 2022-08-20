@@ -1,53 +1,52 @@
 <template>
-  <!-- 密码管理页面详情页 -->
-  <div class="header-name">
-    <div class="input">
-      <div class="inputandcion">
-        <el-input v-model="input">
-          <i slot="prefix" class="prefix">
-            <img class="hualigs" src="../assets/image/搜索.png" alt /> </i>
-        </el-input>
+  <!-- 密码管理页面内容页 -->
+  <div class="all-div">
+    <div class="header-name">
+      <div class="input">
+        <div class="inputandcion">
+          <el-input v-model="input">
+            <i slot="prefix" class="prefix">
+              <img class="hualigs" src="../assets/image/搜索.png" alt /> </i>
+          </el-input>
+        </div>
+        <div class="icon-a">
+          <img src="../assets/image/加号.png" class="icon-img" />
+        </div>
       </div>
-      <div class="icon-a">
-        <img src="../assets/image/加号.png" class="icon-img" />
-      </div>
-    </div>
-    <router-view />
-    <div class="all-button">
-      <router-link to="/AdobDeTail">
+      <router-view />
+      <div class="all-button">
+
         <AdobeApp />
         <!--AdobeApp -->
-      </router-link>
-
-
-      <router-link to="/AppleApp">
-
         <AppleeApp />
-      </router-link>
+        <!--AppleeApp-->
 
-      <!--AppleeApp-->
+        <DribbbleApp />
+        <!--DribbbleApp -->
 
-      <DribbbleApp />
-      <!--DribbbleApp -->
+        <EtsyApp />
+        <!--EtsyApp -->
 
-      <EtsyApp />
-      <!--EtsyApp -->
+        <FaceBook />
+        <!--FaceBook -->
 
-      <FaceBook />
-      <!--FaceBook -->
+        <GooGle />
+        <!--GooGle -->
 
-      <GooGle />
-      <!--GooGle -->
+        <ImdbApp />
+        <!-- ImdbApp -->
 
-      <ImdbApp />
-      <!-- ImdbApp -->
+        <InVisionBut />
+        <!-- InVisionBut -->
 
-      <InVisionBut />
-      <!-- InVisionBut -->
+        <TeleGram />
+        <!-- PasswordApp -->
+      </div>
+      <div>
 
-      <TeleGram />
-      <!-- PasswordApp -->
+      </div>
     </div>
+    <AdobDeTail />
   </div>
 </template>
 
@@ -61,6 +60,7 @@ import ImdbApp from "../View/ImdbApp.vue";
 import FaceBook from "../View/FaceBook.vue";
 import EtsyApp from "../View/EtsyApp.vue";
 import DribbbleApp from "../View/DribbbleApp.vue";
+import AdobDeTail from "../detail/AdobDeTail.vue";
 // 在此处引用button组件
 
 
@@ -80,6 +80,7 @@ export default {
     FaceBook,
     EtsyApp,
     DribbbleApp,
+    AdobDeTail
   },
 };
 </script>

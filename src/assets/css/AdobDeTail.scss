@@ -1,6 +1,6 @@
 .wrap-right {
-    width: 580px;
-    height: 665px;
+    width: 50%;
+    height: 100%;
     background-color: rgb(15, 15, 15);
 }
 
@@ -9,9 +9,6 @@
     justify-content: flex-end;
 }
 
-.padding {
-    padding: 0 0 25px 0;
-}
 
 .wrap-right .display .edit {
     background-color: rgb(47 44 44);
@@ -99,26 +96,6 @@ img {
     padding-top: 30px;
 }
 
-.great p {
-    color: #fff;
-    font-size: 16p
-}
-
-.notes span {
-    color: #8f8f8f;
-    font-size: 14px;
-}
-
-.xxx {
-    color: #8f8f8f;
-    font-size: 17px;
-}
-
-.aaaaa {
-    color: #fff;
-    font-size: 17px;
-}
-
 .username {
     padding-bottom: 10px;
 }
@@ -141,4 +118,12 @@ img {
     border: none;
     margin-left: 15px;
     background-color: rgb(47 44 44);
+}
+
+.imag {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 8px;
+    left: 5px;
 }

@@ -164,7 +164,7 @@ export default {
 }
 
 .header {
-  width: 230px;
+  width: 20%;
   background-color: rgb(24 24 24 / 80%);
   height: 700px;
 

@@ -29,7 +29,7 @@
                 <div class="main-center">
                     <div class="main-max">
                         <div class="icon-ouct">
-                            <div class="password-left">
+                            <div class="password-leftwhite">
                                 <img class="imag" src="../assets/image/apple.png" />
                             </div>
                         </div>
@@ -117,5 +117,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import url(../assets/css/AdobDeTail.scss);
+@import url(../assets/css/AppleApp.scss);
 </style>

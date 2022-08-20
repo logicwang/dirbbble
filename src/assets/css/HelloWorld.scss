@@ -16,9 +16,14 @@ input {
 }
 
 .header-name {
-    width: 390px;
+    width: 30%;
     height: 700px;
     background-color: rgb(30 30 30);
+}
+
+.all-div {
+    width: 100%;
+    display: flex;
 }
 
 .icon-user {
@@ -109,20 +114,6 @@ input {
     height: 45px;
     background: #fff;
     border-radius: 5px;
-}
-
-.imag {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    top: 8px;
-}
-
-.img {
-    width: 33px;
-    height: 33px;
-    position: relative;
-    top: 6px;
 }
 
 .imbg {
