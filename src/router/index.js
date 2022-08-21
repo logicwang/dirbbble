@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import GooGle from '../View/GooGle.vue'
+import GooGle from '../components/GooGle.vue'
 import AppleApp from '../detail/AppleApp.vue'
 import AdobDeTail from '../detail/AdobDeTail.vue'
-import NotFound from '../components/NotFound.vue'
-import HelloWorld from '../components/HelloWorld.vue'
-import RegisterApp from '../components/RegisterApp.vue'
+import NotFound from '../View/NotFound.vue'
+import HelloWorld from '../View/HelloWorld.vue'
+import RegisterApp from '../View/RegisterApp.vue'
 
 
 export const routes =

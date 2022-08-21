@@ -51,15 +51,15 @@
 </template>
 
 <script>
-import GooGle from "../View/GooGle"
-import InVisionBut from "../View/InVisionBut.vue"
-import TeleGram from "../View/TeleGram.vue"
-import AdobeApp from "../View/AdobeApp.vue";
-import AppleeApp from "../View/AppleApp.vue";
-import ImdbApp from "../View/ImdbApp.vue";
-import FaceBook from "../View/FaceBook.vue";
-import EtsyApp from "../View/EtsyApp.vue";
-import DribbbleApp from "../View/DribbbleApp.vue";
+import GooGle from "../components/GooGle.vue"
+import InVisionBut from "../components/InVisionBut.vue"
+import TeleGram from "../components/TeleGram.vue"
+import AdobeApp from "../components/AdobeApp.vue";
+import AppleeApp from "../components/AppleApp.vue";
+import ImdbApp from "../components/ImdbApp.vue";
+import FaceBook from "../components/FaceBook.vue";
+import EtsyApp from "../components/EtsyApp.vue";
+import DribbbleApp from "../components/DribbbleApp.vue";
 import AdobDeTail from "../detail/AdobDeTail.vue";
 // 在此处引用button组件
 
