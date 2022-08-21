@@ -58,7 +58,9 @@
 
                 </div>
                 <div class="word">
-                    <el-input type="password" placeholder="请输入密码" ref="passwordInput"></el-input>
+                    <form>
+                        <el-input type="text/password" name="password" value="12314135135" show-password />
+                    </form>
                 </div>
                 <div class="third">
                     <div class="website xxx">
@@ -74,7 +76,7 @@
             </div>
             <div class="bottom">
                 <div class="duanluo">
-                    <div class="notes">
+                    <div class="xxx">
                         <span>
                             {{ notes }}
                         </span>

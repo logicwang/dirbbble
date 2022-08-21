@@ -4,7 +4,7 @@
     <div class="header-name">
       <div class="input">
         <div class="inputandcion">
-          <el-input v-model="input">
+          <el-input v-model="input" class="helloworldinput">
             <i slot="prefix" class="prefix">
               <img class="hualigs" src="../assets/image/搜索.png" alt /> </i>
           </el-input>

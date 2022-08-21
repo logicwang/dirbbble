@@ -61,7 +61,7 @@
                     <el-input type="password" placeholder="请输入密码" ref="passwordInput"></el-input>
                 </div>
                 <div class="third">
-                    <div class="website xxx">
+                    <div class="xxx">
                         {{ website }}
                     </div>
                 </div>
