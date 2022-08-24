@@ -55,7 +55,6 @@
                     <li v-for="item in items" :key="item.aaa">
                         <span class="aaaaa">{{ item.aaa }}</span>
                     </li>
-
                 </div>
                 <div class="word">
                     <form>
