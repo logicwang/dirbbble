@@ -9,12 +9,41 @@
 # content-type: application/json
 
 # {
-#     "password": "888888",
-#     "username": "admin"
-# }
-
-
-
+#     "username": "Adobe",
+#     "website": "Adobe.com"
+# },
+# {
+#     "username": "Apple",
+#     "website": "Apple.com"
+# },
+# {
+#     "username": "Dribbble",
+#     "website": "Dribbble.com"
+# },
+# {
+#     "username": "Esty",
+#     "website": "Esty.com"
+# },
+# {
+#     "username": "Facebook",
+#     "website": "Facebook.com"
+# },
+# {
+#     "username": "Google",
+#     "website": "Google.com"
+# },
+# {
+#     "username": "IMDB",
+#     "website": "IMDB.com"
+# },
+# {
+#     "username": "InVision",
+#     "website": "InVision.com"
+# },
+# {
+#     "username": "Telegram",
+#     "website": "Telegram.com"
+# },
 ### 登录
 
 GET http://localhost:3721/api/user/list HTTP/1.1
@@ -23,7 +52,11 @@ content-type: application/json
 {
    "name": "Adobe",
     "Website": "Adobe.com",
-    "paragraph":"Great experiences have the power to inspire, transform and move the world forward.And everygreat experience starts with creativity"
+    "mes":"1234qwer"
+},
+{
+   "name": "Apple",
+    "Website": "Apple.com",
 },
 
 

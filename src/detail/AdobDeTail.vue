@@ -58,12 +58,13 @@
                 </div>
                 <div class="word">
                     <form>
-                        <el-input type="text/password" name="password" value="12314135135" show-password />
+                        <el-input type="text/password" name="password" value="12314135135" show-password
+                            v-model="mes" />
                     </form>
                 </div>
                 <div class="third">
                     <div class="website xxx">
-                        {{ website }}
+                        {{ classname.website }}
                     </div>
                 </div>
                 <div class="web ">
@@ -90,6 +91,8 @@
     </div>
 </template>
 <script>
+import { reqCategoryList } from '../API/index'
+
 export default {
     data() {
         return {
@@ -100,19 +103,16 @@ export default {
             star: "", //要插入的星星*
             website: "Website",
             web: [{ com: "Adobe.com" }],
-            notes: "Notes"
+            notes: "Notes",
+            classname: []
         }
     },
-    methods: {
-        //显示事件
-        reveal() {
-            this.codeType = 0
-        },
-        //隐藏事件
-        conceal() {
-            this.codeType = 1
-        },
-    }
+    mounted() {
+        reqCategoryList().then((data) => {
+            console.log(data.data)
+            this.classname = data.data
+        })
+    },
 }
 
 </script>

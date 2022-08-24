@@ -7,7 +7,7 @@ const requests = axios.create({
     //基础路径，发请求的时候，路径当中出现api
     baseURL: "/api",
     //代表请求超时的时间5s
-    timeout: 500.
+    timeout: 1000.
 })
 
 //请求拦截器：在发请发之前，请求拦截器可以检测到，可以在请求发出去之前做一些事情
