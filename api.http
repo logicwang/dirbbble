@@ -17,14 +17,14 @@
 
 ### 登录
 
-# GET http://localhost:3721/api/user/list HTTP/1.1
-# content-type: application/json
+GET http://localhost:3721/api/user/list HTTP/1.1
+content-type: application/json
 
-# {
-#    "id": "2",
-#     "username": "kennyD",
-#     "sex": "6"
-# },
+{
+   "name": "Adobe",
+    "Website": "Adobe.com",
+    "paragraph":"Great experiences have the power to inspire, transform and move the world forward.And everygreat experience starts with creativity"
+},
 
 
 # GET http://localhost:3721/api/user/list HTTP/1.1
@@ -50,5 +50,5 @@
 
 
 
-GET http://localhost:3721/api/user/list  HTTP/1.1
-content-type: application/json
+# GET http://localhost:3721/api/user/list  HTTP/1.1
+# content-type: application/json

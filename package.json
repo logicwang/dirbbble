@@ -9,11 +9,12 @@
     "api": "mocker ./mocker"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "core-js": "^3.8.3",
     "element-ui": "^2.4.5",
+    "mockjs": "^1.1.0",
     "router": "^1.3.7",
     "vue": "^2.6.14",
-    "mockjs": "^1.1.0",
     "vue-clipboard2": "^0.3.3",
     "vue-router": "^3.5.4"
   },
