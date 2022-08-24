@@ -49,9 +49,7 @@
             </div>
             <div class="main borderbottom ">
                 <div class="username">
-                    <li v-for="item in name" :key="item.name">
-                        <span class="xxx">{{ item.name }}</span>
-                    </li>
+                    {{ classname.name }}
                     <li v-for="item in items" :key="item.aaa">
                         <span class="aaaaa">{{ item.aaa }}</span>
                     </li>
@@ -66,9 +64,7 @@
                     </div>
                 </div>
                 <div class="web ">
-                    <li v-for="item in web" :key="item.web">
-                        <span class="aaaaa">{{ item.com }}</span>
-                    </li>
+                    {{ classname.Website }}
                 </div>
 
             </div>
@@ -80,8 +76,7 @@
                         </span>
                     </div>
                     <div class="great">
-                        <p>Great experiences have the power to inspire, transform and move the world forward.And every
-                            great experience starts with creativity</p>
+                        <p>{{ classname.paragraph }}</p>
                     </div>
                 </div>
             </div>
@@ -89,28 +84,25 @@
     </div>
 </template>
 <script>
+import { reqCategoryList } from '../API/index'
+
 export default {
     data() {
         return {
             name: [{ name: "username" }],
-            items: [{ aaa: "thomas@gmail.com" }],
-            privates: "123456789123456789123456789", //密钥内容
-            codeType: 0, //控制密钥显示隐藏 等于1时显示，等于0时隐藏
-            star: "", //要插入的星星*
             website: "Website",
             web: [{ com: "Adobe.com" }],
-            notes: "Notes"
+            notes: "Notes",
+            classname: []
         }
     },
+    mounted() {
+        reqCategoryList().then((data) => {
+            console.log(data.data)
+            this.classname = data.data
+        })
+    },
     methods: {
-        //显示事件
-        reveal() {
-            this.codeType = 0
-        },
-        //隐藏事件
-        conceal() {
-            this.codeType = 1
-        },
     }
 }
 
