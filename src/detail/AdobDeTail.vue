@@ -28,17 +28,19 @@
                 </div>
                 <div class="main-center">
                     <div class="main-max">
-                        <div class="icon-ouct">
-                            <div class="password-left">
-                                <img src="../assets/image/Adobe.png" class="Adobe img">
+                        <div class="wordicon">
+                            <div class="icon-ouct">
+                                <div class="password-left position">
+                                    <img src="../assets/image/Adobe.png" class="Adobe img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="wenzi">
-                            <div class="daobe">
-                                <h1 class="name">Adobe</h1>
-                            </div>
-                            <div class="login">
-                                <span class="logicn">login</span>
+                            <div class="wenzi">
+                                <div class="daobe">
+                                    <h1 class="name">Adobe</h1>
+                                </div>
+                                <div class="login">
+                                    <span class="logicn">login</span>
+                                </div>
                             </div>
                         </div>
                         <div class="collection">
