@@ -1,51 +1,3 @@
-### 用户列表
-
-# GET http://localhost:3721/api/user/list HTTP/1.1
-
-
-### 登录
-
-# POST http://localhost:3721/api/login/account HTTP/1.1
-# content-type: application/json
-
-# {
-#     "username": "Adobe",
-#     "website": "Adobe.com"
-# },
-# {
-#     "username": "Apple",
-#     "website": "Apple.com"
-# },
-# {
-#     "username": "Dribbble",
-#     "website": "Dribbble.com"
-# },
-# {
-#     "username": "Esty",
-#     "website": "Esty.com"
-# },
-# {
-#     "username": "Facebook",
-#     "website": "Facebook.com"
-# },
-# {
-#     "username": "Google",
-#     "website": "Google.com"
-# },
-# {
-#     "username": "IMDB",
-#     "website": "IMDB.com"
-# },
-# {
-#     "username": "InVision",
-#     "website": "InVision.com"
-# },
-# {
-#     "username": "Telegram",
-#     "website": "Telegram.com"
-# },
-### 登录
-
 GET http://localhost:3721/api/user/list HTTP/1.1
 content-type: application/json
 
@@ -58,30 +10,31 @@ content-type: application/json
    "name": "Apple",
     "Website": "Apple.com",
 },
-
-
-# GET http://localhost:3721/api/user/list HTTP/1.1
-# content-type: application/json
-
-# {
-#         "id": "3",
-#         "username"::"kenny",
-#         "sex": "2"
-#     }, {
-#         "id": "2",
-#         "username": "kennyD",
-#         "sex": "6"
-#     }
-
-
-# DELETE  http://localhost:3721/api/user/:id  HTTP/1.1
-# content-type: application/json
-
-
-# GET http://localhost:3721/api/:owner/:repo/raw/:ref/(.*)  HTTP/1.1
-# content-type: application/json
-
-
-
-# GET http://localhost:3721/api/user/list  HTTP/1.1
-# content-type: application/json
+{
+   "name": "Dirbbble",
+    "Website": "Dirbbble.com",
+},
+{
+   "name": "Etsy",
+    "Website": "Etsy.com",
+},
+{
+   "name": "Facebook",
+    "Website": "Facebook.com",
+},
+{
+   "name": "GooGle",
+    "Website": "GooGle.com",
+},
+{
+   "name": "IMDB",
+    "Website": "Apple.com",
+},
+{
+   "name": "InVision",
+    "Website": "InVision.com",
+},
+{
+   "name": "Telegram",
+    "Website": "InVision.com",
+},

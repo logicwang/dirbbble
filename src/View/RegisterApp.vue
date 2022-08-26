@@ -164,8 +164,8 @@ export default {
 }
 
 .header {
-  width: 20%;
-  background-color: rgb(24 24 24 / 80%);
+  width: 19%;
+  background-color: #282828;
   height: 700px;
 
   .padding {

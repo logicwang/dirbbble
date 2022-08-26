@@ -59,7 +59,7 @@
                 <div class="word">
                     <form>
                         <el-input type="text/password" name="password" value="12314135135" show-password
-                            v-model="mes" />
+                            v-model="classname.mes" />
                     </form>
                 </div>
                 <div class="third">
@@ -104,7 +104,7 @@ export default {
             website: "Website",
             web: [{ com: "Adobe.com" }],
             notes: "Notes",
-            classname: []
+            classname: [],
         }
     },
     mounted() {
