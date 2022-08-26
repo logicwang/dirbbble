@@ -168,7 +168,7 @@ export default {
 }
 
 .header {
-  width: 100%;
+  width: 53%;
   background-color: #282828;
   height: 700px;
 
@@ -236,7 +236,7 @@ export default {
     }
 
     .padding-floder {
-      padding: 210px 0px 0px 22px;
+      padding-inline-start: 23px;
     }
 
     .right {
