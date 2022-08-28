@@ -5,21 +5,23 @@
       <div class="padding">
         <div class="flex-item">
           <div class="flex">
-            <li class="space">
-              <div class="icon-items">
-                <svg t="1659013931033" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                  xmlns="http://www.w3.org/2000/svg" p-id="1129" width="15" height="15">
-                  <path
-                    d="M691.79 401.16a32 32 0 0 0-45.24-1L469.82 559.47l-81.72-76.31a32 32 0 1 0-44.24 46.24l99.69 93.52a32 32 0 0 0 25.9 13.2h0.75a31.93 31.93 0 0 0 23.12-9.87 33.26 33.26 0 0 0 2.77-3.33l194.7-176.52a32 32 0 0 0 1-45.24z"
-                    p-id="1130" fill="#8a8a8a"></path>
-                  <path
-                    d="M518.73 963.65h-2.81c-6.22 0-16.63 0-78.86-35.5a1301.81 1301.81 0 0 1-126.91-82.75c-52.91-39.32-95.42-78.14-126.34-115.4-41-49.37-61.77-96.56-61.77-140.24V256.47a46 46 0 0 1 27-41.87l0.89-0.4 0.91-0.35L499.36 81.34a45.77 45.77 0 0 1 36.7 0.52l349.79 145 0.83 0.41a46.2 46.2 0 0 1 25.93 41.35v321.15c0 43.34-20.74 90.3-61.63 139.58-30.87 37.2-73.28 76-126.06 115.43a1302.91 1302.91 0 0 1-126.86 83.12c-62.37 35.75-72.99 35.75-79.33 35.75zM186 269v320.77c0 52.26 54.53 122.47 153.55 197.7 75.8 57.59 153.77 99.81 177.8 110.72 23.82-10.79 101.61-53 178-111.3 98.81-75.38 153.23-145.39 153.23-197.12V280.71L516.83 143.17z"
-                    p-id="1131" fill="#8a8a8a"></path>
-                </svg>
-                <router-link to="/HelloWorld" class="items">All Items</router-link>
-              </div>
-              <span class="number">19</span>
-            </li>
+            <button id="button" onclick="xxxxxxx()">
+              <li class="space">
+                <div class="icon-items">
+                  <svg t="1659013931033" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" p-id="1129" width="15" height="15">
+                    <path
+                      d="M691.79 401.16a32 32 0 0 0-45.24-1L469.82 559.47l-81.72-76.31a32 32 0 1 0-44.24 46.24l99.69 93.52a32 32 0 0 0 25.9 13.2h0.75a31.93 31.93 0 0 0 23.12-9.87 33.26 33.26 0 0 0 2.77-3.33l194.7-176.52a32 32 0 0 0 1-45.24z"
+                      p-id="1130" fill="#8a8a8a"></path>
+                    <path
+                      d="M518.73 963.65h-2.81c-6.22 0-16.63 0-78.86-35.5a1301.81 1301.81 0 0 1-126.91-82.75c-52.91-39.32-95.42-78.14-126.34-115.4-41-49.37-61.77-96.56-61.77-140.24V256.47a46 46 0 0 1 27-41.87l0.89-0.4 0.91-0.35L499.36 81.34a45.77 45.77 0 0 1 36.7 0.52l349.79 145 0.83 0.41a46.2 46.2 0 0 1 25.93 41.35v321.15c0 43.34-20.74 90.3-61.63 139.58-30.87 37.2-73.28 76-126.06 115.43a1302.91 1302.91 0 0 1-126.86 83.12c-62.37 35.75-72.99 35.75-79.33 35.75zM186 269v320.77c0 52.26 54.53 122.47 153.55 197.7 75.8 57.59 153.77 99.81 177.8 110.72 23.82-10.79 101.61-53 178-111.3 98.81-75.38 153.23-145.39 153.23-197.12V280.71L516.83 143.17z"
+                      p-id="1131" fill="#8a8a8a"></path>
+                  </svg>
+                  <router-link to="/HelloWorld" class="items">All Items</router-link>
+                </div>
+                <span class="number">19</span>
+              </li>
+            </button>
             <li class="space">
               <div class="icon-items">
                 <svg t="1658923382051" class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -135,7 +137,7 @@
             </div>
           </div>
         </div>
-        <div class="flex">
+        <div class="flex fixed">
           <ul class="padding-floder">
             <li class="newfolder">
               <svg t="1659013220074" class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -155,11 +157,19 @@
 </template>
 
 <script>
+// import { domainToUnicode } from 'url';.
+
 export default {
   data() {
     return {};
   },
+  methods: {
+    xxxxxxx() {
+      document.getElementById('button').style.backgroundColor = "blue"
+    }
+  }
 };
+
 </script>
 
 <style lang="scss">
@@ -174,6 +184,13 @@ export default {
 
   .padding {
     padding: 55px 0 0 0;
+
+    .flex button {
+      margin: 0;
+      padding: 0;
+      background: #282828;
+      border: none;
+    }
 
     .flex-item {
       padding-left: 20px;
@@ -251,6 +268,11 @@ export default {
     .space {
       display: flex;
       justify-content: space-between;
+    }
+
+    .fixed {
+      position: relative;
+      top: 215px;
     }
   }
 }

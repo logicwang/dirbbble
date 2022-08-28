@@ -15,9 +15,10 @@
       </div>
       <router-view />
       <div class="all-button">
-
-        <AdobeApp />
-        <!--AdobeApp -->
+        <button onclick="AadobeApp" :style="{ color: color }">
+          <AdobeApp />
+          <!--AdobeApp -->
+        </button>
         <AppleeApp />
         <!--AppleeApp-->
 
@@ -42,9 +43,6 @@
         <TeleGram />
         <!-- PasswordApp -->
       </div>
-      <div>
-
-      </div>
     </div>
     <AdobDeTail />
   </div>
@@ -68,7 +66,13 @@ export default {
   data() {
     return {
       input: "SearchVault ",
-    };
+      color: ''
+    }
+  },
+  methods: {
+    AadobeApp() {
+      this.color = 'red'
+    }
   },
   components: {
     TeleGram,
@@ -83,7 +87,7 @@ export default {
     AdobDeTail
   },
 };
-</script>
+</script> 
 
 <style lang="scss" scoped>
 @import url(../assets/css/HelloWorld.scss);

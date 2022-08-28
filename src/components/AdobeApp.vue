@@ -2,7 +2,7 @@
     <button class="password">
         <!-- Adobe -->
         <div class="password-all">
-            <div class="password-left">
+            <div class="password-left position">
                 <img class="img img-position" src="../assets/image/Adobe.png" />
             </div>
             <div class="password-right">
