@@ -58,12 +58,6 @@
                         <span class="aaaaa">{{ item.aaa }}</span>
                     </li>
                 </div>
-                <div class="word">
-                    <form>
-                        <el-input type="text/password" name="password" value="12314135135" show-password
-                            v-model="classname.mes" />
-                    </form>
-                </div>
                 <div class="third">
                     <div class="website xxx">
                         {{ classname.website }}
@@ -74,7 +68,7 @@
                         <span class="aaaaa">{{ item.com }}</span>
                     </li>
                 </div>
-
+                <el-input placeholder="请输入密码" v-model="input" show-password class="margintop" />
             </div>
             <div class="bottom">
                 <div class="duanluo">
@@ -84,7 +78,8 @@
                         </span>
                     </div>
                     <div class="great">
-                        <p>Great experiences have the power to inspire, transform and move the world forward.And every
+                        <p>Great experiences have the power to inspire, transform and move the world forward.And
+                            every
                             great experience starts with creativity</p>
                     </div>
                 </div>
@@ -100,9 +95,7 @@ export default {
         return {
             name: [{ name: "username" }],
             items: [{ aaa: "thomas@gmail.com" }],
-            privates: "123456789123456789123456789", //密钥内容
-            codeType: 0, //控制密钥显示隐藏 等于1时显示，等于0时隐藏
-            star: "", //要插入的星星*
+            input: '1231321321',
             website: "Website",
             web: [{ com: "Adobe.com" }],
             notes: "Notes",
