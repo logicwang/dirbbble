@@ -2,27 +2,25 @@
   <!-- 密码管理页面左侧菜单 -->
   <div class="flex">
     <div class="header">
-      <div class="padding">
+      <div class="padding self-adaption">
         <div class="flex-item">
           <div class="flex">
-            <button id="button" onclick="xxxxxxx()">
-              <li class="space">
-                <div class="icon-items">
-                  <svg t="1659013931033" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg" p-id="1129" width="15" height="15">
-                    <path
-                      d="M691.79 401.16a32 32 0 0 0-45.24-1L469.82 559.47l-81.72-76.31a32 32 0 1 0-44.24 46.24l99.69 93.52a32 32 0 0 0 25.9 13.2h0.75a31.93 31.93 0 0 0 23.12-9.87 33.26 33.26 0 0 0 2.77-3.33l194.7-176.52a32 32 0 0 0 1-45.24z"
-                      p-id="1130" fill="#8a8a8a"></path>
-                    <path
-                      d="M518.73 963.65h-2.81c-6.22 0-16.63 0-78.86-35.5a1301.81 1301.81 0 0 1-126.91-82.75c-52.91-39.32-95.42-78.14-126.34-115.4-41-49.37-61.77-96.56-61.77-140.24V256.47a46 46 0 0 1 27-41.87l0.89-0.4 0.91-0.35L499.36 81.34a45.77 45.77 0 0 1 36.7 0.52l349.79 145 0.83 0.41a46.2 46.2 0 0 1 25.93 41.35v321.15c0 43.34-20.74 90.3-61.63 139.58-30.87 37.2-73.28 76-126.06 115.43a1302.91 1302.91 0 0 1-126.86 83.12c-62.37 35.75-72.99 35.75-79.33 35.75zM186 269v320.77c0 52.26 54.53 122.47 153.55 197.7 75.8 57.59 153.77 99.81 177.8 110.72 23.82-10.79 101.61-53 178-111.3 98.81-75.38 153.23-145.39 153.23-197.12V280.71L516.83 143.17z"
-                      p-id="1131" fill="#8a8a8a"></path>
-                  </svg>
-                  <router-link to="/HelloWorld" class="items">All Items</router-link>
-                </div>
-                <span class="number">19</span>
-              </li>
-            </button>
-            <button>
+            <router-link to="/Items" class="space">
+              <div class="icon-items">
+                <svg t="1659013931033" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" p-id="1129" width="15" height="15">
+                  <path
+                    d="M691.79 401.16a32 32 0 0 0-45.24-1L469.82 559.47l-81.72-76.31a32 32 0 1 0-44.24 46.24l99.69 93.52a32 32 0 0 0 25.9 13.2h0.75a31.93 31.93 0 0 0 23.12-9.87 33.26 33.26 0 0 0 2.77-3.33l194.7-176.52a32 32 0 0 0 1-45.24z"
+                    p-id="1130" fill="#8a8a8a"></path>
+                  <path
+                    d="M518.73 963.65h-2.81c-6.22 0-16.63 0-78.86-35.5a1301.81 1301.81 0 0 1-126.91-82.75c-52.91-39.32-95.42-78.14-126.34-115.4-41-49.37-61.77-96.56-61.77-140.24V256.47a46 46 0 0 1 27-41.87l0.89-0.4 0.91-0.35L499.36 81.34a45.77 45.77 0 0 1 36.7 0.52l349.79 145 0.83 0.41a46.2 46.2 0 0 1 25.93 41.35v321.15c0 43.34-20.74 90.3-61.63 139.58-30.87 37.2-73.28 76-126.06 115.43a1302.91 1302.91 0 0 1-126.86 83.12c-62.37 35.75-72.99 35.75-79.33 35.75zM186 269v320.77c0 52.26 54.53 122.47 153.55 197.7 75.8 57.59 153.77 99.81 177.8 110.72 23.82-10.79 101.61-53 178-111.3 98.81-75.38 153.23-145.39 153.23-197.12V280.71L516.83 143.17z"
+                    p-id="1131" fill="#8a8a8a"></path>
+                </svg>
+              </div>
+              <h1 class="items fontsize">All Items</h1>
+              <span class="number">19</span>
+            </router-link>
+            <router-link to="/HelloWorld" class="items">
               <li class="space">
                 <div class="icon-items">
                   <svg t="1658923382051" class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -31,24 +29,24 @@
                       d="M335.008 916.629333c-35.914667 22.314667-82.88 10.773333-104.693333-25.557333a77.333333 77.333333 0 0 1-8.96-57.429333l46.485333-198.24a13.141333 13.141333 0 0 0-4.021333-12.864l-152.16-132.586667c-31.605333-27.52-35.253333-75.648-8.234667-107.733333a75.68 75.68 0 0 1 51.733333-26.752L354.848 339.2c4.352-0.362667 8.245333-3.232 10.026667-7.594667l76.938666-188.170666c16.032-39.2 60.618667-57.92 99.52-41.461334a76.309333 76.309333 0 0 1 40.832 41.461334l76.938667 188.16c1.781333 4.373333 5.674667 7.253333 10.026667 7.605333l199.712 16.277333c41.877333 3.413333 72.885333 40.458667 69.568 82.517334a76.938667 76.938667 0 0 1-26.08 51.978666l-152.16 132.586667c-3.541333 3.082667-5.141333 8.074667-4.021334 12.853333l46.485334 198.24c9.621333 41.013333-15.36 82.336-56.138667 92.224a75.285333 75.285333 0 0 1-57.525333-9.237333l-170.976-106.24a11.296 11.296 0 0 0-12.010667 0l-170.986667 106.24z"
                       p-id="1954" fill="#f4ea2a"></path>
                   </svg>
-                  <router-link to="/HelloWorld" class="items">Favorites</router-link>
                 </div>
+                <h1 class="items fontsize">Favorites</h1>
                 <span class="number">7</span>
               </li>
-            </button>
-            <button>
+            </router-link>
+            <router-link to="/HelloWorld" class="items">
               <li class="item">
-                <svg t="1658923825827" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                <svg t="1658923825827" class="icon-trash" viewBox="0 0 1024 1024" version="1.1"
                   xmlns="http://www.w3.org/2000/svg" p-id="3155" width="15" height="15">
                   <path
                     d="M912.96 176.64H128.32c-6.08 0-11.2-5.12-11.2-11.2v-76.8c0-5.44 3.84-9.92 9.28-11.2L368 32h274.24l272.32 45.44c5.44 0.96 9.28 5.76 9.28 11.2v76.48c0.32 6.4-4.8 11.52-10.88 11.52zM786.56 1011.84H254.72c-45.12 0-81.92-36.8-81.92-81.92V342.08c0-45.12 36.8-81.92 81.92-81.92h531.84c45.12 0 81.92 36.8 81.92 81.92v587.52a81.92 81.92 0 0 1-81.92 82.24z"
                     fill="#d81e06" p-id="3156"></path>
                 </svg>
-                <router-link to="/HelloWorld" class="items right">
-                  Trash
-                </router-link>
+
+                <h1 class="items fontsize" style="padding-left:5px">Trash</h1>
               </li>
-            </button>
+            </router-link>
+
           </div>
         </div>
         <div class="flex-type">
@@ -57,15 +55,16 @@
             <div class="neirong">
               <div class="center-third">
                 <li class="name">
-                  <button>
+                  <router-link to="/RegisterApp" class="items">
                     <svg t="1659010871342" class="icon" viewBox="0 0 1024 1024" version="1.1"
                       xmlns="http://www.w3.org/2000/svg" p-id="1978" width="15" height="15">
                       <path
                         d="M512 469.333v-40.746a23.467 23.467 0 0 1 6.699-16.427 22.656 22.656 0 0 1 32.426 0l82.176 83.413c8.96 9.046 8.96 23.808 0 32.854l-82.176 83.413a22.741 22.741 0 0 1-16.213 6.827A23.083 23.083 0 0 1 512 595.413v-40.746H170.667a42.667 42.667 0 0 1 0-85.334H512zM128 256v-42.667A85.333 85.333 0 0 1 213.333 128h597.334A85.333 85.333 0 0 1 896 213.333v597.334A85.333 85.333 0 0 1 810.667 896H213.333A85.333 85.333 0 0 1 128 810.667V768a42.667 42.667 0 0 1 85.333 0v42.667h597.334V213.333H213.333V256A42.667 42.667 0 1 1 128 256z"
                         p-id="1979" fill="#bfbfbf"></path>
                     </svg>
-                    <router-link to="/RegisterApp" class="items">Login</router-link>
-                  </button>
+                    Login
+                  </router-link>
+
                 </li>
                 <li class="name">
                   <button>
@@ -75,7 +74,7 @@
                         d="M891.733333 170.666667H132.266667C93.866667 170.666667 64 200.533333 64 238.933333V341.333333h896v-102.4C960 200.533333 930.133333 170.666667 891.733333 170.666667zM891.733333 874.666667c38.4 0 68.266667-29.866667 68.266667-68.266667V426.666667H64v379.733333C64 844.8 93.866667 874.666667 132.266667 874.666667h759.466666zM192 554.666667h253.866667c19.2 0 32 12.8 32 32s-12.8 32-32 32H187.733333c-17.066667-2.133333-27.733333-14.933333-27.733333-32 0-19.2 12.8-32 32-32z m0 128h128c19.2 0 32 12.8 32 32S339.2 746.666667 320 746.666667H187.733333c-17.066667-2.133333-27.733333-14.933333-27.733333-32 0-19.2 12.8-32 32-32z"
                         p-id="2981" fill="#bfbfbf"></path>
                     </svg>
-                    <router-link to="/RegisterApp" class="items">Card</router-link>
+                    <router-link to="/Card" class="items">Card</router-link>
                   </button>
                 </li>
                 <li class="name">
@@ -102,7 +101,7 @@
                         d="M1013.76 546.133333l-170.666667-68.266666h-13.653333l-170.666667 68.266666c-6.826667 3.413333-10.24 10.24-10.24 17.066667v238.933333c0 64.853333 150.186667 136.533333 180.906667 153.6h13.653333c30.72-13.653333 180.906667-88.746667 180.906667-153.6v-238.933333c0-6.826667-3.413333-13.653333-10.24-17.066667zM921.6 768c0 3.413333-3.413333 10.24-6.826667 13.653333l-6.826666 6.826667c-13.653333 13.653333-30.72 30.72-64.853334 47.786667-3.413333 0-3.413333 3.413333-6.826666 3.413333s-6.826667 0-10.24-3.413333c-3.413333-6.826667-6.826667-10.24-6.826667-17.066667v-102.4h-51.2c-10.24 0-17.066667-6.826667-17.066667-17.066667V614.4c0-6.826667 3.413333-13.653333 10.24-13.653333l68.266667-34.133334c6.826667-3.413333 10.24-3.413333 17.066667 0 3.413333 3.413333 6.826667 10.24 6.826666 13.653334v102.4h51.2c10.24 0 17.066667 6.826667 17.066667 17.066666v68.266667z"
                         fill="#bfbfbf" p-id="5050"></path>
                     </svg>
-                    <router-link to="/RegisterApp" class="items right">
+                    <router-link to="/RegisterApp" class="items Note">
                       Secure Note
                     </router-link>
                   </button>
@@ -154,8 +153,8 @@
         <div class="flex fixed">
           <ul class="padding-floder">
             <li class="newfolder">
-              <svg t="1659013220074" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                xmlns="http://www.w3.org/2000/svg" p-id="1977" width="15" height="15">
+              <svg t="1659013220074" class="icon-folder" viewBox="0 0 1024 1024" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" p-id="1977" width="20" height="20">
                 <path
                   d="M801.171 483.589H544V226.418c0-17.673-14.327-32-32-32s-32 14.327-32 32v257.171H222.83c-17.673 0-32 14.327-32 32s14.327 32 32 32H480v257.17c0 17.673 14.327 32 32 32s32-14.327 32-32v-257.17h257.171c17.673 0 32-14.327 32-32s-14.327-32-32-32z"
                   fill="#bfbfbf" p-id="1978"></path>
@@ -177,11 +176,7 @@ export default {
   data() {
     return {};
   },
-  methods: {
-    xxxxxxx() {
-      document.getElementById('button').style.backgroundColor = "blue"
-    }
-  }
+  methods: {}
 };
 
 </script>
@@ -191,13 +186,53 @@ export default {
   display: flex
 }
 
+.router-link-active {
+  color: #fff;
+  background-color: blue;
+  text-decoration: none
+}
+
 .header {
   width: 55%;
   background-color: #282828;
   height: 700px;
 
+  .self-adaption {
+    margin: 0 auto;
+    max-width: 210px;
+  }
+
   .padding {
     padding: 55px 0 0 0;
+
+    .Note {
+      position: relative;
+      bottom: 4px;
+      right: 5px;
+    }
+
+    .right {
+      position: relative;
+      right: 5px;
+      bottom: 1px;
+    }
+
+    .icon-folder {
+      position: relative;
+      top: 3px
+    }
+
+    .icon-trash {
+      position: relative;
+      top: 3px;
+      left: 2px;
+    }
+
+    .fontsize {
+      margin: 0;
+      font-size: 15px;
+      padding-right: 87px;
+    }
 
     .flex button {
       margin: 0;
@@ -206,26 +241,16 @@ export default {
       border: none;
     }
 
-    .flex-item {
-      padding-left: 20px;
-    }
-
     .flex-type {
       padding-top: 30px;
-      padding-left: 20px;
     }
 
     .folders {
       padding-top: 25px;
-      padding-left: 20px;
     }
 
     li {
       list-style: none;
-    }
-
-    ul {
-      margin: 0;
     }
 
     .header li ul {
@@ -245,7 +270,8 @@ export default {
 
     .items {
       color: #fff;
-      padding-left: 12px;
+      width: 95%;
+      border-radius: 5px;
       text-decoration: none;
     }
 
@@ -272,12 +298,7 @@ export default {
     }
 
     .padding-floder {
-      padding-inline-start: 23px;
-    }
-
-    .right {
-      position: relative;
-      right: 5px;
+      padding: 0;
     }
 
     .name {
@@ -286,12 +307,14 @@ export default {
 
     .space {
       display: flex;
+      width: 95%;
+      border-radius: 5px;
       justify-content: space-between;
     }
 
     .fixed {
       position: relative;
-      top: 215px;
+      top: 150px;
     }
   }
 }

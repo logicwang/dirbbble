@@ -4,7 +4,7 @@ import GooGle from '../components/GooGle.vue'
 import AppleApp from '../detail/AppleApp.vue'
 import AdobDeTail from '../detail/AdobDeTail.vue'
 import NotFound from '../View/NotFound.vue'
-import HelloWorld from '../View/HelloWorld.vue'
+import Items from '../View/HelloWorld.vue'
 import RegisterApp from '../View/RegisterApp.vue'
 
 
@@ -25,9 +25,9 @@ export const routes =
                     component: AdobDeTail,
                 },
                 {
-                    path: '/HelloWorld',
-                    name: '/HelloWorld',
-                    component: HelloWorld,
+                    path: '/Items',
+                    name: '/Items',
+                    component: Items,
                     children: [
 
                         {
