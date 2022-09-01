@@ -15,18 +15,7 @@ export const routes =
             component: RegisterApp,
             children: [
                 {
-                    path: '/GooGle',
-                    name: '/GooGle',
-                    component: GooGle,
-                },
-                {
-                    path: '/AdobDeTail',
-                    name: '/AdobDeTail',
-                    component: AdobDeTail,
-                },
-                {
-                    path: '/Items',
-                    name: '/Items',
+                    path: '/list/:type',
                     component: Items,
                     children: [
 

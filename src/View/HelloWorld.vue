@@ -15,6 +15,9 @@
           </div>
         </div>
         <div class="all-button">
+          <li v-for="name in data" :key="name">
+            {{ name.data }}
+          </li>
           <AdobeApp />
           <!--AdobeApp -->
           <AppleeApp />
@@ -65,7 +68,24 @@ export default {
   data() {
     return {
       input: "SearchVault ",
-      color: ''
+      color: '',
+      data: [
+        {
+          name: 'Adobe',
+          email: 'thomas@gmail.com',
+          url: '/imgs/adobe.svg'
+        },
+        {
+          name: 'Adobe',
+          email: 'thomas@gmail.com',
+          url: '/imgs/adobe.svg'
+        },
+        {
+          name: 'Adobe',
+          email: 'thomas@gmail.com',
+          url: '/imgs/adobe.svg'
+        }
+      ]
     }
   },
   methods: {

@@ -8,12 +8,12 @@
       <div class="password-jklb">
         <div class="password-name">
           <li v-for="item in Google" :key="item.name">
-            <span class="ado">{{  item.name  }}</span>
+            <span class="ado">{{ item.name }}</span>
           </li>
         </div>
         <div class="password-job">
           <li v-for="item in items" :key="item.aaa">
-            <span class="job">{{  item.aaa  }}</span>
+            <span class="job">{{ item.aaa }}</span>
           </li>
         </div>
       </div>
@@ -45,6 +45,7 @@ export default {
 
 .password-all {
   display: flex;
+  padding: 8px;
   justify-content: flex-start;
 }
 
@@ -64,7 +65,7 @@ export default {
 
 .imeg {
   position: relative;
-  left: 0px;
+  left: 4px;
   top: 5px;
   width: 38px;
   height: 36px;
@@ -98,6 +99,7 @@ export default {
 .img-position {
   position: relative;
   top: 9px;
+  left: 9px;
 }
 
 .all-button button {

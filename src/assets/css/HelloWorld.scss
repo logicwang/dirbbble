@@ -15,8 +15,13 @@ input {
     align-items: center
 }
 
+.all-button {
+    margin: 0 auto;
+    max-width: 265px;
+}
+
 .header-name {
-    width: 27%;
+    width: 38%;
     height: 700px;
     background-color: rgb(30 30 30);
 }
@@ -151,14 +156,14 @@ input {
 .imcg {
     position: relative;
     top: 9px;
-    left: 1px;
+    left: 9px;
 }
 
 .imdg {
     width: 31px;
     position: relative;
     top: 7px;
-    right: 3px;
+    left: 3px;
 }
 
 .password-jkl {

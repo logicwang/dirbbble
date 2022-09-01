@@ -5,7 +5,7 @@
       <div class="padding self-adaption">
         <div class="flex-item">
           <div class="flex">
-            <router-link to="/Items" class="space">
+            <router-link to="/list/all" class="space">
               <div class="icon-items">
                 <svg t="1659013931033" class="icon" viewBox="0 0 1024 1024" version="1.1"
                   xmlns="http://www.w3.org/2000/svg" p-id="1129" width="15" height="15">
@@ -20,7 +20,7 @@
               <h1 class="items fontsize">All Items</h1>
               <span class="number">19</span>
             </router-link>
-            <router-link to="/Favorites" class="Favorites">
+            <router-link to="/list/favorites" class="Favorites">
               <li class="space">
                 <div class="icon-items">
                   <svg t="1658923382051" class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -62,7 +62,7 @@
                 </li>
                 <li class="name">
                   <router-link to="/Card" class="items flexstart" style="padding:0;">
-                    <svg t="1659010913722" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                    <svg t="1659010913722" class="icon-inentiy" viewBox="0 0 1024 1024" version="1.1"
                       xmlns="http://www.w3.org/2000/svg" p-id="2980" width="15" height="15">
                       <path
                         d="M891.733333 170.666667H132.266667C93.866667 170.666667 64 200.533333 64 238.933333V341.333333h896v-102.4C960 200.533333 930.133333 170.666667 891.733333 170.666667zM891.733333 874.666667c38.4 0 68.266667-29.866667 68.266667-68.266667V426.666667H64v379.733333C64 844.8 93.866667 874.666667 132.266667 874.666667h759.466666zM192 554.666667h253.866667c19.2 0 32 12.8 32 32s-12.8 32-32 32H187.733333c-17.066667-2.133333-27.733333-14.933333-27.733333-32 0-19.2 12.8-32 32-32z m0 128h128c19.2 0 32 12.8 32 32S339.2 746.666667 320 746.666667H187.733333c-17.066667-2.133333-27.733333-14.933333-27.733333-32 0-19.2 12.8-32 32-32z"
@@ -179,10 +179,8 @@ export default {
   text-decoration: none
 }
 
-
-
 .header {
-  width: 52%;
+  width: 20%;
   background-color: #282828;
   height: 700px;
 
@@ -193,6 +191,12 @@ export default {
 
   .padding {
     padding: 55px 0 0 0;
+
+    .icon-inentiy {
+      position: relative;
+      top: 3px;
+      right: 4px;
+    }
 
     .paddingzero {
       padding: 0;
