@@ -2,7 +2,7 @@
     <!-- Apple按钮 -->
     <div class="password-all">
         <div class="password-leftwhite">
-            <img class="imag" src="../assets/image/apple.png" />
+            {{ eal }}
         </div>
         <div class="password-right">
             <div class="password-jkl">
@@ -21,6 +21,10 @@ export default {
             default: ''
         },
         des: {
+            type: String,
+            default: ''
+        },
+        eal: {
             type: String,
             default: ''
         }
