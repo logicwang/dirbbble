@@ -38,14 +38,51 @@ const proxy = {
     //     });
     // },
     'GET /api/user/list': [
-
         {
-            name: 'Adobe',
-            login: 'login',
-            username: 'username',
-            website: 'Adobe.com',
-            mes: '121231231'
+            "name": "Adobe",
+            "email": "thomas@gmail.com",
+            "url": "/imgs/adobe.svg"
         },
+        {
+            "name": "Apple",
+            "email": "thomas@gmail.com",
+            "url": "/imgs/Apple.svg"
+        },
+        {
+            "name": "Dirbbble",
+            "email": "thomas@gmail.com",
+            "url": "/imgs/adobe.svg"
+        },
+        {
+            "name": "Etsy",
+            "email": "thomas@gmail.com",
+            "url": "/imgs/adobe.svg"
+        },
+        {
+            "name": "Facebook",
+            "email": "thomas@gmail.com",
+            "url": "/imgs/adobe.svg"
+        },
+        {
+            "name": "GooGle",
+            "email": "thomas@gmail.com",
+            "url": "/imgs/adobe.svg"
+        },
+        {
+            "name": "IMDB",
+            "email": "thomas@gmail.com",
+            "url": "/imgs/adobe.svg"
+        },
+        {
+            "name": "InVison",
+            "email": "thomas@gmail.com",
+            "url": "/imgs/adobe.svg"
+        },
+        {
+            "name": "Telegram",
+            "email": "thomas@gmail.com",
+            "url": "/imgs/adobe.svg"
+        }
     ],
 }
 module.exports = (noProxy ? {} : delay(proxy, 10));

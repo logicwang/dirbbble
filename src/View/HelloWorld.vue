@@ -15,34 +15,18 @@
           </div>
         </div>
         <div class="all-button">
-          <li v-for="name in data" :key="name">
-            {{ name.data }}
-          </li>
-          <AdobeApp />
-          <!--AdobeApp -->
-          <AppleeApp />
-          <!--AppleeApp-->
-
+          <div v-if="items && items.length > 0">
+            <li v-for="item in items" :key="item.name">
+              <AppleeApp :title="item.name" :des="item.email" />
+            </li>
+          </div>
           <DribbbleApp />
-          <!--DribbbleApp -->
-
           <EtsyApp />
-          <!--EtsyApp -->
-
           <FaceBook />
-          <!--FaceBook -->
-
           <GooGle />
-          <!--GooGle -->
-
           <ImdbApp />
-          <!-- ImdbApp -->
-
           <InVisionBut />
-          <!-- InVisionBut -->
-
           <TeleGram />
-          <!-- PasswordApp -->
         </div>
       </div>
     </div>
@@ -51,15 +35,16 @@
 </template>
 
 <script>
-import GooGle from "../components/GooGle.vue"
-import InVisionBut from "../components/InVisionBut.vue"
-import TeleGram from "../components/TeleGram.vue"
-import AdobeApp from "../components/AdobeApp.vue";
+import { reqCategoryList } from '../API/index'
+// import GooGle from "../components/GooGle.vue"
+// import InVisionBut from "../components/InVisionBut.vue"
+// import TeleGram from "../components/TeleGram.vue"
+// import AdobeApp from "../components/AdobeApp.vue";
 import AppleeApp from "../components/AppleApp.vue";
-import ImdbApp from "../components/ImdbApp.vue";
-import FaceBook from "../components/FaceBook.vue";
-import EtsyApp from "../components/EtsyApp.vue";
-import DribbbleApp from "../components/DribbbleApp.vue";
+// import ImdbApp from "../components/ImdbApp.vue";
+// import FaceBook from "../components/FaceBook.vue";
+// import EtsyApp from "../components/EtsyApp.vue";
+// import DribbbleApp from "../components/DribbbleApp.vue";
 import AdobDeTail from "../detail/AdobDeTail.vue";
 // 在此处引用button组件
 
@@ -69,37 +54,28 @@ export default {
     return {
       input: "SearchVault ",
       color: '',
-      data: [
-        {
-          name: 'Adobe',
-          email: 'thomas@gmail.com',
-          url: '/imgs/adobe.svg'
-        },
-        {
-          name: 'Adobe',
-          email: 'thomas@gmail.com',
-          url: '/imgs/adobe.svg'
-        },
-        {
-          name: 'Adobe',
-          email: 'thomas@gmail.com',
-          url: '/imgs/adobe.svg'
-        }
-      ]
+      // classname: [],
+      items: []
     }
+  },
+  mounted() {
+    reqCategoryList().then((data) => {
+      console.log(data)
+      this.items = data.data
+    })
   },
   methods: {
   },
   components: {
-    TeleGram,
-    GooGle,
-    InVisionBut,
-    AdobeApp,
+    // TeleGram,
+    // GooGle,
+    // InVisionBut,
+    // AdobeApp,
     AppleeApp,
-    ImdbApp,
-    FaceBook,
-    EtsyApp,
-    DribbbleApp,
+    // ImdbApp,
+    // FaceBook,
+    // EtsyApp,
+    // DribbbleApp,
     AdobDeTail
   },
 };

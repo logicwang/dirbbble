@@ -1,40 +1,50 @@
 GET http://localhost:3721/api/user/list HTTP/1.1
 content-type: application/json
-
-{
-   "name": "Adobe",
-    "Website": "Adobe.com",
-    "mes":"1234qwer"
-},
-{
-   "name": "Apple",
-    "Website": "Apple.com",
-},
-{
-   "name": "Dirbbble",
-    "Website": "Dirbbble.com",
-},
-{
-   "name": "Etsy",
-    "Website": "Etsy.com",
-},
-{
-   "name": "Facebook",
-    "Website": "Facebook.com",
-},
-{
-   "name": "GooGle",
-    "Website": "GooGle.com",
-},
-{
-   "name": "IMDB",
-    "Website": "Apple.com",
-},
-{
-   "name": "InVision",
-    "Website": "InVision.com",
-},
-{
-   "name": "Telegram",
-    "Website": "InVision.com",
-},
+data: 
+[
+    {
+        "name": "Adobe",
+        "email": "thomas@gmail.com",
+        "url": "/imgs/adobe.svg"
+    },
+    {
+        "Apple": "Apple",
+        "thomas": "thomas@gmail.com",
+        "Applesvg": "/imgs/Apple.svg"
+    },
+    {
+        "name": "Dirbbble",
+        "email": "thomas@gmail.com",
+        "url": "/imgs/adobe.svg"
+    },
+    {
+        "name": "Etsy",
+        "email": "thomas@gmail.com",
+        "url": "/imgs/adobe.svg"
+    },
+    {
+        "name": "Facebook",
+        "email": "thomas@gmail.com",
+        "url": "/imgs/adobe.svg"
+    },
+    {
+        "name": "GooGle",
+        "email": "thomas@gmail.com",
+        "url": "/imgs/adobe.svg"
+    },
+    {
+        "name": "IMDB",
+        "email": "thomas@gmail.com",
+        "url": "/imgs/adobe.svg"
+    },
+    {
+        "name": "InVison",
+        "email": "thomas@gmail.com",
+        "url": "/imgs/adobe.svg"
+    },
+    {
+        "name": "Telegram",
+        "email": "thomas@gmail.com",
+        "url": "/imgs/adobe.svg"
+    }
+]

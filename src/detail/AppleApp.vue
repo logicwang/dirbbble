@@ -89,10 +89,6 @@ import { reqCategoryList } from '../API/index'
 export default {
     data() {
         return {
-            name: [{ name: "username" }],
-            website: "Website",
-            web: [{ com: "Adobe.com" }],
-            notes: "Notes",
             classname: []
         }
     },

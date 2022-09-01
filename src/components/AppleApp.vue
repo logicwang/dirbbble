@@ -6,16 +6,8 @@
         </div>
         <div class="password-right">
             <div class="password-jkl">
-                <div class="password-name">
-                    <li v-for="item in apple" :key="item.name">
-                        <span class="ado">{{  item.name  }}</span>
-                    </li>
-                </div>
-                <div class="password-job">
-                    <li v-for="item in items" :key="item.aaa">
-                        <span class="job">{{  item.aaa  }}</span>
-                    </li>
-                </div>
+                <h1 class="title">{{ title }}</h1>
+                <h2 class="des">{{ des }}</h2>
             </div>
         </div>
     </div>
@@ -23,16 +15,32 @@
 
 <script>
 export default {
-    data() {
-        return {
-            apple: [{ name: "Apple" }],
-            items: [{ aaa: "thomas@gmail.com" }],
-
+    props: {
+        title: {
+            type: String,
+            default: ''
+        },
+        des: {
+            type: String,
+            default: ''
         }
+    },
+    data() {
+        return {}
     }
 }
 </script>
 
-<style>
-@import url(../assets/css/button.scss);
+<style lang="scss" scoped>
+.title {
+    margin: 0;
+    color: #fff;
+    font-size: 15px;
+}
+
+.des {
+    margin: 0;
+    font-size: 12px;
+    color: #575d64;
+}
 </style>
