@@ -1,26 +1,24 @@
 <template>
     <!-- Etsy按钮 -->
-    <button class="password">
-        <div class="password-all">
-            <div class="password-leftb">
-                <img class="imcg" src="../assets/image/etsy.png" />
-            </div>
-            <div class="password-righta">
-                <div class="password-jklb">
-                    <div class="password-name">
-                        <li v-for="item in Etsy" :key="item.name">
-                            <span class="ado">{{ item.name }}</span>
-                        </li>
-                    </div>
-                    <div class="password-job">
-                        <li v-for="item in items" :key="item.aaa">
-                            <span class="job">{{ item.aaa }}</span>
-                        </li>
-                    </div>
+    <div class="password-all">
+        <div class="password-leftb">
+            <img class="imcg" src="../assets/image/etsy.png" />
+        </div>
+        <div class="password-righta">
+            <div class="password-jklb">
+                <div class="password-name">
+                    <li v-for="item in Etsy" :key="item.name">
+                        <span class="ado">{{  item.name  }}</span>
+                    </li>
+                </div>
+                <div class="password-job">
+                    <li v-for="item in items" :key="item.aaa">
+                        <span class="job">{{  item.aaa  }}</span>
+                    </li>
                 </div>
             </div>
         </div>
-    </button>
+    </div>
 </template>
 
 <script>

@@ -1,22 +1,20 @@
 <template>
-    <button class="password">
-        <!-- Adobe -->
-        <div class="password-all">
-            <div class="password-left position">
-                <img class="img img-position" src="../assets/image/Adobe.png" />
-            </div>
-            <div class="password-right">
-                <div class="password-jkl">
-                    <div class="password-name">
-                        <span class="ado" v-for="item in objects" :key="item.bbb">{{ item.bbb }}</span>
-                    </div>
-                    <div class="password-job">
-                        <span class="job" v-for="item in items" :key="item.aaa">{{ item.aaa }}</span>
-                    </div>
+    <!-- Adobe -->
+    <div class="password-all">
+        <div class="password-left position">
+            <img class="img img-position" src="../assets/image/Adobe.png" />
+        </div>
+        <div class="password-right">
+            <div class="password-jkl">
+                <div class="password-name">
+                    <span class="ado" v-for="item in objects" :key="item.bbb">{{  item.bbb  }}</span>
+                </div>
+                <div class="password-job">
+                    <span class="job" v-for="item in items" :key="item.aaa">{{  item.aaa  }}</span>
                 </div>
             </div>
         </div>
-    </button>
+    </div>
 </template>
 <script>
 export default {

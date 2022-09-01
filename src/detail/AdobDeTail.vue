@@ -52,20 +52,20 @@
             <div class="main borderbottom ">
                 <div class="username">
                     <li v-for="item in name" :key="item.name">
-                        <span class="xxx">{{ item.name }}</span>
+                        <span class="xxx">{{  item.name  }}</span>
                     </li>
                     <li v-for="item in items" :key="item.aaa">
-                        <span class="aaaaa">{{ item.aaa }}</span>
+                        <span class="aaaaa">{{  item.aaa  }}</span>
                     </li>
                 </div>
                 <div class="third">
                     <div class="website xxx">
-                        {{ classname.website }}
+                        {{  classname.website  }}
                     </div>
                 </div>
                 <div class="web ">
                     <li v-for="item in web" :key="item.web">
-                        <span class="aaaaa">{{ item.com }}</span>
+                        <span class="aaaaa">{{  item.com  }}</span>
                     </li>
                 </div>
                 <el-input placeholder="请输入密码" v-model="input" show-password class="margintop" />
@@ -74,7 +74,7 @@
                 <div class="duanluo">
                     <div class="xxx">
                         <span>
-                            {{ notes }}
+                            {{  notes  }}
                         </span>
                     </div>
                     <div class="great">

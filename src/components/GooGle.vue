@@ -1,26 +1,24 @@
 <template>
   <!-- Google按钮 -->
-  <button class="password">
-    <div class="password-all">
-      <div class="password-leftd">
-        <img class="imeg" src="../assets/image/google (1).png" />
-      </div>
-      <div class="password-righta">
-        <div class="password-jklb">
-          <div class="password-name">
-            <li v-for="item in Google" :key="item.name">
-              <span class="ado">{{ item.name }}</span>
-            </li>
-          </div>
-          <div class="password-job">
-            <li v-for="item in items" :key="item.aaa">
-              <span class="job">{{ item.aaa }}</span>
-            </li>
-          </div>
+  <div class="password-all">
+    <div class="password-leftd">
+      <img class="imeg" src="../assets/image/google (1).png" />
+    </div>
+    <div class="password-righta">
+      <div class="password-jklb">
+        <div class="password-name">
+          <li v-for="item in Google" :key="item.name">
+            <span class="ado">{{  item.name  }}</span>
+          </li>
+        </div>
+        <div class="password-job">
+          <li v-for="item in items" :key="item.aaa">
+            <span class="job">{{  item.aaa  }}</span>
+          </li>
         </div>
       </div>
     </div>
-  </button>
+  </div>
 </template>
 
 <script>
@@ -36,5 +34,75 @@ export default {
 </script>
 
 <style>
-@import url(../assets/css/button.scss);
+.password {
+  padding: 0;
+  width: 275px;
+  background: #1e1e1e;
+  height: 65px;
+  margin: 5px 0 0 45px;
+  border: none;
+}
+
+.password-all {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.password-leftd {
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 6px;
+}
+
+.password-leftp {
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 6px;
+}
+
+.imeg {
+  position: relative;
+  left: 0px;
+  top: 5px;
+  width: 38px;
+  height: 36px;
+}
+
+.password-righta {
+  padding-left: 5px;
+}
+
+.password-jklb {
+  padding-left: 20px;
+}
+
+.password-name {
+  padding: 10px 0 10px 0;
+}
+
+.job {
+  color: #8f8f8f;
+}
+
+.ado {
+  color: #fff;
+  float: left;
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+  bottom: 5px;
+}
+
+.img-position {
+  position: relative;
+  top: 9px;
+}
+
+.all-button button {
+  padding: 0;
+  border: none;
+  background-color: rgb(30 30 30);
+}
 </style>

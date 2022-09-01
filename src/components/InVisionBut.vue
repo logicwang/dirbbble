@@ -1,22 +1,20 @@
 <template>
     <!-- InVision按钮 -->
-    <button class="password">
-        <div class="password-all">
-            <div class="password-leftp">
-                <img class="imeg" src="../assets/image/bxl-invision.png" />
-            </div>
-            <div class="password-righta">
-                <div class="password-jklb">
-                    <div class="password-name">
-                        <span class="ado" v-for="item in InVision" :key="item.name">{{ item.name }}</span>
-                    </div>
-                    <div class="password-job">
-                        <span class="job" v-for="item in items" :key="item.aaa">{{ item.aaa }}</span>
-                    </div>
+    <div class="password-all">
+        <div class="password-leftp">
+            <img class="imeg" src="../assets/image/bxl-invision.png" />
+        </div>
+        <div class="password-righta">
+            <div class="password-jklb">
+                <div class="password-name">
+                    <span class="ado" v-for="item in InVision" :key="item.name">{{  item.name  }}</span>
+                </div>
+                <div class="password-job">
+                    <span class="job" v-for="item in items" :key="item.aaa">{{  item.aaa  }}</span>
                 </div>
             </div>
         </div>
-    </button>
+    </div>
 </template>
 
 <script>

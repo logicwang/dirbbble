@@ -188,7 +188,7 @@ export default {
 
   .self-adaption {
     margin: 0 auto;
-    max-width: 210px;
+    max-width: 240px;
   }
 
   .padding {

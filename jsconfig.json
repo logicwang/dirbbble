@@ -3,7 +3,6 @@
     "target": "es5",
     "module": "esnext",
     "baseUrl": "./",
-    "jsx": "preserve", //在这里添加"jsx": "preserve",
     "moduleResolution": "node",
     "paths": {
       "@/*": [
@@ -16,5 +15,11 @@
       "dom.iterable",
       "scripthost"
     ]
-  }
+  },
+  // tsconfig.json
+  // ...其他配置
+  // 加入这一段
+  "vueCompilerOptions": {
+    "experimentalDisableTemplateSupport": true
+  },
 }

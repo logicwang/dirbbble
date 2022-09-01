@@ -2,46 +2,45 @@
   <!-- 密码管理页面内容页 -->
   <div class="all-div">
     <div class="header-name">
-      <div class="input">
-        <div class="inputandcion">
-          <el-input v-model="input" class="helloworldinput">
-            <i slot="prefix" class="prefix">
-              <img class="hualigs" src="../assets/image/搜索.png" alt /> </i>
-          </el-input>
+      <div class="center">
+        <div class="input">
+          <div class="inputandcion">
+            <el-input v-model="input" class="helloworldinput">
+              <i slot="prefix" class="prefix">
+                <img class="hualigs" src="../assets/image/搜索.png" alt /> </i>
+            </el-input>
+          </div>
+          <div class="icon-a">
+            <img src="../assets/image/加号.png" class="icon-img" />
+          </div>
         </div>
-        <div class="icon-a">
-          <img src="../assets/image/加号.png" class="icon-img" />
-        </div>
-      </div>
-      <router-view />
-      <div class="all-button">
-        <button onclick="AadobeApp" :style="{ color: color }">
+        <div class="all-button">
           <AdobeApp />
           <!--AdobeApp -->
-        </button>
-        <AppleeApp />
-        <!--AppleeApp-->
+          <AppleeApp />
+          <!--AppleeApp-->
 
-        <DribbbleApp />
-        <!--DribbbleApp -->
+          <DribbbleApp />
+          <!--DribbbleApp -->
 
-        <EtsyApp />
-        <!--EtsyApp -->
+          <EtsyApp />
+          <!--EtsyApp -->
 
-        <FaceBook />
-        <!--FaceBook -->
+          <FaceBook />
+          <!--FaceBook -->
 
-        <GooGle />
-        <!--GooGle -->
+          <GooGle />
+          <!--GooGle -->
 
-        <ImdbApp />
-        <!-- ImdbApp -->
+          <ImdbApp />
+          <!-- ImdbApp -->
 
-        <InVisionBut />
-        <!-- InVisionBut -->
+          <InVisionBut />
+          <!-- InVisionBut -->
 
-        <TeleGram />
-        <!-- PasswordApp -->
+          <TeleGram />
+          <!-- PasswordApp -->
+        </div>
       </div>
     </div>
     <AdobDeTail />
@@ -70,9 +69,6 @@ export default {
     }
   },
   methods: {
-    AadobeApp() {
-      this.color = 'red'
-    }
   },
   components: {
     TeleGram,
