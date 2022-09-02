@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import GooGle from '../components/GooGle.vue'
+// import GooGle from '../components/GooGle.vue'
 // import AppleApp from '../detail/AppleApp.vue'
 import AdobDeTail from '../detail/AdobDeTail.vue'
 import NotFound from '../View/NotFound.vue'
@@ -17,20 +17,12 @@ export const routes =
                 {
                     path: '/list/:type',
                     component: Items,
-                    children: [
-
-                        // {
-                        //     path: '/AppleApp',
-                        //     name: '/AppleApp',
-                        //     component: AppleApp,
-                        // },
-                    ],
                 },
-                {
-                    path: '/GooGle',
-                    name: '/GooGle',
-                    component: GooGle,
-                },
+                // {
+                //     path: '/GooGle',
+                //     name: '/GooGle',
+                //     component: GooGle,
+                // },
                 {
                     path: '/AdobDeTail',
                     name: '/AdobDeTail',
@@ -40,15 +32,6 @@ export const routes =
                     path: '/Items',
                     name: '/Items',
                     component: Items,
-                    children: [
-
-                        // {
-                        //     path: '/AppleApp',
-                        //     name: '/AppleApp',
-                        //     component: AppleApp,
-                        // },
-                    ],
-
                 },
 
             ]

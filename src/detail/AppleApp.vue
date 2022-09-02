@@ -98,8 +98,7 @@ export default {
             this.classname = data.data
         })
     },
-    methods: {
-    }
+    methods: {}
 }
 
 </script>

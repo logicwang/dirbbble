@@ -34,7 +34,7 @@
                 <span class="number">7</span>
               </li>
             </router-link>
-            <router-link to="/Trash" class="trash">
+            <router-link to="/list/Trash" class="trash">
               <li class="item">
                 <img src="../assets/image/删除色块.png" class="deleteimg" />
                 <h1 class="items fontsize" style="padding-left:5px">Trash</h1>
@@ -49,7 +49,7 @@
             <div class="neirong">
               <div class="center-third">
                 <li class="name">
-                  <router-link to="/Login" class="login flexstart">
+                  <router-link to="/list/Login" class="login flexstart">
                     <svg t="1659010871342" class="icon-login" viewBox="0 0 1024 1024" version="1.1"
                       xmlns="http://www.w3.org/2000/svg" p-id="1978" width="15" height="15">
                       <path
@@ -61,7 +61,7 @@
 
                 </li>
                 <li class="name">
-                  <router-link to="/Card" class="items flexstart" style="padding:0;">
+                  <router-link to="/list/Card" class="items flexstart" style="padding:0;">
                     <svg t="1659010913722" class="icon-inentiy" viewBox="0 0 1024 1024" version="1.1"
                       xmlns="http://www.w3.org/2000/svg" p-id="2980" width="15" height="15">
                       <path
@@ -72,7 +72,7 @@
                   </router-link>
                 </li>
                 <li class="name">
-                  <router-link to="/Identity" class="items right flexstart paddingzero">
+                  <router-link to="/list/Identity" class="items right flexstart paddingzero">
                     <svg t="1659010944159" class="icon" viewBox="0 0 1024 1024" version="1.1"
                       xmlns="http://www.w3.org/2000/svg" p-id="3836" width="15" height="15">
                       <path
