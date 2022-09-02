@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import GooGle from '../components/GooGle.vue'
-// import AppleApp from '../detail/AppleApp.vue'
 import AdobDeTail from '../detail/AdobDeTail.vue'
 import NotFound from '../View/NotFound.vue'
 import Items from '../View/HelloWorld.vue'
@@ -18,11 +16,6 @@ export const routes =
                     path: '/list/:type',
                     component: Items,
                 },
-                // {
-                //     path: '/GooGle',
-                //     name: '/GooGle',
-                //     component: GooGle,
-                // },
                 {
                     path: '/AdobDeTail',
                     name: '/AdobDeTail',
