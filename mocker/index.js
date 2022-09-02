@@ -51,37 +51,37 @@ const proxy = {
         {
             "name": "Dirbbble",
             "email": "thomas@gmail.com",
-            "url": "/imgs/adobe.svg"
+            "url": "/imgs/Dribbble.svg"
         },
         {
             "name": "Etsy",
             "email": "thomas@gmail.com",
-            "url": "/imgs/adobe.svg"
+            "url": "/imgs/Etsy.svg"
         },
         {
             "name": "Facebook",
             "email": "thomas@gmail.com",
-            "url": "/imgs/adobe.svg"
+            "url": "/imgs/Facebook.svg"
         },
         {
             "name": "GooGle",
             "email": "thomas@gmail.com",
-            "url": "/imgs/adobe.svg"
+            "url": "/imgs/Google.svg"
         },
         {
             "name": "IMDB",
             "email": "thomas@gmail.com",
-            "url": "/imgs/adobe.svg"
+            "url": "/imgs/IMDB.svg"
         },
         {
             "name": "InVison",
             "email": "thomas@gmail.com",
-            "url": "/imgs/adobe.svg"
+            "url": "/imgs/Invisionapp.svg"
         },
         {
             "name": "Telegram",
             "email": "thomas@gmail.com",
-            "url": "/imgs/adobe.svg"
+            "url": "/imgs/Telegram.svg"
         }
     ],
 }

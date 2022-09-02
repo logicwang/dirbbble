@@ -2,7 +2,8 @@
     <!-- Apple按钮 -->
     <div class="password-all">
         <div class="password-leftwhite">
-            {{ eal }}
+            <!-- <img width="10" :src="item.eal" /> -->
+            <img :src="eal" />
         </div>
         <div class="password-right">
             <div class="password-jkl">

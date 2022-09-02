@@ -7,7 +7,8 @@
           <div class="inputandcion">
             <el-input v-model="input" class="helloworldinput">
               <i slot="prefix" class="prefix">
-                <img class="hualigs" src="../assets/image/搜索.png" alt /> </i>
+                <img class="hualigs" src="../assets/image/搜索.png" alt />
+              </i>
             </el-input>
           </div>
           <div class="icon-a">
@@ -39,7 +40,6 @@ export default {
     return {
       input: "SearchVault ",
       color: '',
-      // classname: [],
       items: []
     }
   },
