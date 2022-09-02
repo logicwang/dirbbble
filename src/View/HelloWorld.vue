@@ -18,7 +18,10 @@
         <div class="all-button">
           <div v-if="items && items.length > 0">
             <li v-for="item in items" :key="item.name">
-              <AppleeApp :title="item.name" :des="item.email" :eal="item.url" />
+              <router-link :to="`/list/${type}/detail/${item.name}`">
+                <!-- sss{{ type }} -->
+                <AppleeApp :title="item.name" :des="item.email" :eal="item.url" />
+              </router-link>
             </li>
           </div>
         </div>
@@ -36,20 +39,71 @@ import AdobDeTail from "../detail/AdobDeTail.vue";
 
 
 export default {
+  props: ['type'],
   data() {
     return {
       input: "SearchVault ",
       color: '',
-      items: []
+      items: [],
+      allItems: [],
     }
   },
   mounted() {
     reqCategoryList().then((data) => {
-      console.log(data)
-      this.items = data.data
+      this.allItems = data.data
+      const type = this.$route.params.type || 'all';
+      this.filterDatas(type, data.data);
     })
   },
+  created() {
+  },
+  watch: {
+    $route: {
+      handler(newVal, olaVal) {
+        const newType = newVal.params.type;
+        const oldType = olaVal.params.type;
+        if (newType && newType !== oldType) {
+          this.filterDatas(newType, this.allItems);
+        }
+      }
+    }
+  },
   methods: {
+    /**
+     * 
+     * @param {*} type all | Trash | favorites
+     * @param {*} list 所有数据
+     */
+    // filterDatas(type, list) {
+    //   //type: all Trash favorites
+    //   let filterKey = '';
+    //   if (type === 'Trash') {
+    //     filterKey = 'deleteAt'
+    //   }
+    //   if (type === 'favorites') {
+    //     filterKey = 'favorties'
+
+    //   }
+    //   const newlist = list || this.allItems;
+    //   // if (filterKey) {
+    //   //   this.items= newlist.filter(item => item[filterKey])
+    //   // } else {
+    //   //   this.items = newlist;
+    //   // }
+    //   this.items = filterKey ? newlist.filter(item => item[filterKey]) : newlist;
+    // },
+
+    filterDatas(type, list) {
+      //  方法2 
+      if (type === 'Trash') {
+        list.filter(item => item.deleteAt);
+
+      }
+      if (type === 'favorites') {
+        list.filter(item => item.favorites);
+      }
+      this.items = list;
+    },
   },
   components: {
     AppleeApp,

@@ -15,6 +15,12 @@ export const routes =
                 {
                     path: '/list/:type',
                     component: Items,
+                    props: true
+                },
+                {
+                    path: '/list/:type/detail/:name',
+                    component: Items,
+                    props: true
                 },
                 {
                     path: '/AdobDeTail',

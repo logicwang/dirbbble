@@ -31,7 +31,8 @@
                         <div class="wordicon">
                             <div class="icon-ouct">
                                 <div class="password-left position">
-                                    <img src="../assets/image/Adobe.png" class="Adobe img">
+                                    <img src="../assets/image/Adobe.png" class="Adobe img"
+                                        style="width: 27px;height: 27px;">
                                 </div>
                             </div>
                             <div class="wenzi">
@@ -44,7 +45,7 @@
                             </div>
                         </div>
                         <div class="collection">
-                            <img src="../assets/image/收藏.png">
+                            <img src="../assets/image/收藏.png" style="width:27px;height:27px;">
                         </div>
                     </div>
                 </div>

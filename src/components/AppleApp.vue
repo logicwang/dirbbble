@@ -3,7 +3,7 @@
     <div class="password-all">
         <div class="password-leftwhite">
             <!-- <img width="10" :src="item.eal" /> -->
-            <img :src="eal" />
+            <img :src="eal" style="border-radius: 5px;" />
         </div>
         <div class="password-right">
             <div class="password-jkl">
@@ -60,7 +60,7 @@ export default {
 
 .password-all {
     display: flex;
-    padding: 10px;
+    padding: 12px;
     justify-content: flex-start;
 }
 
