@@ -74,36 +74,36 @@ export default {
      * @param {*} type all | Trash | favorites
      * @param {*} list 所有数据
      */
-    // filterDatas(type, list) {
-    //   //type: all Trash favorites
-    //   let filterKey = '';
-    //   if (type === 'Trash') {
-    //     filterKey = 'deleteAt'
-    //   }
-    //   if (type === 'favorites') {
-    //     filterKey = 'favorties'
-
-    //   }
-    //   const newlist = list || this.allItems;
-    //   // if (filterKey) {
-    //   //   this.items= newlist.filter(item => item[filterKey])
-    //   // } else {
-    //   //   this.items = newlist;
-    //   // }
-    //   this.items = filterKey ? newlist.filter(item => item[filterKey]) : newlist;
-    // },
-
     filterDatas(type, list) {
-      //  方法2 
+      //type: all Trash favorites
+      let filterKey = '';
       if (type === 'Trash') {
-        list.filter(item => item.deleteAt);
-
+        filterKey = 'deleteAt'
       }
       if (type === 'favorites') {
-        list.filter(item => item.favorites);
+        filterKey = 'favorties'
+
       }
-      this.items = list;
+      const newlist = list || this.allItems;
+      // if (filterKey) {
+      //   this.items= newlist.filter(item => item[filterKey])
+      // } else {
+      //   this.items = newlist;
+      // }
+      this.items = filterKey ? newlist.filter(item => item[filterKey]) : newlist;
     },
+
+    // filterDatas(type, list) {
+    //   //  方法2 
+    //   if (type === 'Trash') {
+    //     list.filter(item => item.deleteAt);
+
+    //   }
+    //   if (type === 'favorites') {
+    //     list.filter(item => item.favorites);
+    //   }
+    //   this.items = list;
+    // },
   },
   components: {
     AppleeApp,

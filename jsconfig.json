@@ -16,9 +16,6 @@
       "scripthost"
     ]
   },
-  // tsconfig.json
-  // ...其他配置
-  // 加入这一段
   "vueCompilerOptions": {
     "experimentalDisableTemplateSupport": true
   },

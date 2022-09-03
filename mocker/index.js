@@ -8,7 +8,7 @@ const proxy = {
             "email": "thomas@gmail.com",
             "url": "/imgs/adobe.svg",
             "favorties": true,
-            "deleteAt": "2022/12/01",
+            // "deleteAt": "2022/12/01",
             "type": "login",
         },
         {
