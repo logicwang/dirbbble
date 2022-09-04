@@ -103,6 +103,7 @@ export default {
     //     list.filter(item => item.favorites);
     //   }
     //   this.items = list;
+    //   console.log('---------------------',this.items)
     // },
   },
   components: {
