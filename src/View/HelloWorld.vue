@@ -19,7 +19,6 @@
           <div v-if="items && items.length > 0">
             <li v-for="item in items" :key="item.name">
               <router-link :to="`/list/${type}/detail/${item.name}`">
-                <!-- sss{{ type }} -->
                 <AppleeApp :title="item.name" :des="item.email" :eal="item.url" />
               </router-link>
             </li>
@@ -74,37 +73,36 @@ export default {
      * @param {*} type all | Trash | favorites
      * @param {*} list 所有数据
      */
-    filterDatas(type, list) {
-      //type: all Trash favorites
-      let filterKey = '';
-      if (type === 'Trash') {
-        filterKey = 'deleteAt'
-      }
-      if (type === 'favorites') {
-        filterKey = 'favorties'
-
-      }
-      const newlist = list || this.allItems;
-      // if (filterKey) {
-      //   this.items= newlist.filter(item => item[filterKey])
-      // } else {
-      //   this.items = newlist;
-      // }
-      this.items = filterKey ? newlist.filter(item => item[filterKey]) : newlist;
-    },
-
     // filterDatas(type, list) {
-    //   //  方法2 
+    //   //type: all Trash favorites
+    //   let filterKey = '';
     //   if (type === 'Trash') {
-    //     list.filter(item => item.deleteAt);
-
+    //     filterKey = 'deleteAt'
     //   }
     //   if (type === 'favorites') {
-    //     list.filter(item => item.favorites);
+    //     filterKey = 'favorties'
+
     //   }
-    //   this.items = list;
-    //   console.log('---------------------',this.items)
+    //   const newlist = list || this.allItems;
+    //   // if (filterKey) {
+    //   //   this.items= newlist.filter(item => item[filterKey])
+    //   // } else {
+    //   //   this.items = newlist;
+    //   // }
+    //   this.items = filterKey ? newlist.filter(item => item[filterKey]) : newlist;
     // },
+
+    filterDatas(type, list) {
+    if (type === 'Trash') {
+     this.items =list.filter(item => item.deleteAt);
+      } 
+      else if (type === 'favorites') {
+       this.items = list.filter(item => item.favorties);
+      }
+      else{
+       this.items = list;
+      }
+    },
   },
   components: {
     AppleeApp,

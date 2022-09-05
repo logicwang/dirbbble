@@ -60,7 +60,9 @@
               </div>
               <div class="wenzi">
                 <div class="daobe">
-                  <h1 class="name">Adobe</h1>
+                  <h1 class="name">
+                    {{name}}
+                  </h1>
                 </div>
                 <div class="login">
                   <span class="logicn">login</span>
@@ -74,10 +76,11 @@
         </div>
       </div>
       <div class="main borderbottom">
-        <div class="username">
+        <!-- <div class="username">
           <li v-for="item in name" :key="item.name">
             <span class="xxx">{{ item.name }}</span>
           </li>
+
           <li v-for="item in items" :key="item.aaa">
             <span class="aaaaa">{{ item.aaa }}</span>
           </li>
@@ -91,7 +94,7 @@
           <li v-for="item in web" :key="item.web">
             <span class="aaaaa">{{ item.com }}</span>
           </li>
-        </div>
+        </div> -->
         <el-input
           placeholder="请输入密码"
           v-model="input"
@@ -123,13 +126,13 @@ import { reqCategoryList } from "../API/index";
 export default {
   data() {
     return {
-      name: [{ name: "username" }],
-      items: [{ aaa: "thomas@gmail.com" }],
-      input: "1231321321",
-      website: "Website",
+      // name: [{ name: "username" }],
+      // items: [{ aaa: "thomas@gmail.com" }],
+      // input: "1231321321",
+      // website: "Website",
       web: [{ com: "Adobe.com" }],
-      notes: "Notes",
-      classname: [],
+      // notes: "Notes",
+      // classname: [],
     };
   },
   mounted() {

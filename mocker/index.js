@@ -7,7 +7,7 @@ const proxy = {
             "name": "Adobe",
             "email": "thomas@gmail.com",
             "url": "/imgs/adobe.svg",
-            "favorties": true,
+           
             "type": "login",
         },
         {
@@ -24,12 +24,14 @@ const proxy = {
         {
             "name": "Etsy",
             "email": "thomas@gmail.com",
-            "url": "/imgs/etsy.svg"
+            "url": "/imgs/etsy.svg",
+            "favorties": true,
         },
         {
             "name": "Facebook",
             "email": "thomas@gmail.com",
-            "url": "/imgs/Facebook.svg"
+            "url": "/imgs/Facebook.svg",
+            "Trash":"2022/12/01"
         },
         {
             "name": "GooGle",
