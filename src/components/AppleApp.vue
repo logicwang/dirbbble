@@ -1,8 +1,7 @@
 <template>
-  <!-- Apple按钮 -->
+  <!-- 按钮 -->
   <div class="password-all">
     <div class="password-leftwhite">
-      <!-- <img width="10" :src="item.eal" /> -->
       <img :src="eal" style="border-radius: 5px" />
     </div>
     <div class="password-right">

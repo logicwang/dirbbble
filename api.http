@@ -1,50 +1,56 @@
-GET http://localhost:3721/api/user/list HTTP/1.1
+# GET http://localhost:3721/api/user/list HTTP/1.1
+# content-type: application/json
+# data: 
+# [
+#     {
+#         "name": "Adobe",
+#         "email": "thomas@gmail.com",
+#         "url": "/imgs/adobe.svg"
+#     },
+#     {
+#         "Apple": "Apple",
+#         "thomas": "thomas@gmail.com",
+#         "Applesvg": "/imgs/Apple.svg"
+#     },
+#     {
+#         "name": "Dirbbble",
+#         "email": "thomas@gmail.com",
+#         "url": "/imgs/Dribbble.svg"
+#     },
+#     {
+#         "name": "Etsy",
+#         "email": "thomas@gmail.com",
+#         "url": "/imgs/Etsy.svg"
+#     },
+#     {
+#         "name": "Facebook",
+#         "email": "thomas@gmail.com",
+#         "url": "/imgs/Facebook.svg"
+#     },
+#     {
+#         "name": "GooGle",
+#         "email": "thomas@gmail.com",
+#         "url": "/imgs/Google.svg"
+#     },
+#     {
+#         "name": "IMDB",
+#         "email": "thomas@gmail.com",
+#         "url": "/imgs/IMDB.svg"
+#     },
+#     {
+#         "name": "InVison",
+#         "email": "thomas@gmail.com",
+#         "url": "/imgs/Invisionapp.svg"
+#     },
+#     {
+#         "name": "Telegram",
+#         "email": "thomas@gmail.com",
+#         "url": "/imgs/Telegram.svg"
+#     }
+# ]
+
+GET http://localhost:3721/api/user HTTP/1.1
+
 content-type: application/json
-data: 
-[
-    {
-        "name": "Adobe",
-        "email": "thomas@gmail.com",
-        "url": "/imgs/adobe.svg"
-    },
-    {
-        "Apple": "Apple",
-        "thomas": "thomas@gmail.com",
-        "Applesvg": "/imgs/Apple.svg"
-    },
-    {
-        "name": "Dirbbble",
-        "email": "thomas@gmail.com",
-        "url": "/imgs/Dribbble.svg"
-    },
-    {
-        "name": "Etsy",
-        "email": "thomas@gmail.com",
-        "url": "/imgs/Etsy.svg"
-    },
-    {
-        "name": "Facebook",
-        "email": "thomas@gmail.com",
-        "url": "/imgs/Facebook.svg"
-    },
-    {
-        "name": "GooGle",
-        "email": "thomas@gmail.com",
-        "url": "/imgs/Google.svg"
-    },
-    {
-        "name": "IMDB",
-        "email": "thomas@gmail.com",
-        "url": "/imgs/IMDB.svg"
-    },
-    {
-        "name": "InVison",
-        "email": "thomas@gmail.com",
-        "url": "/imgs/Invisionapp.svg"
-    },
-    {
-        "name": "Telegram",
-        "email": "thomas@gmail.com",
-        "url": "/imgs/Telegram.svg"
-    }
-]
+
+ 

@@ -19,7 +19,7 @@
           <div v-if="items && items.length > 0">
             <li v-for="item in items" :key="item.name">
               <router-link :to="`/list/${type}/detail/${item.name}`">
-                <AppleeApp :title="item.name" :des="item.email" :eal="item.url" />
+                <AppleeApp :title="item.name" :des="item.email" :eal="item.url"/>
               </router-link>
             </li>
           </div>
@@ -93,15 +93,15 @@ export default {
     // },
 
     filterDatas(type, list) {
-    if (type === 'Trash') {
-     this.items =list.filter(item => item.deleteAt);
-      } 
-      else if (type === 'favorites') {
-       this.items = list.filter(item => item.favorties);
-      }
-      else{
-       this.items = list;
-      }
+      if (type === 'Trash') {
+          this.items =list.filter(item => item.deleteAt);
+        } 
+        else if (type === 'favorites') {
+          this.items = list.filter(item => item.favorties);
+        }
+        else{
+          this.items = list;
+        }
     },
   },
   components: {

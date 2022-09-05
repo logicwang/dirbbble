@@ -61,7 +61,7 @@
               <div class="wenzi">
                 <div class="daobe">
                   <h1 class="name">
-                    {{name}}
+                    {{ xxxxx.name }}
                   </h1>
                 </div>
                 <div class="login">
@@ -70,50 +70,45 @@
               </div>
             </div>
             <div class="collection">
-              <img src="../assets/image/收藏.png" style="width: 27px; height: 27px" />
+              <img
+                src="../assets/image/收藏.png"
+                style="width: 27px; height: 27px"
+              />
             </div>
           </div>
         </div>
       </div>
       <div class="main borderbottom">
-        <!-- <div class="username">
-          <li v-for="item in name" :key="item.name">
-            <span class="xxx">{{ item.name }}</span>
-          </li>
-
-          <li v-for="item in items" :key="item.aaa">
-            <span class="aaaaa">{{ item.aaa }}</span>
-          </li>
-        </div>
         <div class="third">
           <div class="website xxx">
-            {{ classname.website }}
+            {{ website }}
           </div>
         </div>
-        <div class="web">
-          <li v-for="item in web" :key="item.web">
-            <span class="aaaaa">{{ item.com }}</span>
-          </li>
-        </div> -->
-        <el-input
-          placeholder="请输入密码"
-          v-model="input"
-          show-password
-          class="margintop"
-        />
-      </div>
-      <div class="bottom">
-        <div class="duanluo">
-          <div class="xxx">
-            <span>
-              {{ notes }}
-            </span>
+        <div class="username">
+          <div class="web">
+            <span class="aaaaa">{{ iitem }}</span>
           </div>
-          <div class="great">
-            <p>
-              Great experiences have the power to inspire, transform and move the world
-              forward.And every great experience starts with creativity
-            </p>
+          <el-input
+            placeholder="请输入密码"
+            v-model="input"
+            show-password
+            class="margintop"
+          />
+        </div>
+        <div class="bottom">
+          <div class="duanluo">
+            <div class="xxx">
+              <span>
+                {{ notes }}
+              </span>
+            </div>
+            <div class="great">
+              <p>
+                Great experiences have the power to inspire, transform and move
+                the world forward.And every great experience starts with
+                creativity
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -121,24 +116,27 @@
   </div>
 </template>
 <script>
-import { reqCategoryList } from "../API/index";
+import { reqCategoryList, detalis } from "../API/index";
 
 export default {
   data() {
     return {
-      // name: [{ name: "username" }],
-      // items: [{ aaa: "thomas@gmail.com" }],
-      // input: "1231321321",
-      // website: "Website",
-      web: [{ com: "Adobe.com" }],
-      // notes: "Notes",
-      // classname: [],
+      input: "1231321321",
+      website: "Website",
+      iitem: "Adobe.com",
+      notes: "Notes",
+      classname: [],
+      xxxxx: [],
     };
   },
   mounted() {
     reqCategoryList().then((data) => {
       console.log(data.data);
       this.classname = data.data;
+    });
+    detalis().then((data) => {
+      console.log(data.data);
+      this.xxxxx = data.data;
     });
   },
 };
