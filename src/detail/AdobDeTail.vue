@@ -61,7 +61,7 @@
               <div class="wenzi">
                 <div class="daobe">
                   <h1 class="name">
-                    {{ xxxxx.name }}
+                    {{ detali.name }}
                   </h1>
                 </div>
                 <div class="login">
@@ -81,16 +81,15 @@
       <div class="main borderbottom">
         <div class="third">
           <div class="website xxx">
-            {{ website }}
+            <!-- {{ website }} -->
           </div>
         </div>
         <div class="username">
           <div class="web">
-            <span class="aaaaa">{{ iitem }}</span>
+            <!-- <span class="aaaaa">{{ iitem }}</span> -->
           </div>
           <el-input
             placeholder="请输入密码"
-            v-model="input"
             show-password
             class="margintop"
           />
@@ -99,7 +98,7 @@
           <div class="duanluo">
             <div class="xxx">
               <span>
-                {{ notes }}
+                <!-- {{ notes }} -->
               </span>
             </div>
             <div class="great">
@@ -116,62 +115,44 @@
   </div>
 </template>
 <script>
-import { reqCategoryList, detalis } from "../API/index";
+import { detalis } from "../API/index";
 
 export default {
   data() {
     return {
-      input: "1231321321",
-      website: "Website",
-      iitem: "Adobe.com",
-      notes: "Notes",
-      classname: [],
-      xxxxx: [],
+      // input: "1231321321",
+      // website: "Website",
+      // iitem: "Adobe.com",
+      // notes: "Notes",
+      detali: {},
     };
   },
   mounted() {
-    // 列表页接口
-    reqCategoryList().then((data) => {
-      console.log(data.data);
-      this.classname = data.data;
-    });
     // 详情页接口
     detalis().then((data) => {
       console.log(data.data);
-      const type = this.$route.params.type || 'Apple';
-      this.xxxxxxxxxx(type, data.data);
+      this.detali = data.data;
     });
   },
-  created() {},
   watch: {
     $route: {
       handler(newVal, olaVal) {
+        console.log('----->', newVal)
         const newType = newVal.params.type;
         const oldType = olaVal.params.type;
         if (newType && newType !== oldType) {
-          this.xxxxxxxxxx(newType, this.allItems);
+          this.filterDatas(newType, this.allItems);
         }
       }
     }
   },
   methods: {
-    /**
-     * 
-     * @param {*} type all | Trash | favorites
-     * @param {*} list 所有数据
-     */
-     xxxxxxxxxx(type, list) {
-      if (type === 'Dirbbble') {
-          this.items =list.filter(item => item.name);
-        } 
-        else if (type === 'Etsy') {
-          this.items = list.filter(item => item.img);
-        }
-        else{
-          this.items = list;
-        }
+    filterDatas(type,detali) {
+    if (type === 'Apple') {
+     this.items =detali.filter(item => item.name);
+      } 
     },
-  }
+  },
 };
 </script>
 

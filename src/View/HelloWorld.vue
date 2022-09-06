@@ -93,15 +93,15 @@ export default {
     // },
 
     filterDatas(type, list) {
-      if (type === 'Trash') {
-          this.items =list.filter(item => item.deleteAt);
-        } 
-        else if (type === 'favorites') {
-          this.items = list.filter(item => item.favorties);
-        }
-        else{
-          this.items = list;
-        }
+    if (type === 'Trash') {
+     this.items =list.filter(item => item.deleteAt);
+      } 
+      else if (type === 'favorites') {
+       this.items = list.filter(item => item.favorties);
+      }
+      else{
+       this.items = list;
+      }
     },
   },
   components: {

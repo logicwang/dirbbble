@@ -6,6 +6,7 @@ const proxy = {
         {
         "name": "Adobe",
         "email": "thomas@gmail.com",
+        "input":"1231231231",
         "url": "/imgs/adobe.svg",
         },
 }
