@@ -130,15 +130,48 @@ export default {
     };
   },
   mounted() {
+    // 列表页接口
     reqCategoryList().then((data) => {
       console.log(data.data);
       this.classname = data.data;
     });
+    // 详情页接口
     detalis().then((data) => {
       console.log(data.data);
-      this.xxxxx = data.data;
+      const type = this.$route.params.type || 'Apple';
+      this.xxxxxxxxxx(type, data.data);
     });
   },
+  created() {},
+  watch: {
+    $route: {
+      handler(newVal, olaVal) {
+        const newType = newVal.params.type;
+        const oldType = olaVal.params.type;
+        if (newType && newType !== oldType) {
+          this.xxxxxxxxxx(newType, this.allItems);
+        }
+      }
+    }
+  },
+  methods: {
+    /**
+     * 
+     * @param {*} type all | Trash | favorites
+     * @param {*} list 所有数据
+     */
+     xxxxxxxxxx(type, list) {
+      if (type === 'Dirbbble') {
+          this.items =list.filter(item => item.name);
+        } 
+        else if (type === 'Etsy') {
+          this.items = list.filter(item => item.img);
+        }
+        else{
+          this.items = list;
+        }
+    },
+  }
 };
 </script>
 
