@@ -81,31 +81,33 @@
       <div class="main borderbottom">
         <div class="third">
           <div class="website xxx">
-            <!-- {{ website }} -->
+            {{ detali.website }}
           </div>
         </div>
         <div class="username">
           <div class="web">
-            <!-- <span class="aaaaa">{{ iitem }}</span> -->
+            <span class="aaaaa">{{ detali.iitem }}</span>
           </div>
-          <el-input
-            placeholder="请输入密码"
-            show-password
-            class="margintop"
-          />
+          <form>
+            <el-input
+              placeholder="请输入密码"
+              show-password
+              v-model="detali.input"
+              class="margintop"
+            >
+            </el-input>
+          </form>
         </div>
         <div class="bottom">
           <div class="duanluo">
             <div class="xxx">
               <span>
-                <!-- {{ notes }} -->
+                {{ detali.notes }}
               </span>
             </div>
             <div class="great">
               <p>
-                Great experiences have the power to inspire, transform and move
-                the world forward.And every great experience starts with
-                creativity
+                {{ detali.duanluotwo }}
               </p>
             </div>
           </div>
@@ -120,10 +122,6 @@ import { detalis } from "../API/index";
 export default {
   data() {
     return {
-      // input: "1231321321",
-      // website: "Website",
-      // iitem: "Adobe.com",
-      // notes: "Notes",
       detali: {},
     };
   },
@@ -137,20 +135,20 @@ export default {
   watch: {
     $route: {
       handler(newVal, olaVal) {
-        console.log('----->', newVal)
+        console.log("----->", newVal);
         const newType = newVal.params.type;
         const oldType = olaVal.params.type;
         if (newType && newType !== oldType) {
           this.filterDatas(newType, this.allItems);
         }
-      }
-    }
+      },
+    },
   },
   methods: {
-    filterDatas(type,detali) {
-    if (type === 'Apple') {
-     this.items =detali.filter(item => item.name);
-      } 
+    filterDatas(type, detali) {
+      if (type === "Apple") {
+        this.items = detali.filter((item) => item.name);
+      }
     },
   },
 };
