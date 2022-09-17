@@ -90,13 +90,19 @@
           </div>
           <form>
             <el-input
-              placeholder="请输入密码"
+              placeholder="password"
               show-password
               v-model="detali.input"
               class="margintop"
             >
             </el-input>
           </form>
+        </div>
+        <div class="website xxx">
+          <span>{{ detali.web }}</span>
+        </div>
+        <div class="web">
+          <span class="aaaaa">{{ detali.com }}</span>
         </div>
         <div class="bottom">
           <div class="duanluo">
@@ -149,6 +155,14 @@ export default {
       if (type === "Apple") {
         this.items = detali.filter((item) => item.name);
       }
+    },
+    firstCopySuccess(e) {
+      console.log("copy arguments e:", e);
+      alert("复制成功!");
+    },
+    firstCopyError(e) {
+      console.log("copy arguments e:", e);
+      alert("复制失败!");
     },
   },
 };
