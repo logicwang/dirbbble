@@ -8,10 +8,12 @@ const proxy = {
         "email": "thomas@gmail.com",
         "input": "123",
         "url": "/imgs/adobe.svg",
-        "website": "Website",
-        "iitem": "Adobe.com",
+        "website": "username",
+        "iitem": "thomas@gmail.com",
         "notes": "Notes",
-        "duanluotwo":"Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
+        "web": "Website",
+        "com": "adobe.com",
+        "duanluotwo": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
     },
 }
-module.exports = proxy,noProxy,delay;
+module.exports = proxy, noProxy, delay;
