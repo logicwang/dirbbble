@@ -5,7 +5,7 @@
       <div class="center">
         <div class="input">
           <div class="inputandcion">
-            <el-input v-model="input" class="helloworldinput">
+            <el-input v-model="input" class="helloworldinput" :rules="name">
               <i slot="prefix" class="prefix">
                 <img class="hualigs" src="../assets/image/搜索.png" alt />
               </i>
@@ -25,6 +25,7 @@
                   :eal="item.url"
                 />
               </router-link>
+              <router-view />
             </li>
           </div>
         </div>
@@ -44,6 +45,13 @@ export default {
   props: ["type"],
   data() {
     return {
+      rules: {
+        name: [
+          { required: false, message: "请输入密码", trigger: "blur" },
+          { min: 1, max: 10, message: "长度不超过10个字符", trigger: "blur" },
+        ],
+      },
+
       input: "SearchVault ",
       color: "",
       items: [],

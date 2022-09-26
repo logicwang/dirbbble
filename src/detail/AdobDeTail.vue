@@ -88,15 +88,18 @@
           <div class="web">
             <span class="aaaaa">{{ detali.iitem }}</span>
           </div>
-          <form>
-            <el-input
-              placeholder="password"
-              show-password
-              v-model="detali.input"
-              class="margintop"
-            >
-            </el-input>
-          </form>
+          <div class="color">
+            <span>password</span>
+            <form>
+              <el-input
+                placeholder="password"
+                show-password
+                v-model="detali.input"
+                class="margintop"
+              >
+              </el-input>
+            </form>
+          </div>
         </div>
         <div class="website xxx">
           <span>{{ detali.web }}</span>
@@ -131,17 +134,19 @@ export default {
       detali: {},
     };
   },
+  props: {
+    adobe: {
+      type: String,
+      default: "",
+    },
+  },
   mounted() {
-    // 详情页接口
-    detalis().then((data) => {
-      console.log(data.data);
-      this.detali = data.data;
-    });
+    this.getdetali();
   },
   watch: {
     $route: {
       handler(newVal, olaVal) {
-        console.log("----->", newVal);
+        console.log("----->", newVal.params.name);
         const newType = newVal.params.type;
         const oldType = olaVal.params.type;
         if (newType && newType !== oldType) {
@@ -151,18 +156,18 @@ export default {
     },
   },
   methods: {
+    getdetali() {
+      // 详情页接口
+      detalis().then((data) => {
+        console.log(data.data);
+        this.detali = data.data;
+      });
+    },
+
     filterDatas(type, detali) {
       if (type === "Apple") {
-        this.items = detali.filter((item) => item.name);
+        this.items = detali.filter();
       }
-    },
-    firstCopySuccess(e) {
-      console.log("copy arguments e:", e);
-      alert("复制成功!");
-    },
-    firstCopyError(e) {
-      console.log("copy arguments e:", e);
-      alert("复制失败!");
     },
   },
 };

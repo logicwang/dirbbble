@@ -6,8 +6,9 @@ import Items from '../View/HelloWorld.vue'
 import RegisterApp from '../View/RegisterApp.vue'
 
 
-export const routes =
-    [
+export default new Router({
+    mode: 'history',
+    routes: [
         {
             path: '/',
             component: RegisterApp,
@@ -41,9 +42,9 @@ export const routes =
             component: NotFound
         },
     ]
-
-export default new Router({
-    routes // (缩写) 相当于 routes: routes
-});
+})
+// export default new Router({
+//     routes // (缩写) 相当于 routes: routes
+// });
 
 Vue.use(Router);
