@@ -89,7 +89,6 @@
             <span class="aaaaa">{{ detali.iitem }}</span>
           </div>
           <div class="color">
-            <span>password</span>
             <form>
               <el-input
                 placeholder="password"
