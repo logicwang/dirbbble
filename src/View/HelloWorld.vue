@@ -45,7 +45,7 @@ export default {
   props: ["type"],
   data() {
     return {
-      input: "SearchVault ",
+      input: "SearchVault",
       color: "",
       items: [],
       allItems: [],

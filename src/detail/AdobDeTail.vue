@@ -104,7 +104,9 @@
           <span>{{ detali.web }}</span>
         </div>
         <div class="web">
-          <span class="aaaaa">{{ detali.com }}</span>
+          <a href="https://www.adobe.com/">
+            <span class="aaaaa">{{ detali.com }}</span>
+          </a>
         </div>
         <div class="bottom">
           <div class="duanluo">
@@ -139,20 +141,22 @@ export default {
       default: "",
     },
   },
-  mounted() {
-    this.getdetali();
-  },
   watch: {
     $route: {
       handler(newVal, olaVal) {
-        console.log("----->", newVal.params.name);
-        const newType = newVal.params.type;
-        const oldType = olaVal.params.type;
+        console.log("--newVal--->?", newVal, olaVal);
+        const newType = newVal.params.name;
+        console.log("---newType---->", newType);
+        const oldType = olaVal.params.name;
+        console.log("---oldType---->", oldType);
         if (newType && newType !== oldType) {
-          this.filterDatas(newType, this.allItems);
+          this.getdetali(newType, this.allItems);
         }
       },
     },
+  },
+  mounted() {
+    this.getdetali();
   },
   methods: {
     getdetali() {
@@ -161,12 +165,6 @@ export default {
         console.log(data.data);
         this.detali = data.data;
       });
-    },
-
-    filterDatas(type, detali) {
-      if (type === "Apple") {
-        this.items = detali.filter();
-      }
     },
   },
 };
