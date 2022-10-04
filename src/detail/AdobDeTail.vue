@@ -104,8 +104,8 @@
           <span>{{ detali.web }}</span>
         </div>
         <div class="web">
-          <a href="`[]`">
-            <span class="aaaaa">{{ detali.com }}</span>
+          <a :href="detali.com">
+            <span class="aaaaa">{{ detali.name }}</span>
           </a>
         </div>
         <div class="bottom">
@@ -153,7 +153,7 @@ export default {
       const name = this.$route.params && this.$route.params.name;
       console.log('----name---->',name)
       name && details({name}).then((data) => {
-        console.log('--stringify---->',JSON.stringify(data.data));
+        console.log('----stringify---->',JSON.stringify(data.data));
         this.detali = data.data;
       });
     },

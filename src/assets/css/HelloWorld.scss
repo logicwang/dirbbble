@@ -17,7 +17,7 @@ input {
 
 .all-button {
     margin: 0 auto;
-    max-width: 265px;
+    max-width: 300px;
 }
 
 .header-name {
@@ -123,7 +123,9 @@ input {
 
     border-radius: 5px;
 }
-
+.is-active{
+    background: #005fe4;
+}
 .imbg {
     width: 55px;
     height: 55px;

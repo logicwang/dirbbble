@@ -13,18 +13,17 @@
           </div>
           <div class="icon-a">
             <img src="../assets/image/加号.png" class="icon-img" />
-          </div>
+          </div>image.png
         </div>
         <div class="all-button">
           <div v-if="items && items.length > 0">
-            <li v-for="item in items" :key="item.name">
+            <li v-for="(item, i) in items" :key="item.name">
               <router-link :to="`/list/${type}/detail/${item.name}`">
                 <AppleeApp
                   :title="item.name"
                   :des="item.email"
                   :eal="item.url"
-                  class="router-link-active"
-                />
+                  :class=" (name === item.name || (!i && !name)) ? 'is-active' : undefined"/>
               </router-link>
               <router-view />
             </li>
@@ -50,6 +49,7 @@ export default {
       color: "",
       items: [],
       allItems: [],
+      name:''
     };
   },
   mounted() {
@@ -65,6 +65,7 @@ export default {
       handler(newVal, olaVal) {
         const newType = newVal.params.type;
         const oldType = olaVal.params.type;
+        this.name = newVal.params.name;
         if (newType && newType !== oldType) {
           this.filterDatas(newType, this.allItems);
         }
@@ -104,10 +105,14 @@ export default {
       } else {
         this.items = list;
       }
-      console.log('----this--items---?',this);   
-      this.items &&this.items.length >  0 && this.$router.push(`/list/${type}/detail/${this.items[0].name}`).catch(err => {
-   console.log(err)
-})
+      console.log("----this--items---?", this);
+      this.items &&
+        this.items.length > 0 &&
+        this.$router
+          .push(`/list/${type}/detail/${this.items[0].name}`)
+          .catch((err) => {
+            console.log(err);
+          });
     },
   },
   components: {
