@@ -104,6 +104,10 @@ export default {
       } else {
         this.items = list;
       }
+      console.log('----this--items---?',this);   
+      this.items &&this.items.length >  0 && this.$router.push(`/list/${type}/detail/${this.items[0].name}`).catch(err => {
+   console.log(err)
+})
     },
   },
   components: {

@@ -50,10 +50,11 @@
           <div class="main-max">
             <div class="wordicon">
               <div class="icon-ouct">
-                <div class="password-left position">
+                <div class="password-left position" >
                   <img
                     :src="detali.url"
                     class="img"
+                    style="border-radius: 5px;"
                   />
                 </div>
               </div>
