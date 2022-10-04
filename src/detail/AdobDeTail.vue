@@ -135,12 +135,6 @@ export default {
       detali: {},
     };
   },
-  props: {
-    adobe: {
-      type: String,
-      default: "",
-    },
-  },
   watch: {
     $route: {
       handler(newVal) {
