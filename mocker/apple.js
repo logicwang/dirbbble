@@ -15,6 +15,7 @@ const proxy =(data)=>{
         "com": "apple.com",
         "duanluotwo": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
     },
+    
 }
 }
 module.exports = proxy, noProxy, delay;

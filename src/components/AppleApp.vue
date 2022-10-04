@@ -1,6 +1,6 @@
 <template>
   <!-- 按钮 -->
-  <div class="password-all">
+  <div class="password-all ">
     <div class="password-leftwhite">
       <img :src="eal" style="border-radius: 5px" />
     </div>

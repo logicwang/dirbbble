@@ -1,19 +1,21 @@
 const delay = require('mocker-api/lib/delay');
 const noProxy = process.env.NO_PROXY === 'true';
+const { list }= require('./data')
 
 const proxy = {
-    'GET /api/detalis':
-    {
-        "name": "Adobe",
-        "email": "wangyufei@gmail.com",
-        "input": "1wefwefwefwyrtrhrt23",
-        "url": "/imgs/adobe.svg",
-        "website": "Adobe",
-        "iitem": "wangyufei@gmail.com",
-        "notes": "Notes",
-        "web": "Website",
-        "com": "adobe.com",
-        "duanluotwo": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
-    },
+  'POST /api/details': (req, res) => {
+    const { name } = req.body;
+    const items = name && list.filter(item => (item.name === name));
+    const data = items && items.length > 0 ? items[0] : {}
+    return res.json(data);
+  },
+
+  // 'GET /api/details/:name': (req, res) => {
+  //   const { name } = req.params;
+  //   const items = name && list.filter(item => (item.name === name));
+  //   const data = items && items.length > 0 ? items[0] : {}
+  //   return res.json(data);
+  // }
 }
+
 module.exports = proxy, noProxy, delay;

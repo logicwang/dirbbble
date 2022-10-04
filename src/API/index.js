@@ -7,7 +7,9 @@ import requests from './request'
 
 
 export const reqCategoryList = () => requests({ url: 'http://localhost:3721/api/user/list', method: 'GET' })
-export const detalis = () => requests({ url: 'http://localhost:3721/api/detalis', method: 'GET' })
+// export const details = (params) => requests({ url: `http://localhost:3721/api/details/${params.name}`, method: 'GET' })
+
+export const details = (params) => requests({ url: 'http://localhost:3721/api/details', method: 'POST', data:{...params}})
 
 // export const getUserInfo = () => requests({
 //     url: 'https://api.github.com/users/logicwang',

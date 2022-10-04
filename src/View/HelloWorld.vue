@@ -23,6 +23,7 @@
                   :title="item.name"
                   :des="item.email"
                   :eal="item.url"
+                  class="router-link-active"
                 />
               </router-link>
               <router-view />

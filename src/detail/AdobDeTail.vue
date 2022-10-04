@@ -52,9 +52,8 @@
               <div class="icon-ouct">
                 <div class="password-left position">
                   <img
-                    src="../assets/image/Adobe.png"
-                    class="Adobe img"
-                    style="width: 27px; height: 27px"
+                    :src="detali.url"
+                    class="img"
                   />
                 </div>
               </div>
@@ -104,7 +103,7 @@
           <span>{{ detali.web }}</span>
         </div>
         <div class="web">
-          <a href="https://www.adobe.com/">
+          <a href="`[]`">
             <span class="aaaaa">{{ detali.com }}</span>
           </a>
         </div>
@@ -127,7 +126,7 @@
   </div>
 </template>
 <script>
-import { detalis } from "../API/index";
+import { details } from "../API/index";
 
 export default {
   data() {
@@ -143,26 +142,23 @@ export default {
   },
   watch: {
     $route: {
-      handler(newVal, olaVal) {
-        console.log("--newVal--->?", newVal, olaVal);
-        const newType = newVal.params.name;
-        console.log("---newType---->", newType);
-        const oldType = olaVal.params.name;
-        console.log("---oldType---->", oldType);
-        if (newType && newType !== oldType) {
-          this.getdetali(newType, this.allItems);
-        }
+      handler(newVal) {
+        console.log('----newVal---->',newVal)
+        newVal&& this.getdetail();
       },
     },
   },
   mounted() {
-    this.getdetali();
+    this.getdetail();
   },
   methods: {
-    getdetali() {
+    getdetail() {
       // 详情页接口
-      detalis().then((data) => {
-        console.log(data.data);
+      console.log('----this.$route---->',this.$route)
+      const name = this.$route.params && this.$route.params.name;
+      console.log('----name---->',name)
+      name && details({name}).then((data) => {
+        console.log('--stringify---->',JSON.stringify(data.data));
         this.detali = data.data;
       });
     },
