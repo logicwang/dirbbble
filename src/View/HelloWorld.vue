@@ -13,20 +13,20 @@
           </div>
           <div class="icon-a">
             <img src="../assets/image/加号.png" class="icon-img" />
-          </div>image.png
+          </div>
         </div>
         <div class="all-button">
           <div v-if="items && items.length > 0">
             <li v-for="(item, i) in items" :key="item.name">
-              <router-link :to="`/list/${type}/detail/${item.name}`">
+              <router-link :to="`/list/${type}/detail/${item.name}`" class="password-all">
                 <AppleeApp
                   :title="item.name"
                   :des="item.email"
                   :eal="item.url"
-                  :class=" (name === item.name || (!i && !name)) ? 'is-active' : undefined"/>
+                  :class=" (name === item.name || (i===0 && !name)) ? 'is-active' : undefined"/>
               </router-link>
               <router-view />
-            </li>
+            </li> 
           </div>
         </div>
       </div>
@@ -66,6 +66,8 @@ export default {
         const newType = newVal.params.type;
         const oldType = olaVal.params.type;
         this.name = newVal.params.name;
+        // console.log('------->',typeof item.name)
+        console.log('------->',typeof name)
         if (newType && newType !== oldType) {
           this.filterDatas(newType, this.allItems);
         }

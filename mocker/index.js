@@ -11,17 +11,21 @@ const proxy = {
             "email": "thomas@gmail.com",
             "url": "/imgs/adobe.svg",
             "type": "login",
+            "Trash":"2022/12/01",
         },
         {
             "name": "Apple",
             "email": "thomas@gmail.com",
-            "url": "/imgs/BSApple.svg"
+            "url": "/imgs/BSApple.svg",
+            "deleteAt": "2022/12/01",
         },
         {
             "name": "Dirbbble",
             "email": "thomas@gmail.com",
             "url": "/imgs/Dribbble.svg",
-            "deleteAt": "2022/12/01"
+            "deleteAt": "2022/12/01",
+            "favorties": true,
+            "Trash":"2022/12/01",
         },
         {
             "name": "Etsy",
@@ -33,12 +37,14 @@ const proxy = {
             "name": "Facebook",
             "email": "thomas@gmail.com",
             "url": "/imgs/Facebook.svg",
-            "Trash":"2022/12/01"
+            "Trash":"2022/12/01",
+            "favorties": true,
         },
         {
             "name": "GooGle",
             "email": "thomas@gmail.com",
-            "url": "/imgs/Google.svg"
+            "url": "/imgs/Google.svg",
+            "favorties": true,
         },
         {
             "name": "IMDB",
