@@ -21,7 +21,7 @@
                   fill="#bfbfbf"
                 ></path>
               </svg>
-              <span class="name">edit</span>
+              <span class="name">Edit</span>
             </div>
           </button>
           <button>
@@ -42,7 +42,7 @@
                   fill="#cdcdcd"
                 ></path>
               </svg>
-              <span class="name">delete</span>
+              <span class="name">Delete</span>
             </div>
           </button>
         </div>
@@ -105,7 +105,7 @@
         </div>
         <div class="web">
           <a :href="detali.com">
-            <span class="aaaaa">{{ detali.name }}</span>
+            <span class="aaaaa">{{ detali.com }}</span>
           </a>
         </div>
         <div class="bottom">

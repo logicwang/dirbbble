@@ -1,7 +1,7 @@
 .wrap-right {
     height: auto;
     background-color: rgb(15, 15, 15);
-    width: calc(100% - 340px);
+    width: calc(100% - 325px);
 }
 
 .display {
@@ -12,20 +12,20 @@
 
 .wrap-right .display .edit {
     background-color: rgb(47 44 44);
-    width: 80px;
+    width: 70px;
     height: 30px;
     border-radius: 5px;
 }
 
 .wrap-right .display .edit .icon {
-    position: relative;
-    top: 4px;
-    right: 5px;
+        position: relative;
+        top: 5px;
+        right: 5px;
 }
 
 .wrap-right .display .delete {
     background-color: rgb(47 44 44);
-    width: 80px;
+    width: 70px;
     height: 30px;
     border-radius: 5px;
 }
@@ -33,14 +33,14 @@
 .wrap-right .display .delete .icon {
     position: relative;
     top: 4px;
-    left: 4px;
+    right: 1px;
 }
 
 .wrap-right .display .edit .name {
     color: #fff;
     font-size: 15px;
     position: relative;
-    left: 5px;
+    left: 1px;
 }
 
 .wrap-right .display .delete .name {
@@ -133,7 +133,7 @@ img {
 
 .bottom .duanluo .great p {
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #copy {

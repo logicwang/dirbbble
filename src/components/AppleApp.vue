@@ -59,7 +59,7 @@ export default {
 
 .password-all {
   display: flex;
-  padding: 9px;
+  padding: 11px;
   justify-content: flex-start;
 }
 
