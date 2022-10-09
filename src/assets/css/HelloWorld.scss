@@ -21,13 +21,24 @@ input {
 }
 
 .header-name {
+    /* overflow: auto; */
+    height: 100vh;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* overflow-x: scroll;*/
+}
+
+.header-name {
     width: 325px;
     background-color: rgb(30 30 30);
 }
-.center{
+
+.center {
     margin: 0 auto;
     max-width: 317px;
 }
+
 .all-div {
     display: flex;
     /* justify-content: space-between; */
@@ -128,10 +139,12 @@ input {
 
     border-radius: 5px;
 }
-.is-active{
+
+.is-active {
     border-radius: 5px;
     background: #005fe4;
 }
+
 .imbg {
     width: 55px;
     height: 55px;

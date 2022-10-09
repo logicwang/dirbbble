@@ -1,6 +1,6 @@
 <template>
   <!-- 按钮 -->
-  <div class="password-all ">
+  <div class="password-all">
     <div class="password-leftwhite">
       <img :src="eal" style="border-radius: 5px" />
     </div>
@@ -59,8 +59,10 @@ export default {
 
 .password-all {
   display: flex;
-  padding: 11px;
   justify-content: flex-start;
+}
+.password-all {
+  padding: 15px;
 }
 
 .password-leftd {
