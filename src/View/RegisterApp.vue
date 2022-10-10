@@ -323,7 +323,7 @@ a {
 
 .header {
   width: 240px;
-  height: 100vh;
+  /*height: 100vh;*/
   background-color: #282828;
 
   .aaaaaaaaaaaaaa {
@@ -488,7 +488,7 @@ a {
     }
 
     .fixed {
-      padding-top: 124px;
+      padding-top: 215px;
     }
   }
 }
