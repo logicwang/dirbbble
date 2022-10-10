@@ -323,12 +323,11 @@ a {
 
 .header {
   width: 240px;
-  /*height: 100vh;*/
   background-color: #282828;
 
   .aaaaaaaaaaaaaa {
-    margin-left: 3%;
-    margin-right: 3%;
+    margin: 0 auto;
+    max-width: 220px;
   }
   .padding {
     padding: 55px 0 0 0;
