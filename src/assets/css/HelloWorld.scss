@@ -5,7 +5,9 @@ li {
 ul {
     margin: 0;
 }
-
+div{
+    height: auto;
+}
 input {
     outline: none;
 }
@@ -21,13 +23,12 @@ input {
 }
 
 .header-name {
-    height: 99%;
-    overflow-x: hidden;
+    height: 100vh;
     overflow-y: auto;
 }
 
 .header-name {
-    width: 325px;
+    width: 345px;
     background-color: rgb(30 30 30);
 }
 
@@ -38,7 +39,6 @@ input {
 
 .all-div {
     display: flex;
-    /* justify-content: space-between; */
     width: calc(100% - 240px);
 }
 
@@ -63,11 +63,12 @@ input {
 }
 
 .input {
-    padding: 20px;
     display: flex;
     justify-content: space-around;
 }
-
+.input{
+    padding: 20px 0 25px 0 ;
+}
 .el-input__inner {
     background-color: #404040;
     border-radius: 4px;
@@ -79,27 +80,26 @@ input {
     outline: 0;
     padding: 0 15px;
     transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-    width: 100%;
+    width: 100%;    
 }
 
+.el-input--prefix .el-input__inner {
+    padding-left: 30px; 
+}
+.inputandcion{
+    padding-right: 79px;
+}
 
 .el-input .el-input__clear {
-    color: #C0C4CC;
+    color: #C0C4CC; 
     font-size: 14px;
-    cursor: pointer;
     transition: color .2s cubic-bezier(.645, .045, .355, 1);
-    position: relative;
-    bottom: 5px;
-    right: 28px;
 }
 
 .icon-a {
-    position: relative;
     border-radius: 7px;
     background-color: #005fe4;
     width: 34px;
-    height: initial;
-    left: 27px;
 }
 
 .icon-img {

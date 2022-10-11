@@ -62,7 +62,7 @@ export default {
   justify-content: flex-start;
 }
 .password-all {
-  padding: 15px;
+  padding: 10px;
 }
 
 .password-leftd {

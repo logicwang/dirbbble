@@ -1,5 +1,4 @@
 .wrap-right {
-    /*height: 100vh;*/
     background-color: rgb(15, 15, 15);
     width: calc(100% - 325px);
 }
@@ -15,6 +14,18 @@
     width: 70px;
     height: 30px;
     border-radius: 5px;
+}
+
+.xxxxxxx {
+    height: 60px;
+    padding-top: 20px;
+}
+
+.el-input__icon {
+    height: 25%;
+    width: 17px;
+    text-align: center;
+    transition: all .3s;
 }
 
 .wrap-right .display .edit .icon {
@@ -86,6 +97,7 @@ img {
 
 .username {
     padding-bottom: 10px;
+    padding-top: 23px;
 }
 
 .special {
@@ -101,8 +113,12 @@ img {
 }
 
 .max-width {
-    width: 385px;
+    width: 380px;
     margin: 0 auto;
+}
+
+.main-center {
+    padding-top: 25px;
 }
 
 .max-width button {
@@ -153,6 +169,31 @@ img {
     justify-content: start;
 }
 
+.margintop {
+    background-color: #404040;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    color: #fff;
+    height: 53px;
+    line-height: 40px;
+    font-size: 7px;
+    outline: 0;
+    padding-top: 21px;
+    transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 100%;
+    padding-left: 15px;
+}
+
+.aasdadadwdawd {
+    margin: 0;
+    font-size: 10px;
+    color: #686868;
+    position: relative;
+    top: 23px;
+    left: 16px;
+}
+
 .position {
     position: relative;
     top: 5px;
@@ -160,8 +201,4 @@ img {
 
 .wenzi {
     margin-left: 30px;
-}
-
-.margintop {
-    margin-top: 17px;
 }

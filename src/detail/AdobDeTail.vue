@@ -50,11 +50,11 @@
           <div class="main-max">
             <div class="wordicon">
               <div class="icon-ouct">
-                <div class="password-left position" >
+                <div class="password-left position">
                   <img
                     :src="detali.url"
                     class="img"
-                    style="border-radius: 5px;"
+                    style="border-radius: 5px"
                   />
                 </div>
               </div>
@@ -84,20 +84,15 @@
             {{ detali.website }}
           </div>
         </div>
+        <div class="web">
+          <span class="aaaaa">{{ detali.iitem }}</span>
+        </div>
         <div class="username">
-          <div class="web">
-            <span class="aaaaa">{{ detali.iitem }}</span>
-          </div>
           <div class="color">
-            <form>
-              <el-input
-                placeholder="password"
-                show-password
-                v-model="detali.input"
-                class="margintop"
-              >
-              </el-input>
-            </form>
+            <h1 class="aasdadadwdawd">Password</h1>
+            <input laber="password" v-model="detali.input" class="margintop" />
+            <i class="fa fa-eye-slash"></i>
+          
           </div>
         </div>
         <div class="website xxx">
@@ -138,8 +133,8 @@ export default {
   watch: {
     $route: {
       handler(newVal) {
-        console.log('----newVal---->',newVal)
-        newVal&& this.getdetail();
+        console.log("----newVal---->", newVal);
+        newVal && this.getdetail();
       },
     },
   },
@@ -149,13 +144,14 @@ export default {
   methods: {
     getdetail() {
       // 详情页接口
-      console.log('----this.$route---->',this.$route)
+      console.log("----this.$route---->", this.$route);
       const name = this.$route.params && this.$route.params.name;
-      console.log('----name---->',name)
-      name && details({name}).then((data) => {
-        console.log('----stringify---->',JSON.stringify(data.data));
-        this.detali = data.data;
-      });
+      console.log("----name---->", name);
+      name &&
+        details({ name }).then((data) => {
+          console.log("----stringify---->", JSON.stringify(data.data));
+          this.detali = data.data;
+        });
     },
   },
 };

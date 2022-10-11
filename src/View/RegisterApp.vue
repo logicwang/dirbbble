@@ -1,6 +1,6 @@
 <template>
   <!-- 密码管理页面左侧菜单 -->
-  <div class="flex">
+  <div class="header-main">
     <div class="header">
       <div class="padding aaaaaaaaaaaaaa">
         <div class="flex-item">
@@ -241,7 +241,7 @@
               <li class="name">
                 <router-link
                   to="/list/Personal"
-                  class="items right flexstart "
+                  class="items right flexstart"
                   style="padding: 0; width: 100%"
                 >
                   <svg
@@ -307,8 +307,9 @@ export default {
 </script>
 
 <style lang="scss">
-.flex {
+.header-main {
   display: flex;
+  width: 100%;
 }
 
 a {
@@ -486,9 +487,6 @@ a {
       padding: 3px;
     }
 
-    .fixed {
-      padding-top: 215px;
-    }
   }
 }
 </style>
