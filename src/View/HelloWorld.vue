@@ -1,7 +1,7 @@
 <template>
   <!-- 密码管理页面内容页 -->
   <div class="all-div">
-    <div class="header-name">
+    <div class="header-name scorall">
       <div class="center">
         <div class="input">
           <div class="inputandcion">
