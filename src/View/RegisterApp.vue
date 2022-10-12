@@ -1,6 +1,6 @@
 <template>
   <!-- 密码管理页面左侧菜单 -->
-  <div class="header-main">
+  <div class="header-main" >
     <div class="header">
       <div class="padding aaaaaaaaaaaaaa">
         <div class="flex-item">
@@ -309,7 +309,7 @@ export default {
 <style lang="scss">
 .header-main {
   display: flex;
-  width: 100%;
+  height: 100%;
 }
 
 a {

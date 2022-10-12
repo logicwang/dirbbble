@@ -12,7 +12,7 @@
             </el-input>
           </div>
           <div class="icon-a">
-            <img src="../assets/image/加号.png" class="icon-img" />
+            <img src="../assets/image/加号.png" class="icon-img"/>
           </div>
         </div>
         <div class="all-button">
@@ -25,7 +25,6 @@
                   :eal="item.url"
                   :class=" (name === item.name || (i===0 && !name)) ? 'is-active' : undefined"/>
               </router-link>
-              <router-view />
             </li> 
           </div>
         </div>
