@@ -1,7 +1,7 @@
 <template>
-      <!-- <HelloWorld />
+  <!-- <HelloWorld />
       <AllItems /> -->
-      <router-view></router-view>
+  <router-view></router-view>
 </template>
 
 <script>
@@ -16,3 +16,8 @@ export default {
   },
 };
 </script>
+<style>
+html {
+  height: 100%;
+}
+</style>

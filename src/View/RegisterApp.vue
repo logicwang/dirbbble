@@ -1,6 +1,6 @@
 <template>
   <!-- 密码管理页面左侧菜单 -->
-  <div class="header-main" >
+  <div class="header-main">
     <div class="header">
       <div class="padding aaaaaaaaaaaaaa">
         <div class="flex-item">
@@ -324,6 +324,8 @@ a {
 
 .header {
   width: 240px;
+  height: 100%;
+  overflow: hidden;
   background-color: #282828;
 
   .aaaaaaaaaaaaaa {
@@ -486,7 +488,6 @@ a {
     .name {
       padding: 3px;
     }
-
   }
 }
 </style>
