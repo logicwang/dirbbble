@@ -1,7 +1,7 @@
 <template>
   <!-- 密码管理页面左侧菜单 -->
   <div class="header-main">
-    <div class="header">
+    <div class="header scorall">
       <div class="padding aaaaaaaaaaaaaa">
         <div class="flex-item">
           <div class="flex margin">
@@ -28,7 +28,7 @@
                     fill="#8a8a8a"
                   ></path>
                 </svg>
-                <h1 class="items fontsize" style="width: 75%; padding-left: 0">
+                <h1 class="items fontsize" style="width:75%;">
                   All Items
                 </h1>
                 <span class="number" style="padding-right: 10px">19</span>
@@ -56,7 +56,7 @@
                 </div>
                 <h1
                   class="items fontsize height"
-                  style="padding: 0; width: 79%"
+                  style="width: 79%"
                 >
                   Favorites
                 </h1>
@@ -69,13 +69,13 @@
                   src="../assets/image/删除色块.png"
                   class="deleteimg deleteleft"
                 />
-                <h1 class="items fontsize" style="padding-left: 9px">Trash</h1>
+                <h1 class="items fontsize" style="padding-left: 15px;">Trash</h1>
               </li>
             </router-link>
           </div>
         </div>
         <div class="flex-type">
-          <div class="flex">
+          <div class="flex padding-all">
             <span class="type">Type</span>
             <div class="neirong">
               <div class="center-third">
@@ -266,7 +266,7 @@
             </div>
           </div>
         </div>
-        <div class="flex fixed">
+        <div class="flex fixed top">
           <ul class="padding-floder">
             <li class="newfolder neirong">
               <svg
@@ -324,8 +324,6 @@ a {
 
 .header {
   width: 240px;
-  height: 100%;
-  overflow: hidden;
   background-color: #282828;
 
   .aaaaaaaaaaaaaa {
@@ -344,6 +342,7 @@ a {
     .icon-Identity {
       position: relative;
       top: 3px;
+      left:2px;
     }
     .height {
       position: relative;
@@ -351,12 +350,14 @@ a {
     }
     .icon-note {
       position: relative;
-      top: 5px;
+    top: 5px;
+    left: 4px;
     }
 
     .icon-inentiy {
       position: relative;
       top: 3px;
+      left: 2px;
     }
     .trahs {
       display: flex;
@@ -385,7 +386,8 @@ a {
 
     .icon-login {
       position: relative;
-      top: 2px;
+      top: 4px;
+      left: 3px;
     }
 
     .neirong {
@@ -444,7 +446,7 @@ a {
       margin: 0;
       margin-top: 1px;
       font-size: 15px;
-      padding-left: 7px;
+      padding-left: 10px;
       border-radius: 5px;
       text-decoration: none;
     }
@@ -480,11 +482,12 @@ a {
       flex-direction: column;
       gap: 7px;
     }
-
     .padding-floder {
       padding: 0;
     }
-
+    .top {
+      padding: 165px 0 20px 0;
+    }
     .name {
       padding: 3px;
     }
