@@ -6,7 +6,9 @@
     overflow-y: auto;
     height: 100%;
 }
-
+[v-cloak] {
+    display: none;
+  }
 .display {
     display: flex;
     justify-content: flex-end;
@@ -15,7 +17,7 @@
 
 .wrap-right .display .edit {
     background-color: rgb(47 44 44);
-    width: 70px;
+    width: 85px;
     height: 30px;
     border-radius: 5px;
 }
@@ -34,15 +36,15 @@
 
 .wrap-right .display .edit .icon {
     position: relative;
-    top: 5px;
-    right: 5px;
+    bottom: 0px;
+    right: 13px;
 }
 
 .wrap-right .display .delete {
-    background-color: rgb(47 44 44);
-    width: 70px;
-    height: 30px;
-    border-radius: 5px;
+  background-color: rgb(47 44 44);
+  width: 90px;
+  height: 30px;
+  border-radius: 5px;
 }
 
 .wrap-right .display .delete .icon {
@@ -55,14 +57,15 @@
     color: #fff;
     font-size: 15px;
     position: relative;
-    left: 1px;
+    right: 0px;
+    bottom: 4px;
 }
 
 .wrap-right .display .delete .name {
     color: #fff;
     font-size: 15px;
     position: relative;
-    left: 3px;
+    padding-left: 9px;
 }
 
 .login .logicn {
@@ -174,19 +177,8 @@ img {
 }
 
 .margintop {
-    background-color: #404040;
-    border-radius: 4px;
-    border: none;
-    box-sizing: border-box;
-    color: #fff;
-    height: 53px;
-    line-height: 40px;
-    font-size: 7px;
-    outline: 0;
-    padding-top: 21px;
-    transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-    width: 100%;
-    padding-left: 15px;
+    height: 60px;
+    padding-top: 20px;
 }
 
 .aasdadadwdawd {
@@ -195,7 +187,7 @@ img {
     color: #686868;
     position: relative;
     top: 23px;
-    left: 16px;
+    left: 10px;
 }
 
 .position {

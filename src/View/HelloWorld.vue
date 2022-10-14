@@ -5,7 +5,7 @@
       <div class="center">
         <div class="input">
           <div class="inputandcion">
-            <el-input v-model="input" class="helloworldinput" style="width: 130%;">
+            <el-input v-model="input" class="helloworldinput" style="width: 104%;">
               <i slot="prefix" class="prefix">
                 <img class="hualigs" src="../assets/image/搜索.png" alt />
               </i>

@@ -28,10 +28,10 @@
                     fill="#8a8a8a"
                   ></path>
                 </svg>
-                <h1 class="items fontsize" style="width:75%;">
-                  All Items
-                </h1>
-                <span class="number" style="padding-right: 10px">19</span>
+                <h1 class="items fontsize" style="width: 75%">All Items</h1>
+                <span class="number" style="padding-right: 10px">{{
+                  tableData
+                }}</span>
               </li>
             </router-link>
             <router-link to="/list/favorites" class="Favorites">
@@ -54,10 +54,7 @@
                     ></path>
                   </svg>
                 </div>
-                <h1
-                  class="items fontsize height"
-                  style="width: 79%"
-                >
+                <h1 class="items fontsize height" style="width: 79%">
                   Favorites
                 </h1>
                 <span class="number height">7</span>
@@ -69,7 +66,7 @@
                   src="../assets/image/删除色块.png"
                   class="deleteimg deleteleft"
                 />
-                <h1 class="items fontsize" style="padding-left: 15px;">Trash</h1>
+                <h1 class="items fontsize" style="padding-left: 15px">Trash</h1>
               </li>
             </router-link>
           </div>
@@ -296,13 +293,23 @@
 </template>
 
 <script type="text/javascript">
-// import { domainToUnicode } from 'url';.
+import { reqCategoryList } from "../API/index";
 
 export default {
   data() {
-    return {};
+    return {
+      tableData: {},
+    };
   },
-  methods: {},
+  mounted() {
+    reqCategoryList().then((data) => {
+      this.tableData = data.data;
+      console.log("数据内容>>>>>", data.data);
+      for(var i = 0 ; i <  this.tableData; i ++){
+        this.tableData.length;
+      }
+    });
+  },
 };
 </script>
 
@@ -342,7 +349,7 @@ a {
     .icon-Identity {
       position: relative;
       top: 3px;
-      left:2px;
+      left: 2px;
     }
     .height {
       position: relative;
@@ -350,8 +357,8 @@ a {
     }
     .icon-note {
       position: relative;
-    top: 5px;
-    left: 4px;
+      top: 5px;
+      left: 4px;
     }
 
     .icon-inentiy {
@@ -454,13 +461,9 @@ a {
     .type {
       color: RGB(122, 122, 122);
       font-size: 8px;
-      /* position: relative; */
-      /* right: 6px; */
-      /*margin-left: 5px;*/
     }
     .icon-all {
       position: relative;
-      /* left: 2px; */
       top: 1px;
     }
     .icon-b {
@@ -486,7 +489,7 @@ a {
       padding: 0;
     }
     .top {
-      padding: 165px 0 20px 0;
+      padding: 195px 0 20px 0;
     }
     .name {
       padding: 3px;

@@ -62,9 +62,23 @@ export default {
   justify-content: flex-start;
 }
 .password-all {
-  padding: 10px;
+  padding: 13px;
 }
-
+.el-input__suffix {
+  right: 5px;
+  height: 27px;
+  transition: all 0.3s;
+  pointer-events: none;
+  top: 15px;
+}
+.el-input__suffix {
+  position: absolute;
+  /*top: 0;*/
+  /*-webkit-transition: all .3s;*/
+  height: 100%;
+  color: #c0c4cc;
+  text-align: center;
+}
 .password-leftd {
   background-color: #fff;
   width: 45px;
