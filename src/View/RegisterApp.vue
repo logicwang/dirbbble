@@ -30,7 +30,7 @@
                 </svg>
                 <h1 class="items fontsize" style="width: 75%">All Items</h1>
                 <span class="number" style="padding-right: 10px">{{
-                  tableData
+                  allNum
                 }}</span>
               </li>
             </router-link>
@@ -57,7 +57,7 @@
                 <h1 class="items fontsize height" style="width: 79%">
                   Favorites
                 </h1>
-                <span class="number height">7</span>
+                <span class="number height">{{ favoritesNum }}</span>
               </li>
             </router-link>
             <router-link to="/list/Trash" class="Favorites">
@@ -67,6 +67,7 @@
                   class="deleteimg deleteleft"
                 />
                 <h1 class="items fontsize" style="padding-left: 15px">Trash</h1>
+                <span class="number height">{{ trashNum }}</span>
               </li>
             </router-link>
           </div>
@@ -143,7 +144,6 @@
                         fill="#cdcdcd"
                       ></path>
                     </svg>
-
                     <h1 class="items">Identity</h1>
                   </router-link>
                 </li>
@@ -298,16 +298,29 @@ import { reqCategoryList } from "../API/index";
 export default {
   data() {
     return {
-      tableData: {},
+      allNum: 0,
+      favoritesNum: 0,
+      trashNum: 0,
     };
   },
   mounted() {
     reqCategoryList().then((data) => {
-      this.tableData = data.data;
-      console.log("数据内容>>>>>", data.data);
-      for(var i = 0 ; i <  this.tableData; i ++){
-        this.tableData.length;
-      }
+      var allNum = data.data.length || 0;
+      var favoritesNum = 0;
+      var trashNum = 0;
+      data.data &&
+        data.data.length > 0 &&
+        data.data.forEach((item) => {
+          if (item.deleteAt) {
+            trashNum = trashNum + 1;
+          }
+          if (item.favorties) {
+            favoritesNum += 1;
+          }
+        });
+      this.allNum = allNum;
+      this.favoritesNum = favoritesNum;
+      this.trashNum = trashNum;
     });
   },
 };
@@ -489,7 +502,7 @@ a {
       padding: 0;
     }
     .top {
-      padding: 195px 0 20px 0;
+      padding: 160px 0 20px 0;
     }
     .name {
       padding: 3px;
