@@ -9,9 +9,7 @@
               <li class="dispalay">
                 <img src="../assets/image/items.svg" class="icon-b" />
                 <h1 class="items fontsize" style="width: 75%">All items</h1>
-                <span class="number" style="padding-right: 10px">{{
-                  allNum
-                }}</span>
+                <span class="number" style="padding-right: 10px">{{allNum}}</span>
               </li>
             </router-link>
             <router-link to="/list/favorites" class="Favorites">
@@ -256,6 +254,8 @@ export default {
       this.allNum = allNum;
       this.favoritesNum = favoritesNum;
       this.trashNum = trashNum;
+      // 单独的情况下,this指的是全局对象. 
+      // 在函数中,this指的是全局对象
     });
   },
 };
