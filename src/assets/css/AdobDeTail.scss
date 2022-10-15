@@ -2,13 +2,16 @@
     background-color: rgb(15, 15, 15);
     width: calc(100% - 325px);
 }
+
 .wrap-right {
     overflow-y: auto;
     height: 100%;
 }
+
 [v-cloak] {
     display: none;
-  }
+}
+
 .display {
     display: flex;
     justify-content: flex-end;
@@ -41,10 +44,10 @@
 }
 
 .wrap-right .display .delete {
-  background-color: rgb(47 44 44);
-  width: 90px;
-  height: 30px;
-  border-radius: 5px;
+    background-color: rgb(47 44 44);
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
 }
 
 .wrap-right .display .delete .icon {
@@ -128,6 +131,15 @@ img {
     padding-top: 25px;
 }
 
+.el-input__suffix-inner {
+    position: relative;
+    top: 35px;
+}
+.el-input--suffix .el-input__inner{
+    padding-right: 30px;
+    padding-top: 18px;
+    height: 60px;
+}
 .max-width button {
     padding: 0;
     margin: 0;
@@ -184,10 +196,8 @@ img {
 .aasdadadwdawd {
     margin: 0;
     font-size: 10px;
+    padding-left: 13px;
     color: #686868;
-    position: relative;
-    top: 23px;
-    left: 10px;
 }
 
 .position {
