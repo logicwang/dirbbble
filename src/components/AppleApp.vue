@@ -62,7 +62,7 @@ export default {
   justify-content: flex-start;
 }
 .password-all {
-  padding: 13px;
+  padding: 12px;
 }
 .el-input__suffix {
   right: 5px;
