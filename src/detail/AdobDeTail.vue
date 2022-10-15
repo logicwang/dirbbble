@@ -22,7 +22,7 @@
             </svg>
             <span class="name">Edit</span>
           </el-button>
-          <button>
+          <button >
             <div class="delete">
               <svg
                 t="1660048661978"
@@ -87,7 +87,9 @@
         </div>
         <div class="username">
           <div class="color">
-            <h1 class="aasdadadwdawd">Password</h1>
+            <div class="word">
+              <h1 class="aasdadadwdawd">Password</h1>
+            </div>
             <el-input
               show-password
               laber="password"
@@ -142,6 +144,7 @@ export default {
   },
   mounted() {
     this.getdetail();
+    
   },
   methods: {
     getdetail() {
