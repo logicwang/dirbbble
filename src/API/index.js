@@ -5,21 +5,11 @@ import requests from './request'
 //接口地址  请求方式  有无参数 ----注释
 //——get 无参
 
+export const leftlist = () => requests({ url: 'http://localhost:3721/api/user/list', method: 'GET' }) //左侧主菜单
 
-export const reqCategoryList = () => requests({ url: 'http://localhost:3721/api/user/list', method: 'GET' })
-// export const details = (params) => requests({ url: `http://localhost:3721/api/details/${params.name}`, method: 'GET' })
+export const reqCategoryList = () => requests({ url: 'http://localhost:3721/api/user/list', method: 'GET' }) //中间路由
 
-export const details = (params) => requests({ url: 'http://localhost:3721/api/details', method: 'POST', data:{...params}})
-
-// export const getUserInfo = () => requests({
-//     url: 'https://api.github.com/users/logicwang',
-//     method: 'GET',
-//     headers: {
-//         'content-type': 'application/json',
-//         // Accept: 'application/vnd.github+json',
-//         'Authorization': 'token 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'
-//     }
-// })
+export const details = (params) => requests({ url: 'http://localhost:3721/api/details', method: 'POST', data:{...params}}) //右侧详情页
 
 //——post 有参
 //params至少是一个空对象
