@@ -10,7 +10,7 @@ exports.list= [
             "web": "Website",
             "com": "adobe.com",
             "deleteAt": "2022/12/01",
-            "favorties": true,
+            
             "duanluotwo": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
         },
         {
@@ -33,6 +33,8 @@ exports.list= [
             "website": "username",
             "iitem": "thomas@gmail.com",
             "notes": "Notes",
+            "favorties": true,
+
             "web": "Website",
             "com": "dribbble.com",
             "duanluotwo": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
@@ -46,6 +48,8 @@ exports.list= [
             "iitem": "thomas@gmail.com",
             "notes": "Notes",
             "web": "Website",
+            "favorties": true,
+
             "com": "etsy.com",
             "duanluotwo": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
         },
@@ -57,6 +61,8 @@ exports.list= [
             "website": "username",
             "iitem": "thomas@gmail.com",
             "notes": "Notes",
+            "favorties": true,
+
             "web": "Website",
             "com": "facebook.com",
             "duanluotwo": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
@@ -69,6 +75,7 @@ exports.list= [
             "website": "username",
             "iitem": "thomas@gmail.com",
             "notes": "Notes",
+            "favorties": true,
             "web": "Website",
             "com": "gooGle.com",
             "duanluotwo": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
