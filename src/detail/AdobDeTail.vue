@@ -1,4 +1,5 @@
 <template>
+  <!-- 右侧详情页 -->
   <div class="wrap-right">
     <div class="max-width">
       <div class="header-right borderbottom">
@@ -22,7 +23,7 @@
             </svg>
             <span class="name">Edit</span>
           </el-button>
-          <button >
+          <button>
             <div class="delete">
               <svg
                 t="1660048661978"
@@ -144,7 +145,6 @@ export default {
   },
   mounted() {
     this.getdetail();
-    
   },
   methods: {
     getdetail() {

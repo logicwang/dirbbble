@@ -1,5 +1,5 @@
 <template>
-  <!-- 密码管理页面内容页 -->
+  <!-- 路由转跳页面内容 -->
   <div class="all-div">
     <div class="header-name scorall">
       <div class="center">

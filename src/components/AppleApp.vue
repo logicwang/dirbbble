@@ -1,5 +1,5 @@
 <template>
-  <!-- 按钮 -->
+  <!-- 路由内容 -->
   <div class="password-all">
     <div class="password-leftwhite">
       <img :src="eal" style="border-radius: 5px" />
