@@ -41,6 +41,8 @@
     position: relative;
     bottom: 0px;
     right: 13px;
+    width: 20px;
+    height: 20px;
 }
 
 .wrap-right .display .delete {
@@ -54,6 +56,8 @@
     position: relative;
     top: 4px;
     right: 1px;
+    width: 20px;
+    height: 20px;
 }
 
 .wrap-right .display .edit .name {
@@ -135,11 +139,13 @@ img {
     position: relative;
     top: 35px;
 }
-.el-input--suffix .el-input__inner{
+
+.el-input--suffix .el-input__inner {
     padding-right: 30px;
     padding-top: 18px;
     height: 60px;
 }
+
 .max-width button {
     padding: 0;
     margin: 0;
