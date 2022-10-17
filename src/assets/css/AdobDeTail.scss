@@ -8,21 +8,26 @@
     height: 100%;
 }
 
-[v-cloak] {
-    display: none;
-}
-
 .display {
     display: flex;
     justify-content: flex-end;
 }
-
 
 .wrap-right .display .edit {
     background-color: rgb(47 44 44);
     width: 85px;
     height: 30px;
     border-radius: 5px;
+}
+
+.el-dialog {
+    position: relative;
+    margin: 0 auto 50px;
+    background: rgb(30 30 30);
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+    box-sizing: border-box;
+    width: 50%;
 }
 
 .xxxxxxx {
@@ -68,10 +73,43 @@
     bottom: 4px;
 }
 
+.el-form-item__label {
+    text-align: right;
+    vertical-align: middle;
+    float: left;
+    font-size: 14px;
+    color: #fff;
+    line-height: 40px;
+    padding: 0 12px 0 0;
+    box-sizing: border-box;
+}
+
 .edit .name {
     position: relative;
     bottom: 4px;
     color: #fff;
+}
+
+.quxiao {
+    color: #fff;
+}
+
+.web {
+    padding-bottom: 25px;
+}
+
+.el-input__inner {
+    background-color: #404040;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    color: #fff;
+    height: 30px;
+    line-height: 40px;
+    outline: 0;
+    padding: 0 15px;
+    transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 100%;
 }
 
 .wrap-right .display .save .icon {
