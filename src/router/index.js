@@ -8,11 +8,11 @@ import RegisterApp from '../View/RegisterApp.vue'
 
 export default new Router({
     mode: 'history',
-    linkActiveClass:'is-active',
+    linkActiveClass: 'is-active',
     routes: [
         {
             path: '/',
-            redirect: '/list/all', 
+            redirect: '/list/all',
             component: RegisterApp,
             children: [
                 {
@@ -49,4 +49,9 @@ export default new Router({
 //     routes // (缩写) 相当于 routes: routes
 // });
 
+const originalPush = Router.prototype.push
+
+Router.prototype.push = function push(location) {
+    return originalPush.call(this, location).catch(err => err)
+}
 Vue.use(Router);
