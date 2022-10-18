@@ -82,8 +82,6 @@ export default {
         const newType = newVal.params.type;
         const oldType = olaVal.params.type;
         this.name = newVal.params.name;
-        // console.log('------->',typeof item.name)
-        console.log("------->", typeof name);
         if (newType && newType !== oldType) {
           this.filterDatas(newType, this.items);
         }
