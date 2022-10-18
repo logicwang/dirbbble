@@ -5,27 +5,39 @@
       <div class="center">
         <div class="input">
           <div class="inputandcion">
-            <el-input v-model="input" class="helloworldinput" style="width: 104%;">
-              <i slot="prefix" class="prefix">
-                <img class="hualigs" src="../assets/image/搜索.png" alt />
-              </i>
-            </el-input>
+            <input
+              v-model.trim="keyWord"
+              class="helloworldinput"
+              placeholder="SearchVault"
+            />
+            <button class="sousuo" @click="serch">
+              <img class="hualigs" src="../assets/image/搜索.png" alt />
+              <div class="claer" />
+            </button>
           </div>
           <div class="icon-a">
-            <img src="../assets/image/加号.png" class="icon-img"/>
+            <img src="../assets/image/加号.png" class="icon-img" />
           </div>
         </div>
         <div class="all-button">
           <div v-if="items && items.length > 0">
             <li v-for="(item, i) in items" :key="item.name">
-              <router-link :to="`/list/${type}/detail/${item.name}`" class="password-all">
+              <router-link
+                :to="`/list/${type}/detail/${item.name}`"
+                class="password-all"
+              >
                 <AppleeApp
                   :title="item.name"
                   :des="item.email"
                   :eal="item.url"
-                  :class=" (name === item.name || (i===0 && !name)) ? 'is-active' : undefined"/>
+                  :class="
+                    name === item.name || (i === 0 && !name)
+                      ? 'is-active'
+                      : undefined
+                  "
+                />
               </router-link>
-            </li> 
+            </li>
           </div>
         </div>
       </div>
@@ -42,13 +54,15 @@ import AdobDeTail from "../detail/AdobDeTail.vue";
 
 export default {
   props: ["type"],
+
   data() {
     return {
-      input: "SearchVault",
-      color: "",
+      color: " ",
       items: [],
-      allItems: [],
-      name:''
+      name: " ",
+      tableData: " ",
+      keyWord: " ",
+      filpersons: [],
     };
   },
   mounted() {
@@ -57,8 +71,12 @@ export default {
       const type = this.$route.params.type || "all";
       this.filterDatas(type, data.data);
     });
+    reqCategoryList().then((data) => {
+      this.tableData = data.data;
+      console.log("---- this.tableData---->", this.tableData);
+    });
   },
-  created() {},
+
   watch: {
     $route: {
       handler(newVal, olaVal) {
@@ -66,14 +84,32 @@ export default {
         const oldType = olaVal.params.type;
         this.name = newVal.params.name;
         // console.log('------->',typeof item.name)
-        console.log('------->',typeof name)
+        console.log("------->", typeof name);
         if (newType && newType !== oldType) {
-          this.filterDatas(newType, this.allItems);
+          this.filterDatas(newType, this.items);
         }
       },
     },
   },
   methods: {
+    serch(){
+      var dataList = [];
+      if(this.keyWord){
+        for (var i = 0; i < this.tableData.length; i++) {
+        if(this.tableData[i].name ===this.keyWord){
+          dataList.push(this.tableData[i]);
+        }
+      }
+      }else{
+        dataList = this.tableData;
+      }
+      this.items = [...dataList]
+    },
+    // killer(){
+    //   var tablelist = [];
+
+
+    // },
     /**
      *
      * @param {*} type all | Trash | favorites
@@ -106,7 +142,7 @@ export default {
       } else {
         this.items = list;
       }
-      console.log("----this--items---?", this);
+      // console.log("----this--items---?", this);
       this.items &&
         this.items.length > 0 &&
         this.$router
@@ -121,7 +157,7 @@ export default {
     AdobDeTail,
   },
 };
-</script> 
+</script>
 
 <style lang="scss" scoped>
 @import url(../assets/css/HelloWorld.scss);

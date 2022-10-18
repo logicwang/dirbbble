@@ -6,10 +6,12 @@ ul {
     margin: 0;
 }
 
-div{
+div {
     height: auto;
 }
-
+.claer{
+    clear: both;
+}
 input {
     outline: none;
 }
@@ -24,27 +26,32 @@ input {
     max-width: 300px;
 }
 
-.scorall{
+.scorall {
     height: 100vh;
     overflow-y: auto;
 }
+
 .scorall::-webkit-scrollbar {
     /*滚动条整体样式*/
-    width : 10px; /*高宽分别对应横竖滚动条的尺寸*/
+    width: 10px;
+    /*高宽分别对应横竖滚动条的尺寸*/
     height: 1px;
-  }
-  .scorall::-webkit-scrollbar-thumb {
+}
+
+.scorall::-webkit-scrollbar-thumb {
     /*滚动条里面小方块*/
     border-radius: 10px;
-    box-shadow : inset 0 0 5px rgba(0, 0, 0, 0.2);
-    background : #535353;
-  }
-  .scorall::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #535353;
+}
+
+.scorall::-webkit-scrollbar-track {
     /*滚动条里面轨道*/
-    box-shadow : inset 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    background : rgb(30 30 30);
-  }
+    background: rgb(30 30 30);
+}
+
 .header-name {
     width: 325px;
     background-color: rgb(30 30 30);
@@ -52,13 +59,14 @@ input {
 
 .center {
     margin: 0 auto;
-    max-width: 293px;
+    max-width: 295px;
 }
 
 .all-div {
     display: flex;
     width: calc(100% - 240px);
 }
+
 .all-div {
     height: 100%;
     overflow: hidden;
@@ -88,9 +96,11 @@ input {
     display: flex;
     justify-content: space-around;
 }
-.input{
-    padding: 20px 0 25px 0 ;
+
+.input {
+    padding: 20px 0 25px 0;
 }
+
 .el-input__inner {
     background-color: #404040;
     border-radius: 4px;
@@ -102,15 +112,15 @@ input {
     outline: 0;
     padding: 0 15px;
     transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-    width: 100%;    
+    width: 100%;
 }
 
 .el-input--prefix .el-input__inner {
-    padding-left: 30px; 
+    padding-left: 30px;
 }
 
 .el-input .el-input__clear {
-    color: #C0C4CC; 
+    color: #C0C4CC;
     font-size: 14px;
     transition: color .2s cubic-bezier(.645, .045, .355, 1);
 }
@@ -118,25 +128,68 @@ input {
 .icon-a {
     border-radius: 7px;
     background-color: #005fe4;
-    width: 34px;
+}
+
+.icon-a {
+    width: 30px;
+    height: 30px;
+}
+
+.helloworldinput {
+    background-color: #404040;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    color: #686868;
+    height: 30px;
+    line-height: 40px;
+    outline: 0;
+    padding: 0 15px;
+    transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 104%;
+}
+
+.inputandcion {
+    height: 30px;
 }
 
 .icon-img {
     width: 20px;
     height: 20px;
+}
+
+.icon-img {
     position: relative;
-    left: 7px;
+    left: 5px;
     top: 5px;
+}
+
+.sousuo {
+    position: relative;
+    bottom: 30px;
+    left: 3px;
+}
+
+.sousuo {
+    width: 30px;
+    height: 30px;
+}
+
+.sousuo {
+    background: #404040;
+    float: right;
+    border: none;
+}
+
+
+.hualigs {
+    width: 17px;
+    height: 17px;
 }
 
 .hualigs {
     display: flex;
     align-items: center;
-    position: relative;
-    top: 7px;
-    left: 2px;
-    width: 17px;
-    height: 17px;
 }
 
 .password-right {
