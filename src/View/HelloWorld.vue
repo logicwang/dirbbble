@@ -12,7 +12,7 @@
             />
             <button class="sousuo" @click="serch">
               <img class="hualigs" src="../assets/image/搜索.png" alt />
-              <div class="claer" />
+              <div class="claer"></div>
             </button>
           </div>
           <div class="icon-a">
@@ -61,6 +61,7 @@ export default {
       name: " ",
       tableData: " ",
       keyWord: " ",
+      asdasdasdasda:"SearchVault"
     };
   },
   mounted() {

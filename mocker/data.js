@@ -1,118 +1,89 @@
-exports.list= [
-        {
-            "name": "Adobe",
-            "email": "thomas@gmail.com",
-            "input": "12312145425",
-            "url": "/imgs/adobe.svg",
-            "website": "Username",
-            "iitem": "thomas@gmail.com",
-            "notes": "Notes",
-            "web": "Website",
-            "com": "adobe.com",
-            "deleteAt": "2022/12/01",
-            "duanluotwo": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
-        },
-        {
-            "name": "Apple",
-            "email": "thomas@gmail.com",
-            "input": "qweqwtqertqwert",
-            "url": "/imgs/BSApple.svg",
-            "website": "Username",
-            "iitem": "thomas@gmail.com",
-            "notes": "Notes",
-            "web": "Website",
-            "com": "apple.com",
-            "duanluotwo": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
-        },
-        {
-            "name": "Dirbbble",
-            "email": "thomas@gmail.com",
-            "input": "QEfeasrdht",
-            "url": "/imgs/Dribbble.svg",
-            "website": "Username",
-            "iitem": "thomas@gmail.com",
-            "notes": "Notes",
-            "favorties": true,
-
-            "web": "Website",
-            "com": "dribbble.com",
-            "duanluotwo": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
-        },
-        {
-            "name": "Etsy",
-            "email": "thomas@gmail.com",
-            "input": "qweqwrwhrqth",
-            "url": "/imgs/etsy.svg",
-            "website": "Username",
-            "iitem": "thomas@gmail.com",
-            "notes": "Notes",
-            "web": "Website",
-            "favorties": true,
-            "com": "etsy.com",
-            "duanluotwo": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
-        },
-        {
-            "name": "Facebook",
-            "email": "thomas@gmail.com",
-            "input": "agaergaetgr",
-            "url": "/imgs/Facebook.svg",
-            "website": "Username",
-            "iitem": "thomas@gmail.com",
-            "notes": "Notes",
-            "favorties": true,
-
-            "web": "Website",
-            "com": "facebook.com",
-            "duanluotwo": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
-        },
-        {
-            "name": "GooGle",
-            "email": "thomas@gmail.com",
-            "input": "ethrywjhwyj",
-            "url": "/imgs/Google.svg",
-            "website": "Username",
-            "iitem": "thomas@gmail.com",
-            "notes": "Notes",
-            "favorties": true,
-            "web": "Website",
-            "com": "gooGle.com",
-            "duanluotwo": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
-        },
-        {
-            "name": "IMDB",
-            "email": "thomas@gmail.com",
-            "input": "hahteah",
-            "url": "/imgs/IMDB.svg",
-            "website": "Username",
-            "iitem": "thomas@gmail.com",
-            "notes": "Notes",
-            "web": "Website",
-            "com": "IMDB.com",
-            "duanluotwo": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
-        },
-        {
-            "name": "InVison",
-            "email": "thomas@gmail.com",
-            "input": "htaheth",
-            "url": "/imgs/Invisionapp.svg",
-            "website": "Username",
-            "iitem": "thomas@gmail.com",
-            "notes": "Notes",
-            "web": "Website",
-            "com": "InVison.com",
-            "duanluotwo": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
-        },
-        {
-            "name": "Telegram",
-            "email": "thomas@gmail.com",
-            "input": "ehaehrhtarythjarj",
-            "url": "/imgs/Telegram.svg",
-            "website": "Username",
-            "iitem": "thomas@gmail.com",
-            "notes": "Notes",
-            "web": "Website",
-            "com": "Telegram.com",
-            "duanluotwo": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
-        }
-    ]
+exports.list = [
+    {
+        "name": "Adobe",
+        "password": "12312145425",
+        "imgrul": "/imgs/adobe.svg",
+        "email": "thomas@gmail.com",
+        "websitename": "adobe.com",
+        "website": "https://www.adobe.com/",
+        "deleteAt": "2022/12/01",
+        "paragraph": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
+    },
+    {
+        "name": "Apple",
+        "password": "qweqwtqertqwert",
+        "imgrul": "/imgs/BSApple.svg",
+        "email": "thomas@gmail.com",
+        "websitename": "apple.com",
+        "website": "https://www.apple.com/sg/",
+        "paragraph": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
+    },
+    {
+        "name": "Dirbbble",
+        "password": "QEfeasrdht",
+        "imgrul": "/imgs/Dribbble.svg",
+        "websitename": "dirbbble.com",
+        "email": "thomas@gmail.com",
+        "favorties": true,
+        "website": "https://dribbble.com/",
+        "paragraph": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
+    },
+    {
+        "name": "Etsy",
+        "password": "qweqwrwhrqth",
+        "imgrul": "/imgs/etsy.svg",
+        "email": "thomas@gmail.com",
+        "websitename": "Etsy.com",
+        "favorties": true,
+        "website": "https://www.etsy.com/",
+        "paragraph": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
+    },
+    {
+        "name": "Facebook",
+        "password": "agaergaetgr",
+        "imgrul": "/imgs/Facebook.svg",
+        "email": "thomas@gmail.com",
+        "favorties": true,
+        "websitename": "Facebook.com",
+        "website": "https://www.facebook.com/",
+        "paragraph": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
+    },
+    {
+        "name": "GooGle",
+        "password": "ethrywjhwyj",
+        "imgrul": "/imgs/Google.svg",
+        "email": "thomas@gmail.com",
+        "favorties": true,
+        "websitename": "GooGle.com",
+        "website": "https://www.google.com/",
+        "paragraph": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
+    },
+    {
+        "name": "IMDB",
+        "password": "hahteah",
+        "imgrul": "/imgs/IMDB.svg",
+        "email": "thomas@gmail.com",
+        "websitename": "IMDB.com",
+        "website": "https://www.imdb.com/",
+        "paragraph": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
+    },
+    {
+        "name": "InVison",
+        "password": "htaheth",
+        "imgrul": "/imgs/Invisionapp.svg",
+        "email": "thomas@gmail.com",
+        "websitename": "InVison.com",
+        "website": "https://www.invisionapp.com/",
+        "paragraph": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
+    },
+    {
+        "name": "Telegram",
+        "password": "ehaehrhtarythjarj",
+        "imgrul": "/imgs/Telegram.svg",
+        "email": "thomas@gmail.com",
+        "websitename": "Telegram.com",
+        "website": "https://telegram.org/",
+        "paragraph": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
+    }
+]
 
