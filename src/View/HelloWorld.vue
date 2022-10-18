@@ -57,12 +57,10 @@ export default {
 
   data() {
     return {
-      color: " ",
       items: [],
       name: " ",
       tableData: " ",
       keyWord: " ",
-      filpersons: [],
     };
   },
   mounted() {
@@ -96,14 +94,17 @@ export default {
       var dataList = [];
       if(this.keyWord){
         for (var i = 0; i < this.tableData.length; i++) {
-        if(this.tableData[i].name ===this.keyWord){
+        if(this.tableData[i].name === this.keyWord){
           dataList.push(this.tableData[i]);
+          console.log('--------------this.tableData[i]--->', this.tableData[i])
         }
       }
-      }else{
+      }
+      else{
         dataList = this.tableData;
       }
       this.items = [...dataList]
+      console.log('--------------------->' ,this.items)
     },
     // killer(){
     //   var tablelist = [];
