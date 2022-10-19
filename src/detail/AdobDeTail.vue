@@ -8,14 +8,14 @@
             <img src="../assets/image/edit.svg" class="icon" />
             <span class="name">Edit</span>
           </button>
-          <button v-else class="edit" @click="save()">
+          <button v-else class="edit" >
             <img src="../assets/image/save.svg" class="icon" />
             <span class="name">Save</span>
           </button>
           <button v-if="isNone" @click="cancel()">
-            <div class="delete">
+            <div class="cancela">
               <img src="../assets/image/cancel.svg" class="cancel" />
-              <span class="name">cancel</span>
+              <span class="name cancel-name"> Cancel</span>
             </div>
           </button>
           <button @click="Delete()">
@@ -27,19 +27,19 @@
         </div>
         <div class="main-center">
           <div class="main-max">
-              <div class="password-left position">
-                <img
-                  :src="detali.imgrul"
-                  class="img"
-                  style="border-radius: 5px"
-                />
+            <div class="password-left position">
+              <img
+                :src="detali.imgrul"
+                class="img"
+                style="border-radius: 5px"
+              />
+            </div>
+            <div class="title-name">
+              <input :disabled="!isSave" v-model="detali.name" class="name" />
+              <div class="namelogin">
+                <span class="logicn">login</span>
               </div>
-              <div class="title-name">
-                <input :disabled="!isSave" v-model="detali.name" class="name" />
-                <div class="namelogin">
-                  <span class="logicn">login</span>
-                </div>
-              </div>
+            </div>
             <div class="collection">
               <!-- <img
                   v-if="detali.favorties" 
@@ -72,7 +72,7 @@
           </div>
           <div class="web">
             <input
-              class="aaaaa xxxxxxxxxxxxxxx"
+              class="email"
               v-model="detali.email"
               :disabled="!isSave"
             />
@@ -81,17 +81,16 @@
           <div class="username">
             <div class="color">
               <div class="word">
-                <h1 class="aasdadadwdawd">Password</h1>
+                <h1 class="password">Password</h1>
               </div>
               <div class="clear" />
               <input
                 :disabled="!isSave"
-                readonly="readonly"
                 v-model="detali.password"
                 :type="pwdFlag ? 'password' : 'text'"
                 size="10"
                 class="margintop"
-                autoComplete="“true”"
+                autoComplete="“false”"
               />
               <!-- <div v-else>{{detali.password}}</div> -->
               <!--三元表达式 pwdFlag为真则type是password密码隐藏 pwdFlag为假则type是text密码显示 -->
@@ -103,7 +102,7 @@
               />
             </div>
           </div>
-          <div class="bottom-horizontalline ">
+          <div class="bottom-horizontalline">
             <div class="detaliwebsite">
               <span>Website</span>
             </div>
@@ -141,7 +140,6 @@ export default {
       detali: {},
       isSave: false,
       isNone: false,
-      floag: true,
       pwdFlag: true, //密码标示 true表示当前是密码形式
       textIcon: "https://i.postimg.cc/q7gYH7P7/show.png", //展示图标
       pwdIcon: "https://i.postimg.cc/C5Crsnqc/hide.png", //隐藏图标
@@ -168,10 +166,11 @@ export default {
           console.log("---this.detali--->", this.detali);
         });
     },
+    //显示隐藏
     changePwd() {
       this.pwdFlag = !this.pwdFlag;
     },
-    edit() {},
+    //编辑
     onClickEditBtn() {
       if (!this.isSave) {
         this.isSave = true;
@@ -180,6 +179,7 @@ export default {
         this.isNone = true;
       }
     },
+    //取消
     cancel() {
       if (this.isSave) {
         this.isSave = false;
@@ -188,9 +188,6 @@ export default {
         this.isNone = false;
       }
     },
-    save(){
-
-    }
   },
 };
 </script>

@@ -1,3 +1,8 @@
+img {
+    width: 45px;
+    height: 45px;
+}
+
 .wrap-right {
     background-color: rgb(15, 15, 15);
     width: calc(100% - 325px);
@@ -15,20 +20,6 @@
 .btnall {
     display: flex;
     justify-content: flex-end;
-}
-
-.asdrgqetgqrg {
-    background-color: #404040;
-    border-radius: 4px;
-    border: none;
-    box-sizing: border-box;
-    color: #686868;
-    height: 30px;
-    outline: 0;
-    padding: 0 15px;
-    transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-    width: 46%;
-
 }
 
 .wrap-right .btnall .edit {
@@ -118,15 +109,10 @@
     color: #fff;
     height: 25px;
     width: 100%;
-    padding-top: 5px;
     margin: 0;
     font-size: 24px;
 }
 
-img {
-    width: 45px;
-    height: 45px;
-}
 
 .main-max {
     display: flex;
@@ -188,6 +174,9 @@ img {
 .imag {
     width: 30px;
     height: 30px;
+}
+
+.imag {
     position: relative;
     top: 8px;
     left: 9px;
@@ -203,11 +192,6 @@ img {
     font-size: 15px;
 }
 
-.aaaaa {
-    font-size: 15px;
-    color: #fff;
-}
-
 .detaliweb {
     background-color: rgb(15, 15, 15);
     border-radius: 4px;
@@ -221,13 +205,6 @@ img {
 .bottom .duanluo .great p {
     color: #fff;
     font-size: 14px;
-}
-
-#copy {
-    float: right;
-    position: relative;
-    bottom: 26px;
-    right: 6px;
 }
 
 .png {
@@ -250,10 +227,13 @@ img {
 
 .word {
     float: left;
+    font-size: 23px;
+}
+
+.word {
     position: relative;
     width: 81px;
     top: 28px;
-    font-size: 23px;
 }
 
 .margintop {
@@ -273,7 +253,7 @@ img {
     width: 100%;
 }
 
-.aasdadadwdawd {
+.password {
     margin: 0;
     font-size: 13px;
     padding-left: 10px;
@@ -295,14 +275,18 @@ img {
     height: 80px;
 }
 
-.xxxxxxxxxxxxxxx {
+.email {
     background-color: black;
     border-radius: 4px;
+    font-size: 15px;
     border: none;
     color: #fff;
+    font-size: 15px;
+}
+
+.email {
     height: 25px;
     width: 100%;
-    font-size: 15px;
 }
 
 .shouandhide {
@@ -316,10 +300,32 @@ img {
     height: 40px;
 }
 
+.cancela .name {
+    color: #fff;
+    font-size: 13px;
+}
+
+.cancela .name {
+    position: relative;
+    top: 2px;
+}
+
+.cancel {
+    width: 20px;
+    height: 18px;
+}
+
 .cancel {
     position: relative;
-    top: 5px;
-    right: -2px;
-    width: 20px;
-    height: 20px;
+    top: 6px;
+}
+
+.cancela {
+    background-color: rgb(47 44 44);
+    border-radius: 5px;
+}
+
+.cancela {
+    width: 78px;
+    height: 30px;
 }
