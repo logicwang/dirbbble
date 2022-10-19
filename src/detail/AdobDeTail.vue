@@ -3,25 +3,30 @@
   <div class="wrap-right">
     <div class="max-width">
       <div class="header-right">
-        <div class="display padding">
-          <button class="edit">
+        <div class="btnall">
+          <button v-if="!isSave" class="edit" @click="onClickEditBtn">
             <img src="../assets/image/edit.svg" class="icon" />
-            <span class="name" @click="edit()">Edit</span>
+            <span class="name">Edit</span>
           </button>
-          <button class="edit">
+          <button v-else class="edit" @click="save()">
             <img src="../assets/image/save.svg" class="icon" />
-            <span class="name" @click="edit()">Save</span>
+            <span class="name">Save</span>
           </button>
-          <button>
+          <button v-if="isNone" @click="cancel()">
+            <div class="delete">
+              <img src="../assets/image/cancel.svg" class="cancel" />
+              <span class="name">cancel</span>
+            </div>
+          </button>
+          <button @click="Delete()">
             <div class="delete">
               <img src="../assets/image/rightdelete.svg" class="icon" />
-              <span class="name" @click="edit()">Delete</span>
+              <span class="name">Delete</span>
             </div>
           </button>
         </div>
         <div class="main-center">
           <div class="main-max">
-            <div class="wordicon">
               <div class="password-left position">
                 <img
                   :src="detali.imgrul"
@@ -29,13 +34,12 @@
                   style="border-radius: 5px"
                 />
               </div>
-              <div class="wenzi">
-                <input :value="detali.name" class="name" />
+              <div class="title-name">
+                <input :disabled="!isSave" v-model="detali.name" class="name" />
                 <div class="namelogin">
                   <span class="logicn">login</span>
                 </div>
               </div>
-            </div>
             <div class="collection">
               <!-- <img
                   v-if="detali.favorties" 
@@ -60,27 +64,36 @@
         </div>
         <div class="main">
           <div class="third">
-            <span class="website xxx">Username</span>
+            <input
+              class="website xxx"
+              :value="detali.username"
+              :disabled="!isSave"
+            />
           </div>
           <div class="web">
-            <input class="aaaaa" :value="detali.email" readonly="readonly" />
+            <input
+              class="aaaaa xxxxxxxxxxxxxxx"
+              v-model="detali.email"
+              :disabled="!isSave"
+            />
           </div>
+
           <div class="username">
             <div class="color">
               <div class="word">
                 <h1 class="aasdadadwdawd">Password</h1>
               </div>
               <div class="clear" />
-              <form>
-                <input
-                  laber="password"
-                  v-model="detali.password"
-                  :type="pwdFlag ? 'password' : 'text'"
-                  size="10"
-                  class="margintop"
-                  autoComplete="“true”"
-                />
-              </form>
+              <input
+                :disabled="!isSave"
+                readonly="readonly"
+                v-model="detali.password"
+                :type="pwdFlag ? 'password' : 'text'"
+                size="10"
+                class="margintop"
+                autoComplete="“true”"
+              />
+              <!-- <div v-else>{{detali.password}}</div> -->
               <!--三元表达式 pwdFlag为真则type是password密码隐藏 pwdFlag为假则type是text密码显示 -->
               <!--pwdFlag为真说明密码是隐藏的，显示眼睛打开图标，反之显示眼睛关闭图标-->
               <img
@@ -90,15 +103,15 @@
               />
             </div>
           </div>
-          <div class="borderbottom paddingbottom">
+          <div class="bottom-horizontalline ">
             <div class="detaliwebsite">
               <span>Website</span>
             </div>
-            <a :href="detali.website">
-              <form>
-                <input :value="detali.websitename" class="detaliweb" />
-              </form>
-            </a>
+            <input
+              :value="detali.website"
+              class="detaliweb"
+              :disabled="!isSave"
+            />
           </div>
           <div class="asdasdergrg">
             <div class="bottom">
@@ -126,7 +139,9 @@ export default {
   data() {
     return {
       detali: {},
-      isshow: false,
+      isSave: false,
+      isNone: false,
+      floag: true,
       pwdFlag: true, //密码标示 true表示当前是密码形式
       textIcon: "https://i.postimg.cc/q7gYH7P7/show.png", //展示图标
       pwdIcon: "https://i.postimg.cc/C5Crsnqc/hide.png", //隐藏图标
@@ -144,41 +159,42 @@ export default {
     this.getdetail();
   },
   methods: {
-    showinput() {
-      this.isshow = !this.isshow;
-    },
     getdetail() {
       // 详情页接口
       const name = this.$route.params && this.$route.params.name;
       name &&
         details({ name }).then((data) => {
-          // console.log("----stringify---->", JSON.stringify(data.data));
           this.detali = data.data;
           console.log("---this.detali--->", this.detali);
         });
     },
     changePwd() {
-      //密码标示取反即可
       this.pwdFlag = !this.pwdFlag;
     },
-    // edit() {
-    //   this.flag = false;
-    //   this.flaga = true;
-    // },
-    // getSrc(){
-    //   return this.detali.favorties ? '../assets/image/收藏.svg' : '../assets/image/未收藏.svg'
-    // }
+    edit() {},
+    onClickEditBtn() {
+      if (!this.isSave) {
+        this.isSave = true;
+      }
+      if (!this.isNone) {
+        this.isNone = true;
+      }
+    },
+    cancel() {
+      if (this.isSave) {
+        this.isSave = false;
+      }
+      if (this.isNone) {
+        this.isNone = false;
+      }
+    },
+    save(){
+
+    }
   },
 };
 </script>
 
 <style lang="scss">
 @import url(../assets/css/AdobDeTail.scss);
-.asdasd{
-  .adasdas{
-    .asdasdasd{
-      backface-visibility: hidden;
-    }
-    } 
-    }
 </style>
