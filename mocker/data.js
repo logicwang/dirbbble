@@ -1,6 +1,7 @@
 exports.list = [
     {
         "name": "Adobe",
+        "username":"Username",
         "password": "12312145425",
         "imgrul": "/imgs/adobe.svg",
         "email": "thomas@gmail.com",
@@ -11,6 +12,7 @@ exports.list = [
     },
     {
         "name": "Apple",
+        "username":"Username",
         "password": "qweqwtqertqwert",
         "imgrul": "/imgs/BSApple.svg",
         "email": "thomas@gmail.com",
@@ -20,6 +22,7 @@ exports.list = [
     },
     {
         "name": "Dirbbble",
+        "username":"Username",
         "password": "QEfeasrdht",
         "imgrul": "/imgs/Dribbble.svg",
         "websitename": "dirbbble.com",
@@ -30,6 +33,7 @@ exports.list = [
     },
     {
         "name": "Etsy",
+        "username":"Username",
         "password": "qweqwrwhrqth",
         "imgrul": "/imgs/etsy.svg",
         "email": "thomas@gmail.com",
@@ -40,6 +44,7 @@ exports.list = [
     },
     {
         "name": "Facebook",
+        "username":"Username",
         "password": "agaergaetgr",
         "imgrul": "/imgs/Facebook.svg",
         "email": "thomas@gmail.com",
@@ -50,6 +55,7 @@ exports.list = [
     },
     {
         "name": "GooGle",
+        "username":"Username",
         "password": "ethrywjhwyj",
         "imgrul": "/imgs/Google.svg",
         "email": "thomas@gmail.com",
@@ -60,6 +66,7 @@ exports.list = [
     },
     {
         "name": "IMDB",
+        "username":"Username",
         "password": "hahteah",
         "imgrul": "/imgs/IMDB.svg",
         "email": "thomas@gmail.com",
@@ -69,6 +76,7 @@ exports.list = [
     },
     {
         "name": "InVison",
+        "username":"Username",
         "password": "htaheth",
         "imgrul": "/imgs/Invisionapp.svg",
         "email": "thomas@gmail.com",
@@ -78,6 +86,7 @@ exports.list = [
     },
     {
         "name": "Telegram",
+        "username":"Username",
         "password": "ehaehrhtarythjarj",
         "imgrul": "/imgs/Telegram.svg",
         "email": "thomas@gmail.com",
