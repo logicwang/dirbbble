@@ -12,7 +12,7 @@
             />
             <button class="sousuo" @click="serch">
               <img class="hualigs" src="../assets/image/搜索.png" alt />
-              <div class="claer"></div>
+              <div class="claer" />
             </button>
           </div>
           <div class="icon-a">
@@ -59,23 +59,17 @@ export default {
     return {
       items: [],
       name: " ",
-      tableData: " ",
       keyWord: " ",
-      asdasdasdasda:"SearchVault"
     };
   },
   mounted() {
     reqCategoryList().then((data) => {
-      this.allItems = data.data;
+      this.tableData = data.data;
       const type = this.$route.params.type || "all";
       this.filterDatas(type, data.data);
-    });
-    reqCategoryList().then((data) => {
-      this.tableData = data.data;
-      console.log("---- this.tableData---->", this.tableData);
+      console.log('----this.tableDatathis.tableDatathis.tableDatathis.tableData--->',data.data)
     });
   },
-
   watch: {
     $route: {
       handler(newVal, olaVal) {
@@ -83,33 +77,27 @@ export default {
         const oldType = olaVal.params.type;
         this.name = newVal.params.name;
         if (newType && newType !== oldType) {
-          this.filterDatas(newType, this.items);
+          this.filterDatas(newType, this.tableData);
         }
+        console.log('---------tableData--------->', this.tableData)
       },
     },
   },
   methods: {
-    serch(){
+    serch() {
       var dataList = [];
-      if(this.keyWord){
+      if (this.keyWord) {
         for (var i = 0; i < this.tableData.length; i++) {
-        if(this.tableData[i].name === this.keyWord){
-          dataList.push(this.tableData[i]);
-          console.log('--------------this.tableData[i]--->', this.tableData[i])
+          if (this.tableData[i].name === this.keyWord) {
+            dataList.push(this.tableData[i]);
+          }
         }
-      }
-      }
-      else{
+      } else {
         dataList = this.tableData;
       }
-      this.items = [...dataList]
-      console.log('--------------------->' ,this.items)
+      this.items = [...dataList];
+      console.log("--------------------->", this.items);
     },
-    // killer(){
-    //   var tablelist = [];
-
-
-    // },
     /**
      *
      * @param {*} type all | Trash | favorites
@@ -142,7 +130,8 @@ export default {
       } else {
         this.items = list;
       }
-      // console.log("----this--items---?", this);
+       console.log("----this---?", list);
+
       this.items &&
         this.items.length > 0 &&
         this.$router

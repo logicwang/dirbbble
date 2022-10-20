@@ -8,7 +8,7 @@
             <img src="../assets/image/edit.svg" class="icon" />
             <span class="name">Edit</span>
           </button>
-          <button v-else class="edit" >
+          <button v-else class="edit" @click="save">
             <img src="../assets/image/save.svg" class="icon" />
             <span class="name">Save</span>
           </button>
@@ -71,11 +71,7 @@
             />
           </div>
           <div class="web">
-            <input
-              class="email"
-              v-model="detali.email"
-              :disabled="!isSave"
-            />
+            <input class="email" v-model="detali.email" :disabled="!isSave" />
           </div>
 
           <div class="username">
@@ -132,7 +128,7 @@
   </div>
 </template>
 <script>
-import { details } from "../API/index";
+import { details, save ,} from "../API/index";
 
 export default {
   data() {
@@ -158,14 +154,14 @@ export default {
   },
   methods: {
     getdetail() {
-      // 详情页接口
       const name = this.$route.params && this.$route.params.name;
       name &&
         details({ name }).then((data) => {
           this.detali = data.data;
-          console.log("---this.detali--->", this.detali);
+          console.log("---this.detalithis.detalithis.detalithis.detali--->", this.detali);
         });
     },
+    
     //显示隐藏
     changePwd() {
       this.pwdFlag = !this.pwdFlag;
@@ -178,6 +174,16 @@ export default {
       if (!this.isNone) {
         this.isNone = true;
       }
+      // console.log('-------->', this.tableData)
+    },
+    //保存
+    save() {
+      save({ ...this.detali }).then((data) => {
+        if (data.data && data.data.code === 1) {
+          (this.isSave = false), (this.isNone = false);
+        }
+        // console.log("----->", data);
+      });
     },
     //取消
     cancel() {
@@ -187,6 +193,12 @@ export default {
       if (this.isNone) {
         this.isNone = false;
       }
+      alert("取消编辑");
+    },
+    //删除
+    // delete(){}
+    Delete() {
+      this.tableData.value = "";
     },
   },
 };

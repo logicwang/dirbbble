@@ -201,6 +201,7 @@ export default {
       this.trashNum = trashNum;
       // 单独的情况下,this指的是全局对象.
       // 在函数中,this指的是全局对象
+      console.log('------data.datadata.datadata.datadata.data------->' , data.data)
     });
   },
 };
@@ -357,7 +358,7 @@ a {
       margin: 0;
       margin-top: 1px;
       font-size: 15px;
-      padding-left: 10px;
+      padding-left: 12px;
       border-radius: 5px;
       text-decoration: none;
     }

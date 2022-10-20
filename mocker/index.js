@@ -2,22 +2,23 @@ const delay = require('mocker-api/lib/delay');
 const noProxy = process.env.NO_PROXY === 'true';
 
 const user = require('./detalis');
+const save = require('./save.js');
+
 
 const proxy = {
     ...user,
+    ...save,
     'GET /api/user/list': [
         {
             "name": "Adobe",
             "email": "thomas@gmail.com",
             "url": "/imgs/adobe.svg",
-            "type": "login",
-            "Trash":"2022/12/01",
+            "Trash": "2022/12/01",
         },
         {
             "name": "Apple",
             "email": "thomas@gmail.com",
             "url": "/imgs/BSApple.svg",
-            "deleteAt": "2022/12/01",
         },
         {
             "name": "Dirbbble",
@@ -25,7 +26,7 @@ const proxy = {
             "url": "/imgs/Dribbble.svg",
             "deleteAt": "2022/12/01",
             "favorties": true,
-            "Trash":"2022/12/01",
+            "Trash": "2022/12/01",
         },
         {
             "name": "Etsy",
@@ -37,7 +38,7 @@ const proxy = {
             "name": "Facebook",
             "email": "thomas@gmail.com",
             "url": "/imgs/Facebook.svg",
-            "Trash":"2022/12/01",
+            "Trash": "2022/12/01",
             "favorties": true,
         },
         {
@@ -58,7 +59,7 @@ const proxy = {
         },
         {
             "name": "Telegram",
-            "email": "thomas@gmail.com",
+            "email": "+1 202 555 0918",
             "url": "/imgs/Telegram.svg"
         }
     ],
