@@ -9,7 +9,9 @@
               <li class="dispalay">
                 <img src="../assets/image/items.svg" class="icon-b" />
                 <h1 class="items fontsize" style="width: 75%">All items</h1>
-                <span class="number" style="padding-right: 10px">{{ allNum }}</span>
+                <span class="number" style="padding-right: 10px">{{
+                  allNum
+                }}</span>
               </li>
             </router-link>
             <router-link to="/list/favorites" class="Favorites">
@@ -17,13 +19,18 @@
                 <div class="icon-items height">
                   <img src="../assets/image/favourites.svg" class="icon-all" />
                 </div>
-                <h1 class="items fontsize height" style="width: 79%">Favorites</h1>
+                <h1 class="items fontsize height" style="width: 79%">
+                  Favorites
+                </h1>
                 <span class="number height">{{ favoritesNum }}</span>
               </li>
             </router-link>
             <router-link to="/list/Trash" class="Favorites">
               <li class="item trahs">
-                <img src="../assets/image/删除色块.png" class="deleteimg deleteleft" />
+                <img
+                  src="../assets/image/删除色块.png"
+                  class="deleteimg deleteleft"
+                />
                 <h1 class="items fontsize" style="padding-left: 15px">Trash</h1>
                 <span class="number height">{{ trashNum }}</span>
               </li>
@@ -56,7 +63,10 @@
                     to="/list/Identity"
                     class="right flexstart paddingzero trahs"
                   >
-                    <img src="../assets/image/indetity.svg" class="icon-Identity" />
+                    <img
+                      src="../assets/image/indetity.svg"
+                      class="icon-Identity"
+                    />
                     <h1 class="items">Identity</h1>
                   </router-link>
                 </li>
@@ -66,7 +76,10 @@
                     class="items Note flexstart paddingzero trahs"
                     style="padding: 0px; width: 100%"
                   >
-                    <img src="../assets/image/securenote.svg" class="icon-note" />
+                    <img
+                      src="../assets/image/securenote.svg"
+                      class="icon-note"
+                    />
                     <h1 class="items">Secure Note</h1>
                   </router-link>
                 </li>
@@ -171,7 +184,6 @@
 </template>
 
 <script type="text/javascript">
-
 import { reqCategoryList } from "../API/index";
 
 export default {
@@ -202,208 +214,15 @@ export default {
       this.trashNum = trashNum;
       // 单独的情况下,this指的是全局对象.
       // 在函数中,this指的是全局对象
-      console.log('------data.datadata.datadata.datadata.data------->' , data.data)
+      console.log(
+        "------data.datadata.datadata.datadata.data------->",
+        data.data
+      );
     });
   },
 };
 </script>
 
-<style lang="scss">
-.header-main {
-  display: flex;
-  height: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-.router-link-active {
-  color: #fff;
-  background-color: blue;
-  text-decoration: none;
-}
-
-.header {
-  width: 240px;
-  background-color: #282828;
-
-  .aaaaaaaaaaaaaa {
-    margin: 0 auto;
-    max-width: 220px;
-  }
-  .padding {
-    padding: 55px 0 0 0;
-    .dispalay {
-      display: flex;
-      justify-content: space-between;
-      height: 25px;
-      margin-top: 3px;
-    }
-
-    .icon-Identity {
-      position: relative;
-      top: 3px;
-      width: 15px;
-      left: 2px;
-      height: 20px;
-    }
-    .height {
-      position: relative;
-      left: 5px;
-    }
-    .icon-note {
-      position: relative;
-      top: 5px;
-      left: 4px;
-      height: 15px;
-      width: 15px;
-    }
-
-    .icon-inentiy {
-      position: relative;
-      top: 3px;
-      left: 2px;
-      width: 15px;
-      height: 15px;
-    }
-    .trahs {
-      display: flex;
-      justify-content: space-between;
-      height: 25px;
-      margin-top: 3px;
-    }
-    .paddingzero {
-      padding: 0;
-    }
-    .icon-work {
-      width: 20px;
-      height: 20px;
-    }
-    .deleteimg {
-      width: 15px;
-      height: 19px;
-    }
-
-    .deleteleft {
-      position: relative;
-      left: 5px;
-    }
-
-    .flexstart {
-      display: flex;
-      justify-content: flex-start;
-    }
-
-    .icon-login {
-      position: relative;
-      top: 4px;
-      left: 3px;
-      width: 15px;
-      height: 15px;
-    }
-
-    .neirong {
-      margin-left: 3%;
-      margin-right: 3%;
-    }
-    .icon-folder {
-      position: relative;
-      top: 3px;
-    }
-    .margin {
-      margin-left: 3%;
-      margin-right: 3%;
-    }
-    .icon-trash {
-      position: relative;
-      top: 3px;
-      left: 2px;
-    }
-
-    .fontsize {
-      margin: 0;
-      font-size: 15px;
-    }
-
-    .flex-type {
-      padding-top: 21px;
-    }
-
-    .folders {
-      padding-top: 25px;
-    }
-
-    li {
-      list-style: none;
-    }
-
-    .header li ul {
-      color: #fff;
-    }
-
-    .number {
-      color: #dcdfe633;
-      font-size: 13px;
-      padding: 2px 15px 0px 0px;
-    }
-
-    .item {
-      display: flex;
-      justify-content: start;
-    }
-
-    .items {
-      color: #fff;
-      width: 77%;
-      margin: 0;
-      margin-top: 1px;
-      font-size: 15px;
-      padding-left: 12px;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-
-    .type {
-      color: RGB(122, 122, 122);
-      font-size: 8px;
-    }
-    .icon-all {
-      position: relative;
-      top: 1px;
-      width: 15px;
-      height: 15px;
-    }
-    .icon-b {
-      position: relative;
-      top: 2px;
-      padding-left: 6px;
-      width: 15px;
-      height: 15px;
-    }
-    .center-third {
-      padding-top: 6px;
-    }
-
-    .folder {
-      color: #fff;
-      padding-left: 11px;
-    }
-
-    .flex {
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-    }
-    .padding-floder {
-      padding: 0;
-    }
-    .top {
-      padding: 160px 0 20px 0;
-    }
-    .name {
-      padding: 3px;
-    }
-  }
-}
+<style >
+@import url(../assets/css/RegisterApp.css);
 </style>

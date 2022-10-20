@@ -98,13 +98,16 @@ export default {
           if (this.tableData[i].name === this.keyWord) {
             dataLists.push(this.tableData[i]);
             console.log("--------------this.tableData--->", this.tableData);
+            // console.log('-------------------------->, datali')
           }
         }
       } else {
         dataLists = this.tableData;
       }
       this.items = [...dataLists];
-      console.log("--------------------->", dataLists);
+      console.log('------------------this.items-------------------------->', this.items)
+      // console.log('------------------this.keywords-------------------------->', this.keywords)
+      console.log("------------------dataLists--------------------------->", dataLists);
     },
     /**
      *
@@ -156,6 +159,6 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-@import url(../assets/css/HelloWorld.scss);
+<style>
+@import url(../assets/css/HelloWorld.css);
 </style>

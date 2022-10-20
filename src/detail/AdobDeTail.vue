@@ -182,7 +182,8 @@ export default {
         if (data.data && data.data.code === 1) {
           (this.isSave = false), (this.isNone = false);
         }
-        // console.log("----->", data);
+        console.log("----->", data);
+        this.$message({ type: "success", message: "保存成功" })
       });
     },
     //取消
@@ -193,7 +194,7 @@ export default {
       if (this.isNone) {
         this.isNone = false;
       }
-      alert("取消编辑");
+      this.$message({ type: "success", message: "取消编辑" })
     },
     //删除
     // delete(){}
@@ -204,6 +205,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import url(../assets/css/AdobDeTail.scss);
+<style>
+@import url(../assets/css/AdobDeTail.css);
 </style>

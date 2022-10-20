@@ -3,6 +3,7 @@ exports.list = [
         "name": "Adobe",
         "password": "12312145425",
         "imgrul": "/imgs/adobe.svg",
+        "username":"Username",
         "email": "thomas@gmail.com",
         "websitename": "adobe.com",
         "website": "https://www.adobe.com/",
@@ -11,6 +12,7 @@ exports.list = [
     },
     {
         "name": "Apple",
+        "username":"Username",
         "password": "qweqwtqertqwert",
         "imgrul": "/imgs/BSApple.svg",
         "email": "thomas@gmail.com",
@@ -21,6 +23,7 @@ exports.list = [
     {
         "name": "Dirbbble",
         "password": "QEfeasrdht",
+        "username":"Username",
         "imgrul": "/imgs/Dribbble.svg",
         "websitename": "dirbbble.com",
         "email": "thomas@gmail.com",
@@ -33,6 +36,7 @@ exports.list = [
         "password": "qweqwrwhrqth",
         "imgrul": "/imgs/etsy.svg",
         "email": "thomas@gmail.com",
+        "username":"Username",
         "websitename": "Etsy.com",
         "favorties": true,
         "website": "https://www.etsy.com/",
@@ -43,6 +47,7 @@ exports.list = [
         "password": "agaergaetgr",
         "imgrul": "/imgs/Facebook.svg",
         "email": "thomas@gmail.com",
+        "username":"Username",
         "favorties": true,
         "websitename": "Facebook.com",
         "website": "https://www.facebook.com/",
@@ -52,6 +57,7 @@ exports.list = [
         "name": "GooGle",
         "password": "ethrywjhwyj",
         "imgrul": "/imgs/Google.svg",
+        "username":"Username",
         "email": "thomas@gmail.com",
         "favorties": true,
         "websitename": "GooGle.com",
@@ -61,6 +67,7 @@ exports.list = [
     {
         "name": "IMDB",
         "password": "hahteah",
+        "username":"Username",
         "imgrul": "/imgs/IMDB.svg",
         "email": "thomas@gmail.com",
         "websitename": "IMDB.com",
@@ -72,6 +79,7 @@ exports.list = [
         "password": "htaheth",
         "imgrul": "/imgs/Invisionapp.svg",
         "email": "thomas@gmail.com",
+        "username":"Username",
         "websitename": "InVison.com",
         "website": "https://www.invisionapp.com/",
         "paragraph": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
@@ -79,8 +87,9 @@ exports.list = [
     {
         "name": "Telegram",
         "password": "ehaehrhtarythjarj",
+        "username":"Username",
         "imgrul": "/imgs/Telegram.svg",
-        "email": "thomas@gmail.com",
+        "email": "+1 202 555 0918",
         "websitename": "Telegram.com",
         "website": "https://telegram.org/",
         "paragraph": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"

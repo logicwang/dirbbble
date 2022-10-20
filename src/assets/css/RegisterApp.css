@@ -1,0 +1,197 @@
+.header-main {
+  display: flex;
+  height: 100%;
+}
+  
+a {
+  text-decoration: none;
+}
+
+.router-link-active {
+  color: #fff;
+  background-color: blue;
+  text-decoration: none;
+}
+
+.aaaaaaaaaaaaaa {
+  margin: 0 auto;
+  max-width: 220px;
+}
+
+.header {
+  width: 240px;
+  background-color: #282828;
+}
+.padding {
+  padding: 55px 0 0 0;
+}
+.dispalay {
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  margin-top: 3px;
+}
+
+.icon-Identity {
+  position: relative;
+  top: 3px;
+  width: 15px;
+  left: 2px;
+  height: 20px;
+}
+.height {
+  position: relative;
+  left: 5px;
+}
+.icon-note {
+  position: relative;
+  top: 5px;
+  left: 4px;
+  height: 15px;
+  width: 15px;
+}
+
+.icon-inentiy {
+  position: relative;
+  top: 3px;
+  left: 2px;
+  width: 15px;
+  height: 15px;
+}
+.trahs {
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  margin-top: 3px;
+}
+.paddingzero {
+  padding: 0;
+}
+.icon-work {
+  width: 20px;
+  height: 20px;
+}
+.deleteimg {
+  width: 15px;
+  height: 19px;
+}
+
+.deleteleft {
+  position: relative;
+  left: 5px;
+}
+
+.flexstart {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.icon-login {
+  position: relative;
+  top: 4px;
+  left: 3px;
+  width: 15px;
+  height: 15px;
+}
+
+.neirong {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.icon-folder {
+  position: relative;
+  top: 3px;
+}
+.margin {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.icon-trash {
+  position: relative;
+  top: 3px;
+  left: 2px;
+}
+
+.fontsize {
+  margin: 0;
+  font-size: 15px;
+}
+
+.flex-type {
+  padding-top: 21px;
+}
+
+.folders {
+  padding-top: 25px;
+}
+
+li {
+  list-style: none;
+}
+
+.header li ul {
+  color: #fff;
+}
+
+.number {
+  color: #dcdfe633;
+  font-size: 13px;
+  padding: 2px 15px 0px 0px;
+}
+
+.item {
+  display: flex;
+  justify-content: flexstart;
+}
+
+.items {
+  color: #fff;
+  width: 77%;
+  margin: 0;
+  margin-top: 1px;
+  font-size: 15px;
+  padding-left: 12px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.type {
+  color: RGB(122, 122, 122);
+  font-size: 8px;
+}
+.icon-all {
+  position: relative;
+  top: 1px;
+  width: 15px;
+  height: 15px;
+}
+.icon-b {
+  position: relative;
+  top: 2px;
+  padding-left: 6px;
+  width: 15px;
+  height: 15px;
+}
+.center-third {
+  padding-top: 6px;
+}
+
+.folder {
+  color: #fff;
+  padding-left: 11px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.padding-floder {
+  padding: 0;
+}
+.top {
+  padding: 160px 0 20px 0;
+}
+.name {
+  padding: 3px;
+}
