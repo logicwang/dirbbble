@@ -171,6 +171,7 @@
 </template>
 
 <script type="text/javascript">
+
 import { reqCategoryList } from "../API/index";
 
 export default {

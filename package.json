@@ -9,18 +9,19 @@
     "api": "mocker ./mocker"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.19.4",
+    "api": "^4.5.2",
     "axios": "^0.27.2",
     "clipboard": "^2.0.11",
     "core-js": "^3.8.3",
     "element-ui": "^2.15.10",
-    "mockjs": "^1.1.0",
     "router": "^1.3.7",
     "vue": "^2.6.14",
     "vue-clipboard2": "^0.3.3",
-    "vue-router": "^3.5.4"
+    "vue-router": "^3.6.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
+    "@babel/core": "^7.19.6",
     "@babel/eslint-parser": "^7.12.16",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",

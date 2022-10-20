@@ -65,9 +65,16 @@ export default {
   mounted() {
     reqCategoryList().then((data) => {
       this.tableData = data.data;
+      console.log("---- this.tableData---->", this.tableData);
+    });
+    reqCategoryList().then((data) => {
+      this.tableData = data.data;
       const type = this.$route.params.type || "all";
       this.filterDatas(type, data.data);
-      console.log('----this.tableDatathis.tableDatathis.tableDatathis.tableData--->',data.data)
+      console.log(
+        "---- this.tableData---->",
+        data.data
+      );
     });
   },
   watch: {
@@ -79,24 +86,25 @@ export default {
         if (newType && newType !== oldType) {
           this.filterDatas(newType, this.tableData);
         }
-        console.log('---------tableData--------->', this.tableData)
+        console.log("---------tableData--------->", this.tableData);
       },
     },
   },
   methods: {
     serch() {
-      var dataList = [];
+      var dataLists = [];
       if (this.keyWord) {
         for (var i = 0; i < this.tableData.length; i++) {
           if (this.tableData[i].name === this.keyWord) {
-            dataList.push(this.tableData[i]);
+            dataLists.push(this.tableData[i]);
+            console.log("--------------this.tableData--->", this.tableData);
           }
         }
       } else {
-        dataList = this.tableData;
+        dataLists = this.tableData;
       }
-      this.items = [...dataList];
-      console.log("--------------------->", this.items);
+      this.items = [...dataLists];
+      console.log("--------------------->", dataLists);
     },
     /**
      *
@@ -130,7 +138,7 @@ export default {
       } else {
         this.items = list;
       }
-       console.log("----this---?", list);
+      console.log("----this---?", list);
 
       this.items &&
         this.items.length > 0 &&
