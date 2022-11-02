@@ -6,11 +6,11 @@ import requests from './request'
 //——get 无参
 
 
-export const reqCategoryList = () => requests({ url: 'http://localhost:3721/api/user/list', method: 'GET' }) //中间路由
+export const reqCategoryList = () => requests({ url: '/api/user/list', method: 'GET' }) //中间路由
 
-export const save = (paramssa) => requests({ url: 'http://localhost:3721/api/user/save', method: 'POST',data:{...paramssa }}) 
+export const save = (params) => requests({ url: '/api/user/list/save', method: 'POST',data:{...params }}) 
 
-export const details = (params) => requests({ url: 'http://localhost:3721/api/details', method: 'POST', data:{...params}}) //右侧详情页
+export const details = (params) => requests({ url: '/api/user/list/details', method: 'POST', data:{...params}}) //右侧详情页
 
 //——post 有参
 //params至少是一个空对象

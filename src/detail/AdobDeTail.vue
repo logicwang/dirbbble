@@ -5,22 +5,22 @@
       <div class="header-right">
         <div class="btnall">
           <button v-if="!isSave" class="edit" @click="onClickEditBtn">
-            <img src="../assets/image/edit.svg" class="icon" />
+            <img src="../assets/imgs/edit.svg" class="icon" />
             <span class="name">Edit</span>
           </button>
           <button v-else class="edit" @click="save">
-            <img src="../assets/image/save.svg" class="icon" />
+            <img src="../assets/imgs/save.svg" class="icon" />
             <span class="name">Save</span>
           </button>
           <button v-if="isNone" @click="cancel()">
             <div class="cancela">
-              <img src="../assets/image/cancel.svg" class="cancel" />
+              <img src="../assets/imgs/cancel.svg" class="cancel" />
               <span class="name cancel-name"> Cancel</span>
             </div>
           </button>
           <button @click="Delete()">
             <div class="delete">
-              <img src="../assets/image/rightdelete.svg" class="icon" />
+              <img src="../assets/imgs/delete.svg" class="icon" />
               <span class="name">Delete</span>
             </div>
           </button>
@@ -50,13 +50,13 @@
               <img
                 v-if="detali.favorties"
                 @click="changeImg = true"
-                src="../assets/image/收藏.svg"
+                src="../assets/imgs/收藏.svg"
                 style="width: 27px; height: 27px"
               />
               <img
                 v-if="!detali.favorties"
                 @click="changeImg = true"
-                src="../assets/image/未收藏.svg"
+                src="../assets/imgs/未收藏.svg"
                 style="width: 27px; height: 27px"
               />
             </div>
@@ -64,11 +64,13 @@
         </div>
         <div class="main">
           <div class="third">
-            <input
-              class="website xxx"
-              :value="detali.username"
-              :disabled="!isSave"
-            />
+            <form>
+              <input
+                class="website xxx"
+                :value="detali.username"
+                :disabled="!isSave"
+              />
+            </form>
           </div>
           <div class="web">
             <input class="email" v-model="detali.email" :disabled="!isSave" />
@@ -80,6 +82,16 @@
                 <h1 class="password">Password</h1>
               </div>
               <div class="clear" />
+              <form>
+                <input
+                  :disabled="!isSave"
+                  v-model="detali.password"
+                  :type="pwdFlag ? 'password' : 'text'"
+                  size="10"
+                  class="margintop"
+                  autoComplete="“false”"
+                />
+              </form>
               <input
                 :disabled="!isSave"
                 v-model="detali.password"
@@ -88,9 +100,6 @@
                 class="margintop"
                 autoComplete="“false”"
               />
-              <!-- <div v-else>{{detali.password}}</div> -->
-              <!--三元表达式 pwdFlag为真则type是password密码隐藏 pwdFlag为假则type是text密码显示 -->
-              <!--pwdFlag为真说明密码是隐藏的，显示眼睛打开图标，反之显示眼睛关闭图标-->
               <img
                 :src="pwdFlag ? textIcon : pwdIcon"
                 @click="changePwd"
@@ -102,11 +111,13 @@
             <div class="detaliwebsite">
               <span>Website</span>
             </div>
-            <input
-              :value="detali.website"
-              class="detaliweb"
-              :disabled="!isSave"
-            />
+            <form>
+              <input
+                :value="detali.website"
+                class="detaliweb"
+                :disabled="!isSave"
+              />
+            </form>
           </div>
           <div class="asdasdergrg">
             <div class="bottom">
@@ -128,7 +139,7 @@
   </div>
 </template>
 <script>
-import { details, save ,} from "../API/index";
+import { details, save } from "../API/index";
 
 export default {
   data() {
@@ -158,10 +169,13 @@ export default {
       name &&
         details({ name }).then((data) => {
           this.detali = data.data;
-          console.log("---this.detalithis.detalithis.detalithis.detali--->", this.detali);
+          console.log(
+            "---this.detalithis.detalithis.detalithis.detali--->",
+            this.detali
+          );
         });
     },
-    
+
     //显示隐藏
     changePwd() {
       this.pwdFlag = !this.pwdFlag;
@@ -183,7 +197,7 @@ export default {
           (this.isSave = false), (this.isNone = false);
         }
         console.log("----->", data);
-        this.$message({ type: "success", message: "保存成功" })
+        this.$message({ type: "success", message: "保存成功" });
       });
     },
     //取消
@@ -194,7 +208,7 @@ export default {
       if (this.isNone) {
         this.isNone = false;
       }
-      this.$message({ type: "success", message: "取消编辑" })
+      this.$message({ type: "success", message: "取消编辑" });
     },
     //删除
     // delete(){}

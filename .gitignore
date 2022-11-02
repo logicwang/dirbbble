@@ -1,6 +1,9 @@
 .DS_Store
 node_modules
-dist
+<<<<<<< HEAD
+
+=======
+>>>>>>> 15139c10c56de7f20ee4e8791e11b5ad445005c8
 
 # local env files
 .env.local
@@ -22,3 +25,4 @@ pnpm-debug.log*
 *.sln
 *.sw?
 1.html
+.dist

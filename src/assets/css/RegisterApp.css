@@ -100,7 +100,12 @@ a {
 }
 .icon-folder {
   position: relative;
-  top: 3px;
+  top: 4px;
+  left: 4px;
+}
+.icon-folder{
+  width: 20px;
+  height: 20px;
 }
 .margin {
   margin-left: 3%;
@@ -190,7 +195,7 @@ li {
   padding: 0;
 }
 .top {
-  padding: 160px 0 20px 0;
+  padding: 155px 0 20px 0;
 }
 .name {
   padding: 3px;

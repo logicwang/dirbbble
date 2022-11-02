@@ -2,7 +2,7 @@ const delay = require('mocker-api/lib/delay');
 const noProxy = process.env.NO_PROXY === 'true';
 
 const proxy = {
-    'POST /api/user/save': (req, res) => {
+    'POST /api/user/list/': (req, res) => {
         return res.json({
             "code":1,
             "data":{ },

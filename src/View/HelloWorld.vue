@@ -11,12 +11,12 @@
               placeholder="SearchVault"
             />
             <button class="sousuo" @click="serch">
-              <img class="hualigs" src="../assets/image/搜索.png" alt />
+              <img class="hualigs" src="../assets/imgs/搜索.png" alt />
               <div class="claer" />
             </button>
           </div>
           <div class="icon-a">
-            <img src="../assets/image/加号.png" class="icon-img" />
+            <img src="../assets/imgs/加号.png" class="icon-img" />
           </div>
         </div>
         <div class="all-button">
@@ -143,13 +143,13 @@ export default {
       }
       console.log("----this---?", list);
 
-      this.items &&
-        this.items.length > 0 &&
-        this.$router
-          .push(`/list/${type}/detail/${this.items[0].name}`)
-          .catch((err) => {
-            console.log(err);
-          });
+      // this.items &&
+      //   this.items.length > 0 &&
+      //   this.$router
+      //     .push(`/list/${type}/detail/${this.items[0].name}`)
+      //     .catch((err) => {
+      //       console.log(err);
+      //     });
     },
   },
   components: {
