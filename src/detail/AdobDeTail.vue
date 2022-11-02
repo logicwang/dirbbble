@@ -92,14 +92,6 @@
                   autoComplete="“false”"
                 />
               </form>
-              <input
-                :disabled="!isSave"
-                v-model="detali.password"
-                :type="pwdFlag ? 'password' : 'text'"
-                size="10"
-                class="margintop"
-                autoComplete="“false”"
-              />
               <img
                 :src="pwdFlag ? textIcon : pwdIcon"
                 @click="changePwd"
