@@ -1,5 +1,5 @@
 <template>
-  <!-- 右侧详情页 -->
+  <!-- 详情页 -->
   <div class="wrap-right">
     <div class="max-width">
       <div class="header-right">
@@ -18,7 +18,7 @@
               <span class="name cancel-name"> Cancel</span>
             </div>
           </button>
-          <button @click="Delete()">
+          <button @click="removeItem(index)">
             <div class="delete">
               <img src="../assets/imgs/delete.svg" class="icon" />
               <span class="name">Delete</span>
@@ -167,7 +167,6 @@ export default {
           );
         });
     },
-
     //显示隐藏
     changePwd() {
       this.pwdFlag = !this.pwdFlag;
@@ -187,9 +186,9 @@ export default {
       save({ ...this.detali }).then((data) => {
         if (data.data && data.data.code === 1) {
           (this.isSave = false), (this.isNone = false);
+          alert("保存成功");
         }
         console.log("----->", data);
-        this.$message({ type: "success", message: "保存成功" });
       });
     },
     //取消
@@ -199,13 +198,13 @@ export default {
       }
       if (this.isNone) {
         this.isNone = false;
+        alert("取消编辑");
       }
-      this.$message({ type: "success", message: "取消编辑" });
     },
     //删除
-    // delete(){}
-    Delete() {
-      this.tableData.value = "";
+    removeItem() {
+      var array = new Array(this.detali);
+      console.log("------------>", typeof array);
     },
   },
 };

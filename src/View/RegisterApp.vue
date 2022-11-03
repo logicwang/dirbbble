@@ -1,5 +1,5 @@
 <template>
-  <!-- 密码管理页面左侧菜单 -->
+  <!-- 项目菜单 -->
   <div class="header-main">
     <div class="header scorall">
       <div class="padding aaaaaaaaaaaaaa">
