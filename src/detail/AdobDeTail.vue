@@ -69,13 +69,12 @@
                 class="website xxx"
                 :value="detali.username"
                 :disabled="!isSave"
-              />
+              />  
             </form>
           </div>
           <div class="web">
             <input class="email" v-model="detali.email" :disabled="!isSave" />
           </div>
-
           <div class="username">
             <div class="color">
               <div class="word">
