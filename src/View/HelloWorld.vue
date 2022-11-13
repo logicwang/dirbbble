@@ -54,7 +54,6 @@ import AdobDeTail from "../detail/AdobDeTail.vue";
 
 export default {
   props: ["type"],
-
   data() {
     return {
       items: [],
