@@ -156,19 +156,17 @@ export default {
       var trashNum = 0;
       data.data &&
         data.data.length > 0 &&
-        data.data.forEach((item) => {
-          if (item.deleteAt) {
+        data.data.forEach((items) => {
+          if (items.deleteAt) {
             trashNum = trashNum + 1;
           }
-          if (item.favorties) {
+          if (items.favorties) {
             favoritesNum += 1;
           }
         });
       this.allNum = allNum;
       this.favoritesNum = favoritesNum;
       this.trashNum = trashNum;
-      // 单独的情况下,this指的是全局对象.
-      // 在函数中,this指的是全局对象
       console.log(
         "------data.datadata.datadata.datadata.data------->",
         data.data
