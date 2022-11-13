@@ -47,12 +47,14 @@ const proxy = {
         {
             "name": "GooGle",
             "email": "thomas@gmail.com",
+            "Trash": "2022/12/01",
             "url": "/image/Google.svg",
             "favorties": true,
         },
         {
             "name": "IMDB",
             "email": "thomas@gmail.com",
+            "Trash": "2022/12/01",
             "url": "/image/IMDB.svg"
         },
         {
