@@ -27,9 +27,7 @@ const proxy = {
             "name": "Dirbbble",
             "email": "thomas@gmail.com",
             "url": "/image/Dribbble.svg",
-            "deleteAt": "2022/12/01",
             "favorties": true,
-            "Trash": "2022/12/01",
         },
         {
             "name": "Etsy",
@@ -41,8 +39,6 @@ const proxy = {
             "name": "Facebook",
             "email": "thomas@gmail.com",
             "url": "/image/Facebook.svg",
-            "Trash": "2022/12/01",
-            "favorties": true,
         },
         {
             "name": "GooGle",

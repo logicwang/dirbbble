@@ -27,7 +27,6 @@ exports.list = [
         "imgrul": "/image/Dribbble.svg",
         "websitename": "dirbbble.com",
         "email": "thomas@gmail.com",
-        "favorties": true,
         "website": "https://dribbble.com/",
         "paragraph": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
     },
@@ -38,7 +37,6 @@ exports.list = [
         "email": "thomas@gmail.com",
         "username":"Username",
         "websitename": "Etsy.com",
-        "favorties": true,
         "website": "https://www.etsy.com/",
         "paragraph": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
     },
