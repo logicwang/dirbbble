@@ -8,7 +8,7 @@ import RegisterApp from '../View/RegisterApp.vue'
 
 export default new Router({
     mode: 'history',
-    linkActiveClass: 'is-active',
+    linkActiveClass: 'isactive',
     routes: [
         {
             path: '/',

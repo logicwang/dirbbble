@@ -32,7 +32,7 @@
                   :eal="item.url"
                   :class="
                     name === item.name || (i === 0 && !name)
-                      ? 'is-active'
+                      ? 'isactive'
                       : undefined
                   "
                 />
@@ -48,6 +48,7 @@
 
 <script>
 import { reqCategoryList } from "../API/index";
+
 import AppleeApp from "../components/AppleApp.vue";
 import AdobDeTail from "../detail/AdobDeTail.vue";
 // 在此处引用button组件
