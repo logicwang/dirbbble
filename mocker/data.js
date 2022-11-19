@@ -6,6 +6,7 @@ exports.list = [
         "username":"Username",
         "email": "thomas@gmail.com",
         "websitename": "adobe.com",
+        "favorties": true,
         "website": "https://www.adobe.com/",
         "deleteAt": "2022/12/01",
         "paragraph": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
@@ -15,7 +16,9 @@ exports.list = [
         "username":"Username",
         "password": "qweqwtqertqwert",
         "imgrul": "/image/BSApple.svg",
+        "deleteAt": "2022/12/01",
         "email": "thomas@gmail.com",
+        "favorties": true,
         "websitename": "apple.com",
         "website": "https://www.apple.com/sg/",
         "paragraph": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
@@ -26,6 +29,7 @@ exports.list = [
         "username":"Username",
         "imgrul": "/image/Dribbble.svg",
         "websitename": "dirbbble.com",
+        "deleteAt": "2022/12/01",
         "email": "thomas@gmail.com",
         "website": "https://dribbble.com/",
         "paragraph": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
@@ -33,6 +37,7 @@ exports.list = [
     {
         "name": "Etsy",
         "password": "qweqwrwhrqth",
+        "deleteAt": "2022/12/01",
         "imgrul": "/image/etsy.svg",
         "email": "thomas@gmail.com",
         "username":"Username",
@@ -47,6 +52,7 @@ exports.list = [
         "email": "thomas@gmail.com",
         "username":"Username",
         "favorties": true,
+        "deleteAt": "2022/12/01",
         "websitename": "Facebook.com",
         "website": "https://www.facebook.com/",
         "paragraph": "Great experiences have the power to inspire, transform and movethe world forward.And every great experience starts withcreativity"
@@ -56,6 +62,7 @@ exports.list = [
         "password": "ethrywjhwyj",
         "imgrul": "/image/Google.svg",
         "username":"Username",
+        "deleteAt": "2022/12/01",
         "email": "thomas@gmail.com",
         "favorties": true,
         "websitename": "GooGle.com",
@@ -67,6 +74,7 @@ exports.list = [
         "password": "hahteah",
         "username":"Username",
         "imgrul": "/image/IMDB.svg",
+        "deleteAt": "2022/12/01",
         "email": "thomas@gmail.com",
         "websitename": "IMDB.com",
         "website": "https://www.imdb.com/",

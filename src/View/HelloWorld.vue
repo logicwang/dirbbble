@@ -109,30 +109,6 @@ export default {
       // console.log('------------------this.keywords-------------------------->', this.keywords)
       console.log("------------------dataLists--------------------------->", dataLists);
     },
-    /**
-     *
-     * @param {*} type all | Trash | favorites
-     * @param {*} list 所有数据
-     */
-    // filterDatas(type, list) {
-    //   //type: all Trash favorites
-    //   let filterKey = '';
-    //   if (type === 'Trash') {
-    //     filterKey = 'deleteAt'
-    //   }
-    //   if (type === 'favorites') {
-    //     filterKey = 'favorties'
-
-    //   }
-    //   const newlist = list || this.allItems;
-    //   // if (filterKey) {
-    //   //   this.items= newlist.filter(item => item[filterKey])
-    //   // } else {
-    //   //   this.items = newlist;
-    //   // }
-    //   this.items = filterKey ? newlist.filter(item => item[filterKey]) : newlist;
-    // },
-
     filterDatas(type, list) {
       if (type === "Trash") {
         this.items = list.filter((item) => item.deleteAt);

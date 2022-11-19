@@ -9,7 +9,6 @@
     "api": "mocker ./mocker"
   },
   "dependencies": {
-    "@babel/preset-env": "^7.19.4",
     "api": "^4.5.2",
     "axios": "^0.27.2",
     "clipboard": "^2.0.11",

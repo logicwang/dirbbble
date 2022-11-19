@@ -15,13 +15,17 @@ const proxy = {
         {
             "name": "Adobe",
             "email": "thomas@gmail.com",
-            "url": "/image/Adobe.svg",
+            "favorties": true,
+        "deleteAt": "2022/12/01",
+        "url": "/image/Adobe.svg",
             "Trash": "2022/12/01",
         },
         {
             "name": "Apple",
-            "email": "thomas@gmail.com",
+        "deleteAt": "2022/12/01",
+        "email": "thomas@gmail.com",
             "url": "/image/Apple.svg",
+            "Trash": "2022/12/01",
         },
         {
             "name": "Dirbbble",

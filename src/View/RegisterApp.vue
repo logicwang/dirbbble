@@ -127,7 +127,7 @@
         <div class="flex fixed top">
           <ul class="padding-floder">
             <li class="newfolder neirong">
-  <img src="../assets/imgs/folder.svg" class="icon-folder"/>
+              <img src="../assets/imgs/folder.svg" class="icon-folder" />
               <span class="folder">NewFolder</span>
             </li>
           </ul>
@@ -169,7 +169,7 @@ export default {
       this.trashNum = trashNum;
       console.log(
         "------data.datadata.datadata.datadata.data------->",
-        data.data
+        this.favoritesNum
       );
     });
   },
