@@ -8,10 +8,8 @@
             <router-link to="/list/all" class="Favorites">
               <li class="dispalay">
                 <img src="../assets/imgs/items.svg" class="icon-b" />
-                <h1 class="items fontsize" style="width: 75%">All items</h1>
-                <span class="number" style="padding-right: 10px">{{
-                  allNum
-                }}</span>
+                <h1 class="items fontsize itemwidth">All items</h1>
+                <span class="number itemsright">{{ allNum }}</span>
               </li>
             </router-link>
             <router-link to="/list/favorites" class="Favorites">
@@ -19,9 +17,7 @@
                 <div class="icon-items height">
                   <img src="../assets/imgs/favourites.svg" class="icon-all" />
                 </div>
-                <h1 class="items fontsize height" style="width: 79%">
-                  Favorites
-                </h1>
+                <h1 class="items fontsize height favoritesright" >Favorites</h1>
                 <span class="number height">{{ favoritesNum }}</span>
               </li>
             </router-link>
@@ -31,7 +27,7 @@
                   src="../assets/imgs/删除色块.png"
                   class="deleteimg deleteleft"
                 />
-                <h1 class="items fontsize" style="padding-left: 15px">Trash</h1>
+                <h1 class="items fontsize trashright">Trash</h1>
                 <span class="number height">{{ trashNum }}</span>
               </li>
             </router-link>
@@ -94,8 +90,8 @@
               <li class="name">
                 <router-link
                   to="/list/Work"
-                  class="items flexstart trahs"
-                  style="padding: 0; width: 100%"
+                  class="items flexstart trahs routerlink"
+                  style=""
                 >
                   <img src="../assets/imgs/work.svg" class="icon-work" />
                   <h1 class="items">Work</h1>
@@ -114,8 +110,7 @@
               <li class="name">
                 <router-link
                   to="/list/Personal"
-                  class="items right flexstart"
-                  style="padding: 0; width: 100%"
+                  class="items right flexstart routerlink"
                 >
                   <img src="../assets/imgs/personal.svg" class="icon-work" />
                   <h1 class="items">Personal</h1>

@@ -2,10 +2,27 @@
   display: flex;
   height: 100%;
 }
-  
+
+.itemsright{
+  padding-right: 10px;
+}
+
+.itemwidth{
+  width: 75%;
+}
+
+.favoritesright{
+  width: 79%;
+}
+
+.trshright{
+  padding-left: 15px;
+}
+
 a {
   text-decoration: none;
 }
+
 .aaaaaaaaaaaaaa {
   margin: 0 auto;
   max-width: 220px;
@@ -15,9 +32,11 @@ a {
   width: 240px;
   background-color: #282828;
 }
+
 .padding {
   padding: 55px 0 0 0;
 }
+
 .dispalay {
   display: flex;
   justify-content: space-between;
@@ -60,10 +79,12 @@ a {
 .paddingzero {
   padding: 0;
 }
+
 .icon-work {
   width: 20px;
   height: 20px;
 }
+
 .deleteimg {
   width: 15px;
   height: 19px;
@@ -91,19 +112,23 @@ a {
   margin-left: 3%;
   margin-right: 3%;
 }
+
 .icon-folder {
   position: relative;
   top: 4px;
   left: 4px;
 }
+
 .icon-folder{
   width: 20px;
   height: 20px;
 }
+
 .margin {
   margin-left: 3%;
   margin-right: 3%;
 }
+
 .icon-trash {
   position: relative;
   top: 3px;
@@ -184,12 +209,25 @@ li {
   flex-direction: column;
   gap: 7px;
 }
+
 .padding-floder {
   padding: 0;
 }
+
 .top {
   padding: 155px 0 20px 0;
 }
+
 .name {
   padding: 3px;
+}
+
+.routerlink{
+  padding: 0; 
+  width: 100%;
+}
+
+.favorites{
+  width: 27px; 
+  height: 27px;
 }
